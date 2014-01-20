@@ -24,7 +24,7 @@ This site uses [Jekyll](http://jekyllrb.com/).  To generate pages locally on a M
 ruby 2.0.0p247 (2013-06-27 revision 41674) [universal.x86_64-darwin13]
 ```
 
-1. Install Jekyll with `sudo gem installl jekyll` (you will require administrative access to your machine to do this).  Hopefully you will see something like this:
+2. Install Jekyll with `sudo gem installl jekyll` (you will require administrative access to your machine to do this).  Hopefully you will see something like this:
 
 ```
 [user.name@FT-12345 style-guide]$ sudo gem install jekyll
@@ -40,7 +40,7 @@ Installing ri documentation for jekyll-1.4.3
 2 gems installed
 ```
 
-1. From the directory you cloned this module in, run `jekyll serve --watch --baseurl=''` to run Jekyll and create a web server (by default on port 4000):
+3. From the directory you cloned this module in, run `jekyll serve --watch --baseurl=''` to run Jekyll and create a web server (by default on port 4000):
 
 ```
 [user.name@FT-12345 style-guide]$ jekyll serve --watch --baseurl=''
@@ -53,4 +53,4 @@ Configuration file: /Users/user.name/sandboxes/local/style-guide/_config.yml
   Server running... press ctrl-c to stop.
 ```
 
-1. Now you can view the site on your browser at [http://localhost:4000](http://localhost:4000).  Every time you make a change, the site will update automatically (except changes to main.js or main.scss, for which, see the Building section above)
+4. Now you can view the site on your browser at [http://localhost:4000](http://localhost:4000).  Every time you make a change, the site will update automatically (except changes to main.js or main.scss, for which, see the Building section above)
