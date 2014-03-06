@@ -23,6 +23,7 @@ This site uses [Jekyll](http://jekyllrb.com/).  To generate pages locally on a M
 [user.name@FT-12345 style-guide]$ ruby -v
 ruby 2.0.0p247 (2013-06-27 revision 41674) [universal.x86_64-darwin13]
 ```
+* You also need to check if command line tools are installed for xcode
 
 * Install Jekyll with `sudo gem installl jekyll` (you will require administrative access to your machine to do this).  Hopefully you will see something like this:
 
