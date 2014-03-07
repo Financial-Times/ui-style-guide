@@ -1,6 +1,6 @@
 ## This is a gh-pages branch
 
-Please visit http://financial-times.github.io/style-guide to view the site
+Please visit http://financial-times.github.io/ui-style-guide to view the site
 
 ## Building
 
