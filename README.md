@@ -55,3 +55,15 @@ Configuration file: /Users/user.name/sandboxes/local/style-guide/_config.yml
 ```
 
 * Now you can view the site on your browser at [http://localhost:4000](http://localhost:4000).  Every time you make a change, the site will update automatically (except changes to main.js or main.scss, for which, see the Building section above)
+
+* To run this Jekyll again the next time you turn on your computer follow the follow the previous steps thus. Open the terminal and "__c__hange __d__irectory" to the folder containing your local copy UI style guide.
+
+```
+cd /Users/paul.oneill/Workspace/ui-style-guide/
+```
+Then once inside this directlry you run a "watch", which sets Jeykll running.
+
+```
+jekyll serve --watch --baseurl=''
+```
+To turn Jekyll off press ctrl C in the terminal. The localhost link will stop working.

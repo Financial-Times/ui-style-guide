@@ -1,8 +1,8 @@
 ---
 layout: default
-title: page-styles
+title: Home
 section: Section 1
-permalink: /docs/page-2/
+permalink: /docs/page-1/
 ---
 
 # Grid
