@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Page 2
+title: Design Resources
 section: Section 1
 permalink: /docs/page-2/
 ---
 
-# Another page
+# Design Resources
+
+Below will be content related to design resources help 3rd party design FT pages.
 
 You can put pages whereever you like in the folder structure, and they don't have to map to the URL you want to want to serve them on, but it makes sense to stick to it as much as possible.  Each page has some metadata at the top:
 
