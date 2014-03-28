@@ -18,6 +18,10 @@ Heading levels are indicated by the number of `#` characters preceding the line.
 
 You can also use tables, but you have to write HTML for those (in fact, any HTML works fine, Markdown is just a shortcut)
 
+##Another heading
+
+
+
 <table class='o-techdocs-table'>
 <tr><th>Col 1 head</th><th>Col 2 head</th></tr>
 <tr><td>Cell 1</td><td>Cell 2</td></tr>
@@ -32,6 +36,9 @@ Another thing you can use HTML for is an aside - a boxed bit of content, usually
 </aside>
 
 You can embed images too.  When you refer to other URLs within the repo, use `site.baseurl` in double curly braces to ensure that the file is linked correctly:
+
+##And another heading
+
 
 ![This is the ALT text of the image]({{site.baseurl}}/img/panorama.jpg)
 

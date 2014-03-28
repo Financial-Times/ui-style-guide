@@ -11,29 +11,30 @@
 
     </head>
     <body class='o-techdocs'>
-      <div class="o-techdocs-header">
-        <h1>{{site.name}}</h1>
-        <p>Style guide subtitle goes here</p>
-      </div>
-      <ul class="ui-guide-nav">
-        <li class="{% if page.title == 'Home' %}active{% endif %}">
-          <a href="{{ site.baseurl }}/">Home (section 1)</a>
-          {% if page.section == 'Section 1' %}
-          <ul class="ui-guide-subnav">
-            <li class="{% if page.title == 'Page 2' %}active{% endif %}">
-              <a href="{{ site.baseurl }}/docs/page-2">Page 2</a>
-            </li>
-          </ul>
-          {% endif %}
-        </li>
-      </ul>
-      <div class="o-techdocs-layout">
+      
+      <div class="o-techdocs-layout"> 
+
         <div class="o-techdocs-sidebar">
-         
+          Put the eading in here
+          <div class="o-techdocs-nav"></div>
         </div>
 
         <div class="o-techdocs-main">
           <div class="o-techdocs-content">
+            <ul class="ui-guide-nav">
+              <li class="{% if page.title == 'Home' %}active{% endif %}">
+                <a href="{{ site.baseurl }}/">Home (section 1)</a>
+                {% if page.section == 'Section 1' %}
+                <ul class="ui-guide-subnav">
+                  <li class="{% if page.title == 'Page 2' %}active{% endif %}">
+                    <a href="{{ site.baseurl }}/docs/page-2">Page 2</a>
+                  </li>
+                </ul>
+                {% endif %}
+              </li>
+            </ul>
+
+        
             {{ content }}
           </div>
         </div>
