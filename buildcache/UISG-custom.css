@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* universals */
+.fclear {
+	clear:both;	
+}
+
+
+
+/* design */
+.uisg-pgwidth {
+	width:1440px;
+    font-family: BentonSans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 20px;
+}
+
+.uisg-pagecont {
+	width:100%;	
+}
+
+.uisg-lt {
+	position:fixed;
+	width:25%;
+	min-height:1000px;
+	padding:30px;
+}
+
+.uisg-lt h1 {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 1.2;
+	margin: 10px 0 0 0;	
+}
+
+.uisg-ft-logo {	
+}
+
+.uisg-rt {
+	margin-left:25%;
+	width:75%;
+}
+
+ul.uisg-leftnav {
+	margin:20px 0 0 0;
+}
+
+ul.uisg-leftnav li {
+	padding:10px 10px 7px 10px;
+	border-top:1px dotted #cec6b9;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+ul.uisg-leftnav li a:link, ul.uisg-leftnav li a:visited  {
+		color:#2e6e9e;
+}
+ul.uisg-leftnav li a:hover, ul.uisg-leftnav li a:active  {
+		color:#000000
+}
