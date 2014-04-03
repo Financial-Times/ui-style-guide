@@ -1,1 +1,6 @@
 @import 'o-techdocs/main';
+
+.ui-guide-nav {
+    @extend .o-techdocs-header;
+    background: none;
+}

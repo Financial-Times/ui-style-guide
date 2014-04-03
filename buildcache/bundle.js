@@ -8939,11 +8939,9 @@ $(function() {
 var $ = require("./../../../jquery/jquery.js");
 
 $(function() {
-	$('.o-techdocs-table').removeClass('o-techdocs-table').addClass('o-techdocs-table__table').wrap('<div class="o-techdocs-table"></div>');
+	$('table.o-techdocs-table').removeClass('o-techdocs-table').wrap('<div class="o-techdocs-table"></div>');
 });
 
 },{"./../../../jquery/jquery.js":1}],5:[function(require,module,exports){
-
 require("./bower_components/o-techdocs/main.js");
-
-},{"./bower_components/o-techdocs/main.js":2}]},{},[5])
+},{"./bower_components/o-techdocs/main.js":2}]},{},[5]);

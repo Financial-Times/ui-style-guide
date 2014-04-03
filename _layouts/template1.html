@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }} - {{ site.name }}</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="noindex, nofollow">
+        
+		<link href="{{ site.baseurl }}/buildcache/reset.css" rel="stylesheet">
+        <link href="{{ site.baseurl }}/buildcache/bundle.css" rel="stylesheet">
+        <link href="{{ site.baseurl }}/buildcache/UISG-custom.css" rel="stylesheet">
+        <script src='{{ site.baseurl }}/buildcache/bundle.js'></script>
+
+    </head>
+    <body class='o-techdocs uisg-pgwidth'>
+
+      <div class="uisg-pagecont">
+
+        	<div class="uisg-lt">
+            	<div>
+                  <img class="uisg-ft-logo" src="/img/ft-logo.gif" width=100 height=100 />
+                  <h1>User Interface <br> Style Guide</h1>
+                  <ul class="uisg-leftnav">
+                      <li><a href="#">Grid</a></li>
+                      <li><a href="#">Grid</a></li>
+                      <li><a href="#">Grid</a></li>
+                      <li><a href="#">Grid</a></li>
+                  </ul>
+                  </div>
+            </div><!--uisg-lt-->
+           
+            <div class="uisg-rt">
+                <ul class="uisg-mainnav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+          
+                <div class="uisg-introbox">
+                    <p>Lorem ipsum Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, elementum sed, bibendum quis, rhoncus non, metus. Fusce neque dolor, adipiscing sed, consectetuer et, lacinia sit amet, quam. Suspendisse wisi quam, consectetuer in, blandit sed, suscipit eu, eros. Etiam ligula enim, tempor ut, blandit nec, mollis eu, lectus. Nam cursus. Vivamus iaculis.</p><p>Aenean risus purus, pharetra in, blandit quis, gravida a, turpis. Donec nisl. Aenean eget mi. Fusce mattis est id diam. Phasellus faucibus interdum sapien. Duis quis nunc. Sed enim.</p>
+                </div><!--uisg-introbox-->
+            
+                <div class="uisg-content" >
+                {{ content }}
+                 </div>
+            
+            </div><!--uisg-rt-->
+            
+          <div class="fclear"></div>
+        
+
+        
+          
+
+          
+
+        
+		<!--inherited footer from o-techdocs-->
+        <div class='o-techdocs-footer o-techdocs-content'>
+          <p><a class='o-techdocs-pull-right' href='http://github.com/financial-times/ft-origami'>View project on Github</a>&copy; THE FINANCIAL TIMES LTD {{ site.time | date:'%Y' }}. FT and 'Financial Times' are trademarks of The Financial Times Ltd.</p>
+        </div>
+
+      </div> <!-- uisg-pagecont -->
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js'></script>
+      <script>prettyPrint();</script>
+    </body>
+</html>
