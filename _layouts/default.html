@@ -7,8 +7,11 @@
         <meta name="viewport" content="width=device-width">
         <meta name="robots" content="noindex, nofollow">
 
+        <link href="{{ site.baseurl }}/buildcache/reset.css" rel="stylesheet">
         <link href="{{ site.baseurl }}/buildcache/bundle.css" rel="stylesheet">
-
+        <link href="{{ site.baseurl }}/buildcache/UISG-custom.css" rel="stylesheet">
+        
+        
     </head>
     <body class='o-techdocs'>
       
@@ -22,9 +25,11 @@
 
         <div class="o-techdocs-main">
           <div class="o-techdocs-content">
+            
             <ul class="ui-guide-nav">
               <li class="{% if page.title == 'Home' %}active{% endif %}">
-                <a href="{{ site.baseurl }}/">Home (section 1)</a>
+              <!-- this code in here is not creating the right nav  -->
+                <a href="{{ site.baseurl }}/">Home</a>
                 {% if page.section == 'Section 1' %}
                 <ul class="ui-guide-subnav">
                   <li class="{% if page.title == 'Page 2' %}active{% endif %}">
@@ -34,7 +39,10 @@
                 {% endif %}
               </li>
             </ul>
+		  <div class="introbox">
+          	The following pages show all the component parts and elements that go to create an Financial Times (FT) web page. We’ve endevoured to explain in detail how all these disparate elements come together to form the FT’s visual appearance. The sister site, the Origami Registry, only contains the physical code elements needed to make the parts of an app, website or digital product this page describes the rules on layout and structure.
 
+          </div>
         
             {{ content }}
           </div>

@@ -5,7 +5,7 @@ section: Section 1
 permalink: /docs/page-2/
 ---
 
-# Design Resources
+# file nesting explained
 
 Below will be content related to design resources help 3rd party design FT pages.
 

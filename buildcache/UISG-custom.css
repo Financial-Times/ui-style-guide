@@ -5,54 +5,149 @@
 	clear:both;	
 }
 
-
-
 /* design */
-.uisg-pgwidth {
-	width:1440px;
-    font-family: BentonSans,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 20px;
+
+.o-techdocs-layout {
+	font-family: BentonSans, Helvetica, Arial, Sans-serif;
 }
 
-.uisg-pagecont {
-	width:100%;	
+.o-techdocs-content {
+	font-family: BentonSans, Helvetica, Arial, sans-serif;
 }
 
-.uisg-lt {
-	position:fixed;
-	width:25%;
-	min-height:1000px;
-	padding:30px;
+.o-techdocs-sidebar img.uisg-ft-logo {	
+	margin:30px 0 0 30px;
 }
 
-.uisg-lt h1 {
+.o-techdocs-sidebar h1 {
 	font-weight: normal;
-	font-size: 30px;
+	margin: 25px 0 0 30px;
 	line-height: 1.2;
-	margin: 10px 0 0 0;	
+	font-size: 1.8em;
 }
 
-.uisg-ft-logo {	
+/* fic to lock nav set by some JS trickery */
+
+.o-techdocs-nav--affix {
+	top:0;
 }
 
-.uisg-rt {
-	margin-left:25%;
-	width:75%;
+.o-techdocs-nav {
+	margin: 30px 0 0 30px;
 }
 
-ul.uisg-leftnav {
-	margin:20px 0 0 0;
-}
 
-ul.uisg-leftnav li {
-	padding:10px 10px 7px 10px;
-	border-top:1px dotted #cec6b9;
-	text-transform:uppercase;
+.o-techdocs-nav a {
+	padding:15px 10px 13px 10px;
+	text-transform: uppercase;
+	font-size: 14px;
 	font-weight:bold;
 }
-ul.uisg-leftnav li a:link, ul.uisg-leftnav li a:visited  {
-		color:#2e6e9e;
+
+.o-techdocs-nav li {
+	background:none;
+	border-top: 1px dotted #cec6b9;
 }
-ul.uisg-leftnav li a:hover, ul.uisg-leftnav li a:active  {
-		color:#000000
+.o-techdocs-nav--page li a {
+	color:#2e6e9e;
 }
+
+.o-techdocs-nav--page li a:hover {
+	background-color:#f6e9d8;
+}
+/* main page nav at the top  border-top: 1px dotted #cec6b9;   */
+.ui-guide-nav {
+box-sizing: border-box;
+padding:0;
+margin:20px 0 20px 0;
+min-height: 65px;
+font-family: BentonSans, Helvetica, Arial, sans-serif;
+text-align:right;
+border-bottom:none;
+
+}
+
+.ui-guide-nav li {
+	display:inline;
+	padding:0 30px 0 0;
+	text-transform:uppercase;
+}
+
+
+/* main page nav at the top */
+
+.introbox {
+	border-top: 4px solid #A7A59B;
+	border-bottom: 1px dotted #cec6b9;	
+	font-size:18px;
+	line-height:1.3;
+	color:#72726C;
+	min-height:30px;
+	padding:37px 0;	
+	margin:0 0 80px 0;
+}
+
+.introbox  p {
+	margin:0 0 20px 0;	
+}
+
+
+/* heading from Velcro. Not in use.
+.ft-header-medium {
+	height:32px;
+	border-top: 4px solid #cec6b9;
+border-bottom: 1px dotted #cec6b9;
+margin:0 0 20px 0;
+}
+*/
+
+/* heading styles h2 h3 */
+.o-techdocs-content h2 {
+	border-top: 4px solid #cec6b9;
+    border-bottom: 1px dotted #cec6b9;
+	padding: 10px 0 7px 0;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: Bold;
+    margin: 0 0 20px 0;
+	text-transform:uppercase;
+}
+
+.o-techdocs-content h3 {
+border-bottom: 1px dotted #cec6b9;
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+padding: 0 0 7px 0;
+margin: 0 0 20px 0;
+}
+
+.o-techdocs-content h4 {
+border-radius: 4px;
+background-color: #e9decf;
+height: 9px;
+line-height: 8px;
+font-size: 14px;
+}
+
+.o-techdocs-content p {
+	margin:0 0 20px 0;
+}
+
+/* table correcttions */
+
+div.o-techdocs-table>table {
+border-top: 1px solid #f6e9d8;
+border-right: 0px solid #f6e9d8;
+border-bottom: 1px solid #f6e9d8;
+border-left: 0px solid #f6e9d8;
+border:none;
+background: none;
+}
+
+div.o-techdocs-table>table>tbody>tr>th {
+	border-top: 1px solid #cec6b9;
+}
+
+
+
