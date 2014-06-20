@@ -1,6 +1,6 @@
+$o-ft-header-logo-width: 153px;
 @import 'o-techdocs/main';
 
-.ui-guide-nav {
-    @extend .o-techdocs-header;
-    background: none;
+.o-ft-header__logo--ft abbr {
+	background-image: url(img/ft-logo.svg);
 }
