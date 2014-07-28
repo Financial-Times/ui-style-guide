@@ -25,7 +25,7 @@ ruby 2.0.0p247 (2013-06-27 revision 41674) [universal.x86_64-darwin13]
 ```
 * You also need to check if command line tools are installed for xcode
 
-* Install Jekyll with `sudo gem installl jekyll` (you will require administrative access to your machine to do this).  Hopefully you will see something like this:
+* Install Jekyll with `sudo gem install jekyll` (you will require administrative access to your machine to do this).  Hopefully you will see something like this:
 
 ```
 [user.name@FT-12345 style-guide]$ sudo gem install jekyll
@@ -67,3 +67,34 @@ Then once inside this directlry you run a "watch", which sets Jeykll running.
 jekyll serve --watch --baseurl=''
 ```
 To turn Jekyll off press ctrl C in the terminal. The localhost link will stop working.
+
+
+###Summary
+Here's a quick summary of what step you need to do to get Jekyll running on your local machine.
+
+* Download the style guide from git hub and put in a new folder
+
+
+
+* In terminal:
+
+sudo gem install jekyll
+
+(change directory to your new folder)
+
+jekyll serve --watch --baseurl=''
+
+
+
+* In folder:
+
+Should now have a _site folder
+
+Move all style guide files out of the ui-style-guide folder and into the parent folder 
+
+
+
+* In your browser:
+
+http://localhost:4000/
+
