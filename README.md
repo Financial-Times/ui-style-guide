@@ -58,7 +58,7 @@ Configuration file: /Users/user.name/sandboxes/local/style-guide/_config.yml
 
 
 ## Restarting Jekyll
-To run this Jekyll again the next time you turn on your computer follow the following steps. Open the terminal and "*c*hange *d*irectory" to the folder containing your local copy UI style guide.
+To run this Jekyll again the next time you turn on your computer follow the following steps. Open the terminal and change directory (type cd before) to the folder containing your local copy UI style guide.
 
 ```
 cd /Users/paul.oneill/Workspace/ui-style-guide/
@@ -71,8 +71,8 @@ jekyll serve --watch --baseurl=''
 To turn Jekyll off press ctrl C in the terminal. The localhost link will stop working.
 
 
-###Summary
-Here's a quick summary of what step you need to do to get Jekyll running on your local machine.
+##Summary
+Here's a quick summary of the steps needed to get Jekyll running on your local machine.
 
 * Download the style guide from git hub and put in a new folder
 
