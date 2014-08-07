@@ -14,33 +14,40 @@
         <script src='http://registry.origami.ft.com/embedapi'></script>
     </head>
     <body class='o-techdocs o-hoverable-on'>
-      
+
+      <header data-o-component="o-ft-header" class="o-ft-header">
+          <div class="o-ft-header__container">
+              <div class="o-ft-header__primary">
+                  <div class="o-ft-header__primary__left">
+                      <div class="o-ft-header__logo o-ft-header__logo--ft">
+                          <a href="http://www.ft.com"><abbr title="Financial Times">FT</abbr></a>
+                          <span class="o-techdocs__logo"></span>
+                      </div>
+                      <h1 class="o-ft-header__title">{{site.name}}</h1>
+                  </div>
+                  <nav class="o-ft-header__primary__center o-hierarchical-nav o-ft-header__nav--primary-theme" data-o-component="o-hierarchical-nav">
+                    <ul data-o-hierarchical-nav-level="1">
+                      <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/">Home <i class="o-hierarchical-nav__parent__down-arrow"></i></a>
+                          <ul data-o-hierarchical-nav-level="2">
+                              <li><a href="{{ site.baseurl }}/docs/page-2">Page 2</a></li>
+                          </ul>
+                      </li>
+                      <li data-more class="o-hierarchical-nav__parent"><a><span class="o-hierarchical-nav__more--if-some">More</span><span class="o-hierarchical-nav__more--if-all">Menu</span></a></li>
+                    </ul>
+                </nav>
+              </div>
+              <div class="o-ft-header__secondary"></div>
+          </div>
+      </header>  
+
       <div class="o-techdocs-layout"> 
 
         <div class="o-techdocs-sidebar">
-             <!--
-             <img class="uisg-ft-logo" src="/img/ft-logo.gif" width=100 height=100 />
-             <h1>User Interface <br> Style Guide</h1>
-             -->
           <div class="o-techdocs-nav"></div>
         </div>
 
         <div class="o-techdocs-main">
           <div class="o-techdocs-content">
-            
-            <ul class="ui-guide-nav">
-              <li class="{% if page.title == 'Home' %}active{% endif %}">
-              <!-- this code in here is not creating the right nav  -->
-                <a href="{{ site.baseurl }}/">Home</a>
-                {% if page.section == 'Section 1' %}
-                <ul class="ui-guide-subnav">
-                  <li class="{% if page.title == 'Page 2' %}active{% endif %}">
-                    <a href="{{ site.baseurl }}/docs/page-2">Page 2</a>
-                  </li>
-                </ul>
-                {% endif %}
-              </li>
-            </ul>
             {{ content }}
           </div>
         </div>
