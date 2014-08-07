@@ -7,19 +7,21 @@
         <meta name="viewport" content="width=device-width">
         <meta name="robots" content="noindex, nofollow">
 
-        <link href="{{ site.baseurl }}/buildcache/reset.css" rel="stylesheet">
         <link href="{{ site.baseurl }}/buildcache/bundle.css" rel="stylesheet">
+        
         <link href="{{ site.baseurl }}/buildcache/UISG-custom.css" rel="stylesheet">
         
-        
+        <script src='http://registry.origami.ft.com/embedapi'></script>
     </head>
-    <body class='o-techdocs'>
+    <body class='o-techdocs o-hoverable-on'>
       
       <div class="o-techdocs-layout"> 
 
         <div class="o-techdocs-sidebar">
+             <!--
              <img class="uisg-ft-logo" src="/img/ft-logo.gif" width=100 height=100 />
              <h1>User Interface <br> Style Guide</h1>
+             -->
           <div class="o-techdocs-nav"></div>
         </div>
 
@@ -39,11 +41,6 @@
                 {% endif %}
               </li>
             </ul>
-		  <div class="introbox">
-          	The following pages show all the component parts and elements that go to create an Financial Times (FT) web page. We’ve endevoured to explain in detail how all these disparate elements come together to form the FT’s visual appearance. The sister site, the Origami Registry, only contains the physical code elements needed to make the parts of an app, website or digital product this page describes the rules on layout and structure.
-
-          </div>
-        
             {{ content }}
           </div>
         </div>

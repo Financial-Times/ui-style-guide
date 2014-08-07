@@ -8830,11 +8830,37 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 })( window );
 
 },{}],2:[function(require,module,exports){
+/*global require*/
 
 require('./src/js/nav');
-require('./src/js/tablewrap');
+require('./src/js/tables');
+require('./src/js/reveals');
+require('./src/js/permalinks');
+require('./src/js/gist-it');
 
-},{"./src/js/nav":3,"./src/js/tablewrap":4}],3:[function(require,module,exports){
+(function(){
+	"use strict";
+	document.addEventListener("DOMContentLoaded", function() {
+		document.dispatchEvent(new CustomEvent('o.DOMContentLoaded'));
+	});
+}());
+
+},{"./src/js/gist-it":3,"./src/js/nav":4,"./src/js/permalinks":5,"./src/js/reveals":6,"./src/js/tables":7}],3:[function(require,module,exports){
+/*global $,require*/
+/**
+ * Display Gist-it gists
+ *
+ * Gist-it is a JSONp endpoint, so we need to attach a handler to the window object.
+ */
+
+if (typeof window.oTechdocs == 'undefined') window.oTechdocs = {};
+
+window.oTechdocs.renderGistIt = function(content, file) {
+	document.write(content);
+}
+
+},{}],4:[function(require,module,exports){
+/*global $,require*/
 /**
  * Add a second navigation menu to quickly navigate to
  * anchors in the page.
@@ -8848,7 +8874,7 @@ $(function() {
 	// Find heading 2s and build a link list.  Only proceed if there would be more than one item in the list
 	$('.o-techdocs-content h2[id]').each(function() {
 		headings.push({id:this.id, pos:$(this).offset().top});
-		lis.push('<li id="o-techdocs-pagenav-'+this.id+'"><a href="#'+this.id+'">'+this.innerText+'</a></li>');
+		lis.push('<li id="o-techdocs-pagenav-'+this.id+'"><a href="#'+this.id+'">'+this.innerHTML+'</a></li>');
 	});
 	if (lis.length < 2) return;
 	list = $('<ul class="o-techdocs-nav o-techdocs-nav--page o-grid-col|12|">'+lis.join('')+'</ul>');
@@ -8858,10 +8884,6 @@ $(function() {
 
 	// Determine border tolerance for highlighting nav sections (once immediately, and then on resize)
 	calcScrollMargin();
-
-	// Calculate the dock point for the menu
-	dockpoint = list.offset().top;
-	dockmargin = 50;
 
 	function calcScrollMargin() {
 		scrollmargin = $(window).height() / 8;
@@ -8896,11 +8918,11 @@ $(function() {
 				}
 			});
 			if (candidate && candidate.id != currentheading) {
-				list.find('li').removeClass('o-techdocs-nav__item--active');
-				$('#o-techdocs-pagenav-'+candidate.id).addClass('o-techdocs-nav__item--active');
+				list.find('li').removeAttr('aria-selected');
+				$('#o-techdocs-pagenav-'+candidate.id).attr('aria-selected', 'true');
 				currentheading = candidate.id;
 			} else if (!candidate) {
-				list.find('li').removeClass('o-techdocs-nav__item--active');
+				list.find('li').removeAttr('aria-selected');
 			}
 
 			// Dock or undock the navigation menu
@@ -8911,7 +8933,7 @@ $(function() {
 			} else if (docked && (scrolltop+dockmargin) < dockpoint) {
 				list.removeClass('o-techdocs-nav--affix');
 				list.width('auto');
-			};
+			}
 		}, 100);
 	});
 
@@ -8931,17 +8953,59 @@ $(function() {
 		$('.o-techdocs-content h2[id]').each(function() {
 			headings.push({id:this.id, pos:$(this).offset().top});
 		});
+
+		// Calculate the dock point for the menu
+		dockpoint = list.offset().top;
+		dockmargin = 50;
 	});
 });
 
-},{"./../../../jquery/jquery.js":1}],4:[function(require,module,exports){
+},{"./../../../jquery/jquery.js":1}],5:[function(require,module,exports){
+/*global $,require*/
+/**
+ * Show permalink markers on headings with an ID
+ */
 
 var $ = require("./../../../jquery/jquery.js");
 
 $(function() {
-	$('table.o-techdocs-table').removeClass('o-techdocs-table').wrap('<div class="o-techdocs-table"></div>');
+	$('.o-techdocs-content').find('h1, h2, h3, h4, h5, h6').filter('[id]').each(function() {
+		$(this).append('<a href="#'+this.id+'" class="o-techdocs__permalink" title="Link directly to this section of the page">&#x00B6;</a>');
+	});
 });
 
-},{"./../../../jquery/jquery.js":1}],5:[function(require,module,exports){
+},{"./../../../jquery/jquery.js":1}],6:[function(require,module,exports){
+/*global $,require*/
+/**
+ * Support displaying additional content on clicking reveal links
+ */
+
+var $ = require("./../../../jquery/jquery.js");
+
+$(function() {
+	$('.o-techdocs-content').on('click', 'a', function(e) {
+		if ($(this).attr('href').indexOf('#') === 0) {
+			var el = $($(this).attr('href'));
+			if (el.length && el.hasClass('o-techdocs__aside--toggleable')) {
+				el.toggle();
+				e.preventDefault();
+			}
+		}
+	})
+});
+
+},{"./../../../jquery/jquery.js":1}],7:[function(require,module,exports){
+/*global $,require*/
+/**
+ * Wrap tables
+ */
+
+var $ = require("./../../../jquery/jquery.js");
+
+$(function() {
+	$('.o-techdocs-content > table').wrap('<div class="o-techdocs-table-wrapper"></div>');
+});
+
+},{"./../../../jquery/jquery.js":1}],8:[function(require,module,exports){
 require("./bower_components/o-techdocs/main.js");
-},{"./bower_components/o-techdocs/main.js":2}]},{},[5]);
+},{"./bower_components/o-techdocs/main.js":2}]},{},[8]);
