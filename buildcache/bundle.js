@@ -36,12 +36,6 @@ function Delegate(root) {
 }
 
 /**
- * @protected
- * @type ?boolean
- */
-Delegate.tagsCaseSensitive = null;
-
-/**
  * Start listening for events
  * on the provided DOM element
  *
@@ -108,7 +102,7 @@ Delegate.prototype.root = function(root) {
  * @returns boolean
  */
 Delegate.prototype.captureForType = function(eventType) {
-  return ['error', 'blur', 'focus', 'scroll', 'resize'].indexOf(eventType) !== -1;
+  return ['blur', 'error', 'focus', 'load', 'resize', 'scroll'].indexOf(eventType) !== -1;
 };
 
 /**
@@ -177,29 +171,18 @@ Delegate.prototype.on = function(eventType, selector, handler, useCapture) {
 
     // COMPLEX - matchesRoot needs to have access to
     // this.rootElement, so bind the function to this.
-    matcher = this.matchesRoot.bind(this);
+    matcher = matchesRoot.bind(this);
 
   // Compile a matcher for the given selector
   } else if (/^[a-z]+$/i.test(selector)) {
-
-    // Lazily check whether tag names are case sensitive (as in XML or XHTML documents).
-    if (Delegate.tagsCaseSensitive === null) {
-      Delegate.tagsCaseSensitive = document.createElement('i').tagName === 'i';
-    }
-
-    if (!Delegate.tagsCaseSensitive) {
-      matcherParam = selector.toUpperCase();
-    } else {
-      matcherParam = selector;
-    }
-
-    matcher = this.matchesTag;
+    matcherParam = selector;
+    matcher = matchesTag;
   } else if (/^#[a-z0-9\-_]+$/i.test(selector)) {
     matcherParam = selector.slice(1);
-    matcher = this.matchesId;
+    matcher = matchesId;
   } else {
     matcherParam = selector;
-    matcher = this.matches;
+    matcher = matches;
   }
 
   // Add to the list of listeners
@@ -288,28 +271,33 @@ Delegate.prototype.off = function(eventType, selector, handler, useCapture) {
  * @param {Event} event
  */
 Delegate.prototype.handle = function(event) {
-  var i, l, type = event.type, root, listener, returned, listenerList = [], target, /** @const */ EVENTIGNORE = 'ftLabsDelegateIgnore';
+  var i, l, type = event.type, root, phase, listener, returned, listenerList = [], target, /** @const */ EVENTIGNORE = 'ftLabsDelegateIgnore';
 
   if (event[EVENTIGNORE] === true) {
     return;
   }
 
   target = event.target;
-  if (target.nodeType === Node.TEXT_NODE) {
+
+  // Hardcode value of Node.TEXT_NODE
+  // as not defined in IE8
+  if (target.nodeType === 3) {
     target = target.parentNode;
   }
 
   root = this.rootElement;
 
-  switch (event.eventPhase) {
-    case Event.CAPTURING_PHASE:
+  phase = event.eventPhase || ( event.target !== event.currentTarget ? 3 : 2 );
+  
+  switch (phase) {
+    case 1: //Event.CAPTURING_PHASE:
       listenerList = this.listenerMap[1][type];
     break;
-    case Event.AT_TARGET:
+    case 2: //Event.AT_TARGET:
       if (this.listenerMap[0] && this.listenerMap[0][type]) listenerList = listenerList.concat(this.listenerMap[0][type]);
       if (this.listenerMap[1] && this.listenerMap[1][type]) listenerList = listenerList.concat(this.listenerMap[1][type]);
     break;
-    case Event.BUBBLING_PHASE:
+    case 3: //Event.BUBBLING_PHASE:
       listenerList = this.listenerMap[0][type];
     break;
   }
@@ -336,7 +324,7 @@ Delegate.prototype.handle = function(event) {
       // the event if there's one
       //
       // TODO:MCG:20120117: Need a way
-      // to check if event#stopImmediateProgagation
+      // to check if event#stopImmediatePropagation
       // was called. If so, break both loops.
       if (listener.matcher.call(target, listener.matcherParam, target)) {
         returned = this.fire(event, target, listener);
@@ -353,7 +341,7 @@ Delegate.prototype.handle = function(event) {
     }
 
     // TODO:MCG:20120117: Need a way to
-    // check if event#stopProgagation
+    // check if event#stopPropagation
     // was called. If so, break looping
     // through the DOM. Stop if the
     // delegation root has been reached
@@ -385,7 +373,7 @@ Delegate.prototype.fire = function(event, target, listener) {
  * @type function()
  * @param {string} selector A CSS selector
  */
-Delegate.prototype.matches = (function(el) {
+var matches = (function(el) {
   if (!el) return;
   var p = el.prototype;
   return (p.matches || p.matchesSelector || p.webkitMatchesSelector || p.mozMatchesSelector || p.msMatchesSelector || p.oMatchesSelector);
@@ -403,9 +391,9 @@ Delegate.prototype.matches = (function(el) {
  * @param {Element} element The element to test with
  * @returns boolean
  */
-Delegate.prototype.matchesTag = function(tagName, element) {
+function matchesTag(tagName, element) {
   return tagName.toLowerCase() === element.tagName.toLowerCase();
-};
+}
 
 /**
  * Check whether an element
@@ -415,10 +403,11 @@ Delegate.prototype.matchesTag = function(tagName, element) {
  * @param {Element} element The element to test with
  * @returns boolean
  */
-Delegate.prototype.matchesRoot = function(selector, element) {
+function matchesRoot(selector, element) {
+  /*jshint validthis:true*/
   if (this.rootElement === window) return element === document;
   return this.rootElement === element;
-};
+}
 
 /**
  * Check whether the ID of
@@ -431,9 +420,9 @@ Delegate.prototype.matchesRoot = function(selector, element) {
  * @param {Element} element The element to test with
  * @returns boolean
  */
-Delegate.prototype.matchesId = function(id, element) {
+function matchesId(id, element) {
   return id === element.id;
-};
+}
 
 /**
  * Short hand for off()
@@ -9709,35 +9698,57 @@ exports.getIndex = getIndex;
 exports.matches = matches;
 },{"./../o-useragent/main.js":24}],11:[function(require,module,exports){
 /*global require,module*/
-module.exports = require('./src/js/Header');
 
+var oHeader = require('./src/js/Header'),
+    constructAll = function() {
+        'use strict';
+        console.log('ok');
+        oHeader.prototype.createAllIn(document.body);
+        document.removeEventListener('o.DOMContentLoaded', constructAll);
+    };
+
+document.addEventListener('o.DOMContentLoaded', constructAll);
+
+module.exports = oHeader;
 
 },{"./src/js/Header":12}],12:[function(require,module,exports){
 /*global require,module*/
 
-var DomDelegate = require("./../../../dom-delegate/lib/delegate.js"),
+var DomDelegate = require("./../../../ftdomdelegate/lib/delegate.js"),
     oHierarchicalNav = require("./../../../o-hierarchical-nav/main.js");
 
 function Header(rootEl) {
     "use strict";
 
     var bodyDelegate,
+        // Gets all nav elements in the header
         hierarchicalNavEls = [
             rootEl.querySelector('.o-ft-header__nav--primary-theme'),
             rootEl.querySelector('.o-ft-header__nav--secondary-theme'),
             rootEl.querySelector('.o-ft-header__nav--tools-theme')
         ].filter(function(el) {
-            return el && el.nodeType === 1;
+            /* 
+            *  Overflow is hidden by default on the tools and primary theme for it to resize properly on core experience
+            *  where level 2 and 3 menus won't appear anyway, but in primary experience they do need to appear. We do this
+            *  here instead of the map function in init because this needs to be applied regardless of the nav having been
+            *  initialized previously, like when the o.DOMContententLoaded event is dispatched
+            */
+            if (el) {
+                el.style.overflow = 'visible';
+            }
+            return el && el.nodeType === 1 && !el.hasAttribute('data-o-hierarchical-nav--js');
         }),
         hierarchicalNavs = [];
 
     function init() {
+        rootEl.setAttribute('data-o-ft-header--js', '');
         bodyDelegate = new DomDelegate(document.body);
         hierarchicalNavs = hierarchicalNavEls.map(function(el) {
             return new oHierarchicalNav(el);
         });
     }
 
+    // Release header and all its navs from memory
     function destroy() {
         bodyDelegate.destroy();
         for (var c = 0, l = hierarchicalNavs.length; c < l; c++) {
@@ -9745,6 +9756,7 @@ function Header(rootEl) {
                 hierarchicalNavs[c].destroy();
             }
         }
+        rootEl.removeAttribute('data-o-ft-header--js');
     }
 
     init();
@@ -9753,30 +9765,38 @@ function Header(rootEl) {
 
 }
 
+// Initializes all header elements in the page or whatever element is passed to it
+Header.prototype.createAllIn = function(el) {
+    'use strict';
+    if (!el) {
+        el = document.body;
+    }
+    var headerEls = el.querySelectorAll('[data-o-component="o-ft-header"]:not([data-o-ft-header--js])'),
+        headers = [];
+    for (var c = 0, l = headerEls.length; c < l; c++) {
+        headers.push(new Header(headerEls[c]));
+    }
+    return headers;
+};
+
 module.exports = Header;
-},{"./../../../dom-delegate/lib/delegate.js":1,"./../../../o-hierarchical-nav/main.js":13}],13:[function(require,module,exports){
+
+},{"./../../../ftdomdelegate/lib/delegate.js":1,"./../../../o-hierarchical-nav/main.js":13}],13:[function(require,module,exports){
 /*global require,module*/
-function HierarchicalNav(rootEl) {
-
-	function init() {
-		if (rootEl.getAttribute('data-o-hierarchical-nav-orientiation') == 'vertical') {
-			var Nav = require('./src/js/Nav');
-			new Nav(rootEl);
-		} else {
-			var ResponsiveNav = require('./src/js/ResponsiveNav');
-			new ResponsiveNav(rootEl);
-		}
-	}
-
-	init();
+var oHierarchicalNav = require('./src/js/ResponsiveNav');
+var constructAll = function() {
+	'use strict';
+	oHierarchicalNav.prototype.createAllIn(document.body);
+	document.removeEventListener('o.DOMContentLoaded', constructAll);
 }
+document.addEventListener('o.DOMContentLoaded', constructAll);
 
-module.exports = HierarchicalNav;
+module.exports = oHierarchicalNav;
 
-},{"./src/js/Nav":14,"./src/js/ResponsiveNav":15}],14:[function(require,module,exports){
+},{"./src/js/ResponsiveNav":15}],14:[function(require,module,exports){
 /*global require, module*/
 
-var DomDelegate = require("./../../../dom-delegate/lib/delegate.js"),
+var DomDelegate = require("./../../../ftdomdelegate/lib/delegate.js"),
     oDom = require("./../../../o-dom/main.js"),
     utils = require('./utils');
 
@@ -9786,28 +9806,34 @@ function Nav(rootEl) {
     var bodyDelegate = new DomDelegate(document.body),
         rootDelegate = new DomDelegate(rootEl);
 
+    // Get sub-level element
     function getChildListEl(el) {
         return el.querySelector('ul');
     }
 
+    // Check if element has sub-level nav
     function hasChildList(el) {
         return !!getChildListEl(el);
     }
 
+    // Get controlled element
     function getMegaDropdownEl(itemEl) {
         if (itemEl.hasAttribute('aria-controls')) {
             return document.getElementById(itemEl.getAttribute('aria-controls'));
         }
     }
 
+    // Check if element is a controller of another DOM element
     function isControlEl(el) {
         return !!(getChildListEl(el) || getMegaDropdownEl(el));
     }
 
+    // Check if element has been expanded
     function isExpanded(el) {
         return el.getAttribute('aria-expanded') === 'true';
     }
 
+    // Check if a certain element is inside the root nav
     function isElementInsideNav(el) {
         var expandedLevel1El = rootEl.querySelector('[data-o-hierarchical-nav-level="1"] > [aria-expanded="true"]'),
             expandedMegaDropdownEl,
@@ -9827,18 +9853,22 @@ function Nav(rootEl) {
         return false;
     }
 
+    // Get the level a nav is in
     function getLevel(el) {
         return parseInt(el.parentNode.getAttribute('data-o-hierarchical-nav-level'), 10);
     }
 
+    // Check if a level 2 nav will fit in the window
     function level2ListFitsInWindow(l2El) {
         return l2El.getBoundingClientRect().right < window.innerWidth;
     }
 
+    // Check if an element will have enough space to its right
     function elementFitsToRight(el1, el2) {
         return el1.getBoundingClientRect().right + el2.offsetWidth < window.innerWidth;
     }
 
+    // Depending on if an element fits to its right or not, change its class to apply correct css
     function positionChildListEl(parentEl, childEl) {
         parentEl.classList.remove('o-hierarchical-nav--align-right');
         parentEl.classList.remove('o-hierarchical-nav__outside-right');
@@ -9857,18 +9887,21 @@ function Nav(rootEl) {
         }
     }
 
+    // Hide an element
     function hideEl(el) {
         if (el) {
             el.setAttribute('aria-hidden', 'true');
         }
     }
 
+    // Display an element
     function showEl(el) {
         if (el) {
             el.removeAttribute('aria-hidden');
         }
     }
 
+    // Collapse all items from a certain node list
     function collapseAll(nodeList) {
         if (!nodeList) {
             nodeList = rootEl.querySelectorAll('[data-o-hierarchical-nav-level="1"] > li[aria-expanded=true]');
@@ -9881,6 +9914,7 @@ function Nav(rootEl) {
         });
     }
 
+    // Set an element as not expanded, and if it has children, do the same to them
     function collapseItem(itemEl) {
         itemEl.setAttribute('aria-expanded', 'false');
         if (hasChildList(itemEl)) {
@@ -9890,6 +9924,7 @@ function Nav(rootEl) {
         dispatchCloseEvent(itemEl);
     }
 
+    // Get same level items and collapse them
     function collapseSiblingItems(itemEl) {
         var listLevel = oDom.getClosestMatch(itemEl, 'ul').getAttribute('data-o-hierarchical-nav-level'),
             listItemEls = rootEl.querySelectorAll('[data-o-hierarchical-nav-level="' + listLevel + '"] > li[aria-expanded="true"]');
@@ -9898,27 +9933,26 @@ function Nav(rootEl) {
         }
     }
 
+    // Expand a nav item
     function expandItem(itemEl) {
         collapseSiblingItems(itemEl);
         itemEl.setAttribute('aria-expanded', 'true');
         positionChildListEl(itemEl, getChildListEl(itemEl));
         showEl(getMegaDropdownEl(itemEl));
-        dispatchCloseAllEvent(itemEl);
         dispatchExpandEvent(itemEl);
     }
 
+    // Helper method to dispatch o-layers new event
     function dispatchExpandEvent(itemEl) {
         utils.dispatchCustomEvent(itemEl, 'oLayers.new', {'zIndex': 10, 'el': itemEl});
     }
 
-    function dispatchCloseAllEvent(itemEl) {
-        utils.dispatchCustomEvent(itemEl, 'oLayers.closeAll', {'el': itemEl});
-    }
-
+    // Helper method to dispatch o-layers close event
     function dispatchCloseEvent(itemEl) {
         utils.dispatchCustomEvent(itemEl, 'oLayers.close', {'zIndex': 10, 'el': itemEl});
     }
 
+    // Handle clicks ourselved by expanding or collapsing selected element
     function handleClick(ev) {
         var itemEl = oDom.getClosestMatch(ev.target, 'li');
         if (itemEl && isControlEl(itemEl)) {
@@ -9931,6 +9965,7 @@ function Nav(rootEl) {
         }
     }
 
+    // Position a level 3 nav
     function positionLevel3s() {
         var openLevel2El = rootEl.querySelector('[data-o-hierarchical-nav-level="2"] > [aria-expanded="true"]'),
             openLevel3El = rootEl.querySelector('[data-o-hierarchical-nav-level="2"] > [aria-expanded="true"] > ul');
@@ -9939,10 +9974,12 @@ function Nav(rootEl) {
         }
     }
 
+    // Position level 3s on resize
     function resize() {
         positionLevel3s();
     }
 
+    // Set all tabIndexes of a tags to 0
     function setTabIndexes() {
         var aEls = rootEl.querySelectorAll('li > a:not([href])');
         for (var c = 0, l = aEls.length; c < l; c++) {
@@ -9959,15 +9996,10 @@ function Nav(rootEl) {
                 collapseAll();
             }
         });
-
-        bodyDelegate.on('oLayers.closeAll', function(e) {
-            if (!isElementInsideNav(e.detail.el)) {
-                collapseAll();
-            }
-        });
     }
 
     function init() {
+        rootEl.setAttribute('data-o-hierarchical-nav--js', '');
         setTabIndexes();
         setLayersContext();
         rootDelegate.on('click', handleClick);
@@ -9976,6 +10008,7 @@ function Nav(rootEl) {
                 handleClick(ev);
             }
         });
+        // Collapse all elements if the user clicks outside the nav
         bodyDelegate.on('click', function(ev) {
             if (!isElementInsideNav(ev.target)) {
                 collapseAll();
@@ -9986,6 +10019,7 @@ function Nav(rootEl) {
     function destroy() {
         rootDelegate.destroy();
         bodyDelegate.destroy();
+        rootEl.removeAttribute('data-o-hierarchical-nav--js');
     }
 
     init();
@@ -9996,12 +10030,26 @@ function Nav(rootEl) {
 
 }
 
+Nav.prototype.createAllIn = function(el) {
+    'use strict';
+    if (!el) {
+        el = document.body;
+    }
+
+    var navEls = el.querySelectorAll('[data-o-component="o-hierarchical-nav"]:not([data-o-hierarchical-nav--js])'),
+        navs = [];
+    for (var c = 0, l = navEls.length; c < l; c++) {
+        navs.push(new Nav(navEls[c]));
+    }
+    return navs;
+}
+
 module.exports = Nav;
-},{"./../../../dom-delegate/lib/delegate.js":1,"./../../../o-dom/main.js":10,"./utils":16}],15:[function(require,module,exports){
+},{"./../../../ftdomdelegate/lib/delegate.js":1,"./../../../o-dom/main.js":10,"./utils":16}],15:[function(require,module,exports){
 /*global require,module*/
 
 var SquishyList = require("./../../../o-squishy-list/main.js"),
-    DomDelegate = require("./../../../dom-delegate/lib/delegate.js"),
+    DomDelegate = require("./../../../ftdomdelegate/lib/delegate.js"),
     oViewport = require("./../../../o-viewport/main.js"),
     Nav = require('./Nav');
 
@@ -10015,39 +10063,55 @@ function ResponsiveNav(rootEl) {
         moreEl,
         moreListEl;
 
+    // Check if element is a controller of another DOM element
     function isMegaDropdownControl(el) {
         return el.hasAttribute('aria-controls');
     }
 
+    // On resize, apply o-squishy-list, and, if it has a sub-level dom, populate more list
     function resize() {
         nav.resize();
         if (contentFilter) {
             contentFilter.squish();
+            if (!isMegaDropdownControl(moreEl)) {
+                populateMoreList(contentFilter.getHiddenItems());
+            }
         }
     }
 
+    // Empty the more list
     function emptyMoreList() {
         moreListEl.innerHTML = '';
     }
 
-    function addItemToMoreList(text, href, ul) {
+    // Get the information from the element and create a new li tag with the element's text to append more list
+    function addItemToMoreList(text, href) {
         var itemEl = document.createElement('li'),
             aEl = document.createElement('a');
-        aEl.innerText = text;
+
+        if (typeof aEl.textContent !== 'undefined') {
+            aEl.textContent = text;
+        } else {
+            aEl.innerText = text;
+        }
         aEl.href = href;
         itemEl.appendChild(aEl);
         moreListEl.appendChild(itemEl);
     }
 
+    // For every hidden item, add it to the more list
     function populateMoreList(hiddenEls) {
         emptyMoreList();
         for (var c = 0, l = hiddenEls.length; c < l; c++) {
             var aEl = hiddenEls[c].querySelector('a');
             var ulEl = hiddenEls[c].querySelector('ul');
-            addItemToMoreList(aEl.innerText, aEl.href, ulEl);
+
+            var aText = (typeof aEl.textContent !== 'undefined') ? aEl.textContent : aEl.innerText;
+            addItemToMoreList(aText, aEl.href, ulEl);
         }
     }
 
+    // If all elements are hidden, add the all modifier, if not, the some modifier
     function setMoreElClass(remainingItems) {
         if (remainingItems === 0) {
             moreEl.classList.add('o-hierarchical-nav__more--all');
@@ -10058,6 +10122,7 @@ function ResponsiveNav(rootEl) {
         }
     }
 
+    // When there's an o-squishy-list change, collapse all elements and run the setMoreElClass method with number of non-hidden elements    
     function contentFilterChangeHandler(ev) {
         if (ev.target === contentFilterEl && ev.detail.hiddenItems.length > 0) {
             nav.collapseAll();
@@ -10065,6 +10130,7 @@ function ResponsiveNav(rootEl) {
         }
     }
 
+    // If more button is clicked, populate it
     function navExpandHandler(ev) {
         if (ev.target === moreEl) {
             populateMoreList(contentFilter.getHiddenItems());
@@ -10076,15 +10142,18 @@ function ResponsiveNav(rootEl) {
         rootDelegate = new DomDelegate(rootEl);
         contentFilterEl = rootEl.querySelector('ul');
         moreEl = rootEl.querySelector('[data-more]');
+        moreEl.setAttribute('aria-hidden', 'true');
+        if (contentFilterEl) {
+            contentFilter = new SquishyList(contentFilterEl, { filterOnResize: false });
+        }
+        // If there's a more element, add a ul tag where hidden elements will be appended
         if (moreEl && !isMegaDropdownControl(moreEl)) {
             moreListEl = document.createElement('ul');
             moreListEl.setAttribute('data-o-hierarchical-nav-level', '2');
             moreEl.appendChild(moreListEl);
             rootDelegate.on('oLayers.new', navExpandHandler);
         }
-        if (contentFilterEl) {
-            contentFilter = new SquishyList(contentFilterEl, { filterOnResize: false });
-        }
+
         rootDelegate.on('oSquishyList.change', contentFilterChangeHandler);
 
         var bodyDelegate = new DomDelegate(document.body);
@@ -10106,19 +10175,41 @@ function ResponsiveNav(rootEl) {
 
 }
 
+// Initializes all nav elements in the page or whatever element is passed to it
+ResponsiveNav.prototype.createAllIn = function(el) {
+    'use strict';
+    if (!el) {
+        el = document.body;
+    }
+
+    var navEls = el.querySelectorAll('[data-o-component="o-hierarchical-nav"]:not([data-o-hierarchical-nav--js])'),
+        responsiveNavs = [];
+    for (var c = 0, l = navEls.length; c < l; c++) {
+        // If it's a vertical nav, we don't need all the responsive methods
+        if (navEls[c].getAttribute('data-o-hierarchical-nav-orientiation') === 'vertical') {
+            responsiveNavs.push(new Nav(navEls[c]));
+        } else {
+            responsiveNavs.push(new ResponsiveNav(navEls[c]));
+        }
+    }
+    return responsiveNavs;
+}
+
 module.exports = ResponsiveNav;
-},{"./../../../dom-delegate/lib/delegate.js":1,"./../../../o-squishy-list/main.js":17,"./../../../o-viewport/main.js":26,"./Nav":14}],16:[function(require,module,exports){
+},{"./../../../ftdomdelegate/lib/delegate.js":1,"./../../../o-squishy-list/main.js":17,"./../../../o-viewport/main.js":26,"./Nav":14}],16:[function(require,module,exports){
 /*global exports*/
 
+// Helper function that converts a list of elements into an array
 function nodeListToArray(nl) {
-    "use strict";
+    'use strict';
     return [].map.call(nl, function(element) {
         return element;
     });
 }
 
+// Helper function to dispatch events
 function dispatchCustomEvent(el, name, data) {
-    "use strict";
+    'use strict';
     if (document.createEvent && el.dispatchEvent) {
         var event = document.createEvent('Event');
         event.initEvent(name, true, true);
@@ -10306,57 +10397,37 @@ function SquishyList(rootEl, opts) {
 
 module.exports = SquishyList;
 },{}],18:[function(require,module,exports){
-/*global exports, require*/
-exports.wrap = require('./src/js/wrap').wrap;
-},{"./src/js/wrap":19}],19:[function(require,module,exports){
-/*global require, exports*/
-
-var oDom = require("./../../../o-dom/main.js");
-
-function wrapElement(targetEl, wrapEl) {
-    "use strict";
-    var parentEl = targetEl.parentNode;
-    parentEl.insertBefore(wrapEl, targetEl);
-    wrapEl.appendChild(targetEl);
-}
-
-function wrap(tableSelector, wrapClass) {
-    "use strict";
-    tableSelector = typeof tableSelector === "string" ? tableSelector : ".o-table";
-    wrapClass = typeof wrapClass === "string" ? wrapClass : "o-table-wrapper";
-    var matchingEls = document.querySelectorAll(tableSelector),
-        wrapEl;
-    if (matchingEls.length > 0) {
-        wrapEl = document.createElement('div');
-        wrapEl.setAttribute("class", wrapClass);
-        for (var c = 0, l = matchingEls.length; c < l; c++) {
-            var tableEl = matchingEls[c];
-            if (!oDom.matches(tableEl.parentNode, "." + wrapClass)) {
-                wrapElement(tableEl, wrapEl.cloneNode(false));
-            }
-        }
-    }
-}
-
-exports.wrap = wrap;
-},{"./../../../o-dom/main.js":10}],20:[function(require,module,exports){
 /*global require*/
 
 require('./src/js/nav');
+require('./src/js/tables');
 require('./src/js/reveals');
 require('./src/js/permalinks');
-require("./../o-table/main.js").wrap('.o-techdocs-content table', 'o-techdocs-table-wrapper');
+require('./src/js/gist-it');
+require("./../o-ft-header/main.js");
 
 (function(){
-    "use strict";
-    var Header = require("./../o-ft-header/main.js"),
-        headerEl = document.querySelector('[data-o-component="o-ft-header"]');
-    if (headerEl) {
-        new Header(headerEl);
-    }
+	"use strict";
+	document.addEventListener("DOMContentLoaded", function() {
+		document.dispatchEvent(new CustomEvent('o.DOMContentLoaded'));
+	});
 }());
 
-},{"./../o-ft-header/main.js":11,"./../o-table/main.js":18,"./src/js/nav":21,"./src/js/permalinks":22,"./src/js/reveals":23}],21:[function(require,module,exports){
+},{"./../o-ft-header/main.js":11,"./src/js/gist-it":19,"./src/js/nav":20,"./src/js/permalinks":21,"./src/js/reveals":22,"./src/js/tables":23}],19:[function(require,module,exports){
+/*global $,require*/
+/**
+ * Display Gist-it gists
+ *
+ * Gist-it is a JSONp endpoint, so we need to attach a handler to the window object.
+ */
+
+if (typeof window.oTechdocs == 'undefined') window.oTechdocs = {};
+
+window.oTechdocs.renderGistIt = function(content, file) {
+	document.write(content);
+}
+
+},{}],20:[function(require,module,exports){
 /*global $,require*/
 /**
  * Add a second navigation menu to quickly navigate to
@@ -10381,10 +10452,6 @@ $(function() {
 
 	// Determine border tolerance for highlighting nav sections (once immediately, and then on resize)
 	calcScrollMargin();
-
-	// Calculate the dock point for the menu
-	dockpoint = list.offset().top;
-	dockmargin = 50;
 
 	function calcScrollMargin() {
 		scrollmargin = $(window).height() / 8;
@@ -10419,11 +10486,11 @@ $(function() {
 				}
 			});
 			if (candidate && candidate.id != currentheading) {
-				list.find('li').removeClass('o-techdocs-nav__item--active');
-				$('#o-techdocs-pagenav-'+candidate.id).addClass('o-techdocs-nav__item--active');
+				list.find('li').removeAttr('aria-selected');
+				$('#o-techdocs-pagenav-'+candidate.id).attr('aria-selected', 'true');
 				currentheading = candidate.id;
 			} else if (!candidate) {
-				list.find('li').removeClass('o-techdocs-nav__item--active');
+				list.find('li').removeAttr('aria-selected');
 			}
 
 			// Dock or undock the navigation menu
@@ -10454,10 +10521,14 @@ $(function() {
 		$('.o-techdocs-content h2[id]').each(function() {
 			headings.push({id:this.id, pos:$(this).offset().top});
 		});
+
+		// Calculate the dock point for the menu
+		dockpoint = list.offset().top;
+		dockmargin = 50;
 	});
 });
 
-},{"./../../../jquery/jquery.js":2}],22:[function(require,module,exports){
+},{"./../../../jquery/jquery.js":2}],21:[function(require,module,exports){
 /*global $,require*/
 /**
  * Show permalink markers on headings with an ID
@@ -10471,7 +10542,7 @@ $(function() {
 	});
 });
 
-},{"./../../../jquery/jquery.js":2}],23:[function(require,module,exports){
+},{"./../../../jquery/jquery.js":2}],22:[function(require,module,exports){
 /*global $,require*/
 /**
  * Support displaying additional content on clicking reveal links
@@ -10489,6 +10560,18 @@ $(function() {
 			}
 		}
 	})
+});
+
+},{"./../../../jquery/jquery.js":2}],23:[function(require,module,exports){
+/*global $,require*/
+/**
+ * Wrap tables
+ */
+
+var $ = require("./../../../jquery/jquery.js");
+
+$(function() {
+	$('.o-techdocs-content > table').wrap('<div class="o-techdocs-table-wrapper"></div>');
 });
 
 },{"./../../../jquery/jquery.js":2}],24:[function(require,module,exports){
@@ -10787,4 +10870,4 @@ module.exports = {
 };
 },{"./../lodash-node/modern/functions/debounce":3,"./../lodash-node/modern/functions/throttle":4,"./../o-useragent/main.js":24}],27:[function(require,module,exports){
 require("./bower_components/o-techdocs/main.js");
-},{"./bower_components/o-techdocs/main.js":20}]},{},[27])
+},{"./bower_components/o-techdocs/main.js":18}]},{},[27])

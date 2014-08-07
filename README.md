@@ -56,14 +56,44 @@ Configuration file: /Users/user.name/sandboxes/local/style-guide/_config.yml
 
 * Now you can view the site on your browser at [http://localhost:4000](http://localhost:4000).  Every time you make a change, the site will update automatically (except changes to main.js or main.scss, for which, see the Building section above)
 
-* To run this Jekyll again the next time you turn on your computer follow the follow the previous steps thus. Open the terminal and "__c__hange __d__irectory" to the folder containing your local copy UI style guide.
+
+## Restarting Jekyll
+To run this Jekyll again the next time you turn on your computer follow the following steps. Open the terminal and change directory (type cd before) to the folder containing your local copy UI style guide.
 
 ```
 cd /Users/paul.oneill/Workspace/ui-style-guide/
 ```
-Then once inside this directlry you run a "watch", which sets Jeykll running.
+Then once inside this directory run a "watch", which sets Jeykll running.
 
 ```
 jekyll serve --watch --baseurl=''
 ```
 To turn Jekyll off press ctrl C in the terminal. The localhost link will stop working.
+
+
+##Summary
+Here's a quick summary of the steps needed to get Jekyll running on your local machine.
+
+* Download the style guide from git hub and put in a new folder
+
+
+* In terminal:
+
+sudo gem install jekyll
+
+(change directory to your new folder)
+
+jekyll serve --watch --baseurl=''
+
+
+* In folder:
+
+Should now have a _site folder
+
+Move all style guide files out of the ui-style-guide folder and into the parent folder 
+
+
+* In your browser:
+
+http://localhost:4000/
+

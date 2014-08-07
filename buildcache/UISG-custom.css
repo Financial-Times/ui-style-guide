@@ -1,32 +1,9 @@
 @charset "UTF-8";
 
-/* universals */
-.fclear {
-	clear:both;	
-}
 
-/* design */
 
-.o-techdocs-layout {
-	font-family: BentonSans, Helvetica, Arial, Sans-serif;
-}
 
-.o-techdocs-content {
-	font-family: BentonSans, Helvetica, Arial, sans-serif;
-}
-
-.o-techdocs-sidebar img.uisg-ft-logo {	
-	margin:30px 0 0 30px;
-}
-
-.o-techdocs-sidebar h1 {
-	font-weight: normal;
-	margin: 25px 0 0 30px;
-	line-height: 1.2;
-	font-size: 1.8em;
-}
-
-/* fic to lock nav set by some JS trickery */
+/* fix to lock nav set by some JS trickery */
 
 .o-techdocs-nav--affix {
 	top:0;
@@ -55,7 +32,7 @@
 .o-techdocs-nav--page li a:hover {
 	background-color:#f6e9d8;
 }
-/* main page nav at the top  border-top: 1px dotted #cec6b9;   */
+/* main page nav at the top   */
 .ui-guide-nav {
 box-sizing: border-box;
 padding:0;
@@ -74,65 +51,17 @@ border-bottom:none;
 }
 
 
-/* main page nav at the top */
-
-.introbox {
-	border-top: 4px solid #A7A59B;
-	border-bottom: 1px dotted #cec6b9;	
-	font-size:18px;
-	line-height:1.3;
-	color:#72726C;
-	min-height:30px;
-	padding:37px 0;	
-	margin:0 0 80px 0;
-}
-
-.introbox  p {
-	margin:0 0 20px 0;	
-}
 
 
-/* heading from Velcro. Not in use.
-.ft-header-medium {
-	height:32px;
-	border-top: 4px solid #cec6b9;
-border-bottom: 1px dotted #cec6b9;
-margin:0 0 20px 0;
-}
-*/
 
-/* heading styles h2 h3 */
-.o-techdocs-content h2 {
-	border-top: 4px solid #cec6b9;
-    border-bottom: 1px dotted #cec6b9;
-	padding: 10px 0 7px 0;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: Bold;
-    margin: 0 0 20px 0;
-	text-transform:uppercase;
-}
 
-.o-techdocs-content h3 {
-border-bottom: 1px dotted #cec6b9;
-font-size: 16px;
-font-weight: bold;
-text-transform: uppercase;
-padding: 0 0 7px 0;
-margin: 0 0 20px 0;
-}
 
-.o-techdocs-content h4 {
-border-radius: 4px;
-background-color: #e9decf;
-height: 9px;
-line-height: 8px;
-font-size: 14px;
-}
 
-.o-techdocs-content p {
-	margin:0 0 20px 0;
-}
+
+
+
+
+
 
 /* table correcttions */
 
@@ -149,5 +78,36 @@ div.o-techdocs-table>table>tbody>tr>th {
 	border-top: 1px solid #cec6b9;
 }
 
+/* image incorrect style */
+.o-techdocs-content img:not(.transparent) {
+	padding: 0;
+	border: 0;
+	background-color: none;
+}
 
+/* redundant styles
+
+.o-techdocs-layout {
+	font-family: BentonSans, Helvetica, Arial, Sans-serif;
+}
+
+.o-techdocs-content {
+	font-family: BentonSans, Helvetica, Arial, sans-serif;
+}
+
+.o-techdocs-sidebar img.uisg-ft-logo {	
+	margin:30px 0 0 30px;
+}
+
+.o-techdocs-sidebar h1 {
+	font-weight: normal;
+	margin: 25px 0 0 30px;
+	line-height: 1.2;
+	font-size: 1.8em;
+}
+
+.o-techdocs-content p {
+	margin:0 0 20px 0;
+}
+*/
 
