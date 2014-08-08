@@ -1,8 +1,6 @@
-$o-techdocs-is-silent: false;
+$o-ft-header-primary-left-width: 302px;
 @import 'o-techdocs/main';
 
-/*.ui-guide-nav {
-    @extend .o-techdocs-header;
-    background: none;
+body {
+	margin: 0;
 }
-*/
