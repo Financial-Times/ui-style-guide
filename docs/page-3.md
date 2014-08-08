@@ -2,25 +2,26 @@
 layout: default
 title: FT.com Style guide (Legacy)
 section: Section 1
+permalink: /docs/legacy/
 ---
+# Legacy FT site (Falcon)
 
+The current version of the FT website can often be referred to as the Falcon version of the site. It is not responsive but still adhere's to a grid system.
 
-##FT.com Grid
-The Origami grid is designed to be responsive and works on a 12 column system. Margins and gutter widths between each column is controlled by the grid. Resizing and formatting is accounted for as you reduce the page width down through the FT’s various breakpoints.
+##Grid
+The grid is based around the retrictive width of advertising on FT.com.
 
-Display a demo link here like the BBC page showing the responsive grid [Rhys to supply]
+Full site width 972
+Right-hand Rail = 352
+Main content = 600
 
-![grid]({{site.baseurl}}/img/grid.png)
+For additional styles of Falcon design elements within Ft pages please consult the <a href="http://financial-times.github.io/ft-velcro/">FT Velcro style guide.</a>
 
 ###Designing on the grid
 Designers looking for a Photoshop grid document can download from the link below. 
 
 <a href="design.ft.com">FT PSD grid</a>
 
-###Responsive grid
-The FT responsove grid has 12 columns at it's maximium width. With the grid comes a predefined set of breakpoints designed to work across devices that best satisfy our users. It is designed to cater for rearranging layouts and tested to work on a large array of platforms, browsers and devies. 
-
-For technical implementation, setup and general paramters please see <a href="http://registry.origami.ft.com/components/o-grid@2.0.8">Origami o-grid module.</a>
 
 ##links
 
