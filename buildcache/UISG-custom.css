@@ -1,18 +1,27 @@
 @charset "UTF-8";
 
+/* links */
+.o-techdocs-content a:link {
+	text-decoration: none;
+}
 
+.o-techdocs-content a:hover {
+border-bottom:1px dotted #2e6e9e;
+}
 
-
-/* fix to lock nav set by some JS trickery */
+/* nav stuff */
+.o-techdocs-nav--page {
+	padding:0;
+	margin:0;
+}
 
 .o-techdocs-nav--affix {
 	top:0;
 }
 
 .o-techdocs-nav {
-	margin: 30px 0 0 30px;
+	margin: 0;
 }
-
 
 .o-techdocs-nav a {
 	padding:15px 10px 13px 10px;
@@ -30,84 +39,15 @@
 }
 
 .o-techdocs-nav--page li a:hover {
-	background-color:#f6e9d8;
-}
-/* main page nav at the top   */
-.ui-guide-nav {
-box-sizing: border-box;
-padding:0;
-margin:20px 0 20px 0;
-min-height: 65px;
-font-family: BentonSans, Helvetica, Arial, sans-serif;
-text-align:right;
-border-bottom:none;
-
+	background-color:#eee;
+	color:#000000;
 }
 
-.ui-guide-nav li {
-	display:inline;
-	padding:0 30px 0 0;
-	text-transform:uppercase;
+.o-techdocs-sidebar {
+padding-left: 10px;
+margin-top: 7px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* table correcttions */
-
-div.o-techdocs-table>table {
-border-top: 1px solid #f6e9d8;
-border-right: 0px solid #f6e9d8;
-border-bottom: 1px solid #f6e9d8;
-border-left: 0px solid #f6e9d8;
-border:none;
-background: none;
+.o-techdocs-nav>li>a {
+	padding:10px;
 }
-
-div.o-techdocs-table>table>tbody>tr>th {
-	border-top: 1px solid #cec6b9;
-}
-
-/* image incorrect style */
-.o-techdocs-content img:not(.transparent) {
-	padding: 0;
-	border: 0;
-	background-color: none;
-}
-
-/* redundant styles
-
-.o-techdocs-layout {
-	font-family: BentonSans, Helvetica, Arial, Sans-serif;
-}
-
-.o-techdocs-content {
-	font-family: BentonSans, Helvetica, Arial, sans-serif;
-}
-
-.o-techdocs-sidebar img.uisg-ft-logo {	
-	margin:30px 0 0 30px;
-}
-
-.o-techdocs-sidebar h1 {
-	font-weight: normal;
-	margin: 25px 0 0 30px;
-	line-height: 1.2;
-	font-size: 1.8em;
-}
-
-.o-techdocs-content p {
-	margin:0 0 20px 0;
-}
-*/
-
