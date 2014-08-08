@@ -56,12 +56,6 @@ Tint 2
 
 Tint 3
 
-
-###Greys
-Greys can be used on pages that employ a reversed colour scheme or dark styling. An example if video.ft.com They're also used for the FT's secondary button styles.
-
-
-
 ###Other colours
 
 Claret is used for Special Report titles. This colour can be used as an accent colour for elements and designs that specifically need to stand-out strongly. FT Tints are used to seperate page elements and designs. Be warned that the Claret is used sparingly so don’t over-do it. 
