@@ -25,7 +25,7 @@ ruby 2.0.0p247 (2013-06-27 revision 41674) [universal.x86_64-darwin13]
 ```
 * You also need to check if command line tools are installed for xcode
 
-* Install Jekyll with `sudo gem install jekyll` (you will require administrative access to your machine to do this).  Hopefully you will see something like this:
+* Install Jekyll with `sudo gem install jekyll` (you will require administrative access to your machine to do this).  Hopefully you will see something like the below, but there'll be a delay where nothing happens for several minutes first:
 
 ```
 [user.name@FT-12345 style-guide]$ sudo gem install jekyll
