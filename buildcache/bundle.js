@@ -9702,7 +9702,6 @@ exports.matches = matches;
 var oHeader = require('./src/js/Header'),
     constructAll = function() {
         'use strict';
-        console.log('ok');
         oHeader.prototype.createAllIn(document.body);
         document.removeEventListener('o.DOMContentLoaded', constructAll);
     };
@@ -10870,4 +10869,4 @@ module.exports = {
 };
 },{"./../lodash-node/modern/functions/debounce":3,"./../lodash-node/modern/functions/throttle":4,"./../o-useragent/main.js":24}],27:[function(require,module,exports){
 require("./bower_components/o-techdocs/main.js");
-},{"./bower_components/o-techdocs/main.js":18}]},{},[27])
+},{"./bower_components/o-techdocs/main.js":18}]},{},[27]);
