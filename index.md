@@ -51,7 +51,7 @@ There are also a host of other colours in the FT's digital colour pallette. They
 ###Ancillary colours
 These colours are generally used to create interactive graphics or for ancillary widgets, components and page elements outside of standard editorial content. THese colours should never be used on article text, headings or section pages.
 
-<table class='o-techdocs-table'>
+<table class='o-techdocs-table' style="width:100%;">
                 <tr>
                 <th>Name</th>
                 <th>Hex</th>
@@ -139,7 +139,7 @@ Use a combination of these tints to create your page elements and differentiate 
 
 Below is a table of the FT tints following the numbering system.
 
-<table class='o-techdocs-table'>
+<table class='o-techdocs-table' style="width:100%;">
                 <tr>
                 <th>Name</th>
                 <th>Hex</th>
@@ -190,7 +190,7 @@ Greys can be used on pages that employ a reversed colour scheme or dark styling.
 
 Below is a table of the FT Greys following the numbering system.
 
-<table class='o-techdocs-table'>
+<table class='o-techdocs-table' style="width:100%;">
                 <tr>
                 <th>Name</th>
                 <th>Hex</th>
