@@ -22,9 +22,13 @@ Below is a demo link of the grid with columns displayed. There are a few key des
 <iframe frameborder='0' width="100%" src='http://registry.origami.ft.com/components/o-grid@2.1.0/demos/visual/demos/silent.html?embed=1'></iframe>
 
 
-##links
+##Link Styles
 __Standard Links__ 
-FT standard links are always blue and turn black on hover. This applies to all links in content on a page or in any apps.
+FT standard links are always FT blue and turn Grey tint 5 on hover. This applies to all links in content or in any apps.
+
+<div class="o-ft-typography-body-wrapper" style="padding:20px;margin:20px 0;background-color:#fff1e0;">
+The valuation of the company was not <a style="color:#2e6e9e">disclosed</a> but it is likely to be more than $1bn, based on other fundraisings at this scale. The start-up’s last fundraising was in October 2013, when a large telecoms company led a <a style="color:#2e6e9e">$55m round</a> that also included money from international investors.
+</div>
 
 __Article Links__ 
 Article links are an inversion of standard links so appear black and turn blue on hover. When a user clicks on an article link they'll be taken to an FT article links can appear on the home page, section pages and for any other situation where articles appear.
@@ -32,13 +36,13 @@ Article links are an inversion of standard links so appear black and turn blue o
 These colours can be retrieved from <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color module.</a>
 
 
-##Colour pallette
+##Colour Pallete
 
 The FT's signature colour is pink. It's been the colour of the paper for over 125 years. Physically the colour is actually shade of beige but this is used to best reproduce of the flagship colour of the paper. This colour has come to be a key brand signal marking the FT out from other products. As such, it is strongly suggested that you use FT pink when creating your design, product or app. 
 
 There are also a host of other colours in the FT's digital colour pallette. They are broken down into three principal groupings. All these colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color module.</a>
 
-###Common colours
+###Common Colours
 
 **FT Pink** - the background colour for FT.com, webapp and all FT products. FT pink is crucial and should be the first requirement when designing FT digital products.
 
@@ -48,7 +52,7 @@ There are also a host of other colours in the FT's digital colour pallette. They
 
 **Tint 3** - used to make the header modules in the Right-hand Rail 
 
-###Ancillary colours
+###Ancillary Colours
 These colours are generally used to create interactive graphics or for ancillary widgets, components and page elements outside of standard editorial content. THese colours should never be used on article text, headings or section pages.
 
 <table class='o-techdocs-table'>
@@ -242,7 +246,7 @@ Below is a table of the FT Greys following the numbering system.
 
 
 
-###Other colours
+###Other Colours
 
 __Claret__ is used for Special Report titles. This colour can be used as an accent colour for elements and designs that specifically need to stand-out strongly. FT Tints are used to seperate page elements and designs. Be warned that the Claret is used sparingly so don’t over-do it. 
 
@@ -252,7 +256,7 @@ __Red__ is used for warnings and emergency messaging
 
 These colours can be retrieved from <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color module.</a>
 
-##spacing
+##Spacing
 
 A standard FT spacing unit is 20px.
 
@@ -272,11 +276,11 @@ Benton is the FT's house font used in the newspaper and online. It is also used 
 
 __Miller Display Bold__
 
-This font is used for article headlines. It's not used by FT.com but can be seen on the FT webapp.
+Used for article headlines. It's not used by FT.com but can be seen on the FT webapp.
 
 __Miller Display Bolder__
 
-This is used for article headlines. It's not used by FT.com but can be seen on the FT webapp.
+Used for article headlines. It's not used by FT.com but can be seen on the FT webapp.
 
 __Georgia__
 
@@ -289,7 +293,7 @@ This is the fallback standard font if Benton Sans is not available.
 All these fonts can be retrieved from the <a href="http://registry.origami.ft.com/components/o-fonts">Origami o-fonts module.</a>
 
 
-###Implementation names
+###Implementation Names
 
 Fonts used by development differ in name to the font names installed for design software. All font names above are accoding to the CSS names for fonts. Below is a table of the CSS names compared to actual font names locally used by design software. Under contractual agreement copies of these fonts cannot be distributed to third parties.
 
@@ -341,14 +345,6 @@ Fonts used by development differ in name to the font names installed for design 
 </table>
 
 
-
-
-
-
-
-
-
-
 ##Buttons
 
 __Legacy buttons__
@@ -362,31 +358,32 @@ All Origami button styles can be retrieved from the <a href="http://registry.ori
 Origami buttons are designed to not be preset with any colour. If your product uses a specific colour pallete you can colour your buttons accordingly. Below are the recommended default settings.
 
 
-####Standard Origami button
+####Standard Origami Button
 
 These buttons have hollow colouring and are the default for standard button interactions.
 
 <iframe width="100%" frameborder='0' scrolling='no' src='http://registry.origami.ft.com/components/o-ft-buttons@1.4.1/demos/visual/demos/individual.html?embed=1'></iframe>
 
-####Call-to-action button
+
+
+####Call-to-action Button
 
 These buttons are only used for pages which require affirmative action. Examples would be on marketing pages, product purchasing pages, sign-up pages and as sign-in buttons.
-![Demo code here]({{site.baseurl}}/img/democode.fw.png)
+
+<iframe width="100%" frameborder='0' scrolling='no' src='http://registry.origami.ft.com/components/o-ft-buttons@1.4.1/demos/visual/demos/individual-standout.html?embed=1'></iframe>
 
 ####Pagination
 
 Used for paging through content. e.g. search results
-![Demo code here]({{site.baseurl}}/img/democode.fw.png)
+
+<iframe width="100%" frameborder='0' scrolling='no' src='http://registry.origami.ft.com/components/o-ft-buttons@1.4.1/demos/visual/demos/pagination.html?embed=1'></iframe>
+
 
 ####Toggle buttons / multi toggle
 
 Simple on / off interactions will use the following design.
-![Demo code here]({{site.baseurl}}/img/democode.fw.png)
 
-
-
-
-
+<iframe width="100%" frameborder='0' scrolling='no' src='http://registry.origami.ft.com/components/o-ft-buttons@1.4.1/demos/visual/demos/grouped.html?embed=1'></iframe>
 
 ##Forms
 
@@ -405,23 +402,23 @@ There are two scales of input available in Origami the “default” size should
 *may change to better name
 
 INSERT DEMO CODE HERE of the 2 scales types.
+
 ![Demo code here]({{site.baseurl}}/img/democode.fw.png)
 
 
-###Input fields
+###Input Fields
 
 When laying out input fields in a form all fields must stack vertically. This is the easiest way to read and complete a form.
 
 
-###Multi column layout
+###Multi Column Layout
 
 In exceptional cases a two column form can be used. For example, if your form is for a simple request for a name and email these two fields can be placed horizontally. When your form has more than four fields it's advised to use a single column layout. UX and design descretion is advised as you don't want to make your form difficult to read.
 
 Example 2 column layout for a competition.
 
 
-
-###Input level errors
+###Input Level Errors
 
 These will always appear underneath the input field. Any information you need to present to explain an error should be written into the redbox displayed below the input field.
 
@@ -432,26 +429,45 @@ Below is the style for when you want to display important information related to
 ![Demo code here]({{site.baseurl}}/img/democode.fw.png)
 
 
-
-
-
-
-
-
-
 ##Overlays
 
-FT.com currently uses a series of legacy overlays. 
+Ft.com currently uses a series of legacy overlay styles. Do not in any circumstances reproduce any of these legacy overlays.
 
-The FT uses many different overlays to deliver different messages. Some are barrier overlays explaining why a user cannot see content others are needed to deliver tools or services such as FT Clippings, share tools, email, gift article etc
+###Barrier Overlay
+Users who arrive at the FT and haven't registered their email will get a barrier overlay. these overlays contain marketing information explaining why they cannot see the page content and paywall information with subscription information.
+
+![Demo code here]({{site.baseurl}}/img/democode.fw.png)
+
+The width and height will be controlled by the content inside these overlays.
+
+###Modal Overlays
+
+These overlays are needed to deliver interactions and FT tools and services. Examples are things such as FT Clippings (our save-for-later service), social sharing options, email this and gift article. Only use this overlay if you want to specifically interupt the users flow - you must have a valid reason for this. 
 
 ![Demo code here]({{site.baseurl}}/img/democode.fw.png)
 
-###Origami overlays
+**Closing** - users can click on the close button in the top right or click off the box.
 
-There is one universal overlay container that all overlays must use. The content inside overlays can vary depending on your products need. The current FT.com overlay types are listed above.
+**Width** - recommended width for desktop is 500px. While the code is allowed to be flexible to any width do not let overlays strecth to be full width of the screen.
+
+**Height** - there is no restriction on height but likewise with width please start with a min-height of 200px
+
+**Heading** - all modal overlays should have a heading. Keep it short, long titles will not look nice at smaller screen sizes.  
+
+
+###Smallscale Overlays
+
+These overlays are used for minor page interactions. Similiar to tooltips these should be small and just pop up over a small area that the user has interacted with. They should never be implemented as hover. 
+
+An arrow should appear pointing to the original point where the user clicked. This arrow can be placed on the top or bottom or left and right of the overlay.
 
 ![Demo code here]({{site.baseurl}}/img/democode.fw.png)
+
+**Closing** - users can click on the close button in the top right or click off the box.
+
+**Heading** - headings are optional on smallscale, if needed keep the text short. The heading with a coloured background is NOT to be used.
+
+**Scale** - as the name says do not make smallscale overlays too big in proportion to your products screensize
 
 
 
