@@ -52,3 +52,20 @@ margin-top: 7px;
 .o-techdocs-nav>li>a {
 	padding:10px;
 }
+
+/* remove dotted line left of FT Square*/
+.o-ft-header__nav--tools-theme [data-o-hierarchical-nav-level='1']>li>a {
+	border-left: none;
+}
+
+.o-ft-header__nav--primary-theme [data-o-hierarchical-nav-level]:not([data-o-hierarchical-nav-level='1']) a {
+padding: 20px ;
+}
+
+.o-ft-header__nav--primary-theme [data-o-hierarchical-nav-level]:not([data-o-hierarchical-nav-level='1']) li:first-child{
+	border-top: none;
+}
+
+.o-ft-header__nav--primary-theme [data-o-hierarchical-nav-level]:not([data-o-hierarchical-nav-level='1']) {
+	margin: -1px 0 0 4px;
+}
