@@ -1,6 +1,10 @@
-$o-ft-header-primary-left-width: 302px;
+$o-ft-header-primary-left-width: 160px;
 @import 'o-techdocs/main';
 
 body {
 	margin: 0;
+}
+
+.o-ft-header__nav--tools-theme {
+	width: 55px;
 }
