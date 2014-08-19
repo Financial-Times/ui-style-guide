@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }} - {{ site.name }}</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="noindex, nofollow">
+
+        <link href="{{ site.baseurl }}/buildcache/bundle.css" rel="stylesheet">
+        
+        <link href="{{ site.baseurl }}/buildcache/UISG-custom.css" rel="stylesheet">
+        
+        <script src='http://registry.origami.ft.com/embedapi'></script>
+        <link rel="stylesheet" href="http://build.origami.ft.com/bundles/css?modules=o-ft-typography@^1.12.2" />
+    </head>
+    <body class='o-techdocs o-hoverable-on'>
+
+      <header data-o-component="o-ft-header" class="o-ft-header">
+          <div class="o-ft-header__container">
+              <div class="o-ft-header__primary">
+                  <div class="o-ft-header__primary__left">
+                      <!--<div class="o-ft-header__logo o-ft-header__logo--ft">
+                          <a href="http://www.ft.com"><abbr title="Financial Times">FT</abbr></a>
+                          <span class="o-techdocs__logo"></span>
+                      </div> -->
+                      <h1 class="o-ft-header__title">{{site.name}}</h1>
+                  </div>
+                  <nav class="o-ft-header__primary__center o-hierarchical-nav o-ft-header__nav--primary-theme" data-o-component="o-hierarchical-nav">
+                    <ul data-o-hierarchical-nav-level="1">
+                      <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true">
+                      <a href="{{ site.baseurl }}/">Home</a></li>
+
+                      <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/accessability">Accessability</a></li>
+
+                      <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/legacy">Legacy</a></li>
+
+                      <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/contact">Contact</a></li>
+                                                
+                      <li data-more class="o-hierarchical-nav__parent"><a><span class="o-hierarchical-nav__more--if-some">More</span><span class="o-hierarchical-nav__more--if-all">Menu<!-- REMOVED UNTILL the ICON FONT WORKS AGAIN<i class="o-hierarchical-nav__parent__down-arrow"></i>--></span></a></li>
+                    </ul>
+                  </nav>
+                  <nav class="o-ft-header__primary__right o-hierarchical-nav o-ft-header__nav--tools-theme" data-o-component="o-hierarchical-nav" data-o-version="0.2.8">
+                    <ul data-o-hierarchical-nav-level="1"><!--
+                      --><li data-priority="-1"><a href="http://ft.com"><i class="o-ft-header__back-to-ft">Back to FT.com</i></a></li><!--
+                    --></ul>
+                  </nav>
+              </div>
+              <div class="o-ft-header__secondary"></div>
+          </div>
+      </header>  
+
+      <div class="o-techdocs-layout"> 
+        <!-- removed sidebar to allow full width design
+        <div class="o-techdocs-sidebar">
+          <div class="o-techdocs-nav"></div>
+        </div>
+        -->
+
+        <div class="o-techdocs-main">
+          <div class="o-techdocs-content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+
+      <div class='o-techdocs-footer'>
+        <p><a class='o-techdocs-pull-right' href='http://github.com/financial-times/ft-origami'>View project on Github</a>&copy; THE FINANCIAL TIMES LTD {{ site.time | date:'%Y' }}. FT and 'Financial Times' are trademarks of The Financial Times Ltd.</p>
+      </div>
+
+      <script src='{{ site.baseurl }}/buildcache/bundle.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js'></script>
+      <script>prettyPrint();</script>
+
+    </body>
+</html>
