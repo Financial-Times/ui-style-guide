@@ -100,3 +100,7 @@ font-family: BentonSans, Helevetica, Arial, sans-serif;
 color: #b0b0b0;
 padding: 0 20px 0 0;
 }
+
+.o-techdocs-layout {
+	min-height: 800px;
+}
