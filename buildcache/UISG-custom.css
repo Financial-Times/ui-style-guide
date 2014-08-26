@@ -86,3 +86,17 @@ padding: 20px ;
 .o-techdocs-leadbody {
 	font-size:20px;
 }
+
+.o-techdocs-footer {
+	background-color: #000000;
+padding: 10px;
+color: #ffffff;
+font-size: 14px;
+font-family: BentonSans, Helevetica, Arial, sans-serif;
+}
+
+.o-techdocs-pull-right {
+	text-decoration: none;
+color: #b0b0b0;
+padding: 0 20px 0 0;
+}
