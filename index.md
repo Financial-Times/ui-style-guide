@@ -15,7 +15,7 @@ section: Section 1
 
 Many services and digital require a square icon to represent brands digitally. There is only one version of the FT square please do not use a copied imitation or the print version.
 
-![UI Style guide banner]({{site.baseurl}}/img/ft-square.png)
+![UI Style guide banner]({{site.baseurl}}/img/FT-square.png)
 
 ##Origami Grid
 
