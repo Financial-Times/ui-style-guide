@@ -7,7 +7,7 @@
 }
 
 .o-techdocs-content a:hover {
-border-bottom:1px dotted #2e6e9e;
+border-bottom:1px dotted #4a95db;
 }
 
 /* nav stuff */
@@ -35,8 +35,16 @@ border-bottom:1px dotted #2e6e9e;
 	background:none;
 	border-top: 1px dotted #cec6b9;
 }
+.o-techdocs-nav li:last-child {
+	border-bottom: 1px dotted #cec6b9;
+}
+
 .o-techdocs-nav--page li a {
-	color:#2e6e9e;
+	color:#4a95db;
+}
+
+.o-techdocs-content a:hover {
+border-bottom: 1px dotted #4a95db;
 }
 
 .o-techdocs-nav--page li a:hover {

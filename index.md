@@ -258,49 +258,49 @@ These colours are only to be used for sections within the FT weekend. They're no
                 <tr>
                 <td>Section Green</td>
                 <td>#09a25c</td>
-                <td><div style="width:100px;height:20px;background-color:#b0b0b0"></div></td>
+                <td><div style="width:100px;height:20px;background-color:#09a25c"></div></td>
                 <td>House and Home</td>   
                 </tr>
                 
                 <tr>
                 <td>Section Light Green</td>
                 <td>#a1dbb2</td>
-                <td><div style="width:100px;height:20px;background-color:#999"></div></td>
-                <td>enter section name</td> 
+                <td><div style="width:100px;height:20px;background-color:#a1dbb2"></div></td>
+                <td>House and Home</td> 
                 </tr>
                 
                 <tr>
                 <td>Section Red</td>
                 <td>#cc0033</td>
-                <td><div style="width:100px;height:20px;background-color:#777"></div></td>
-                <td>enter section name</td> 
+                <td><div style="width:100px;height:20px;background-color:#cc0033"></div></td>
+                <td>Life and Arts</td> 
                 </tr>
                 
                 <tr>
                 <td>Section Purple</td>
                 <td>#92288f</td>
-                <td><div style="width:100px;height:20px;background-color:#333"></div></td>
-                <td>enter section name</td> 
+                <td><div style="width:100px;height:20px;background-color:#92288f"></div></td>
+                <td>Culture</td> 
                 </tr>
                 
                 <tr>
                 <td>Section Light Purple</td>
                 <td>#ebcaec</td>
-                <td><div style="width:100px;height:20px;background-color:#000000"></div></td>
+                <td><div style="width:100px;height:20px;background-color:#ebcaec"></div></td>
                 <td>enter section name</td> 
                 </tr>
                 
                 <tr>
                 <td>Section Blue</td>
                 <td>#0e6dcc</td>
-                <td><div style="width:100px;height:20px;background-color:#000000"></div></td>
+                <td><div style="width:100px;height:20px;background-color:#0e6dcc"></div></td>
                 <td>enter section name</td> 
                 </tr>
                 
                 <tr>
                 <td>Section Light Blue</td>
                 <td>#c5d4e8</td>
-                <td><div style="width:100px;height:20px;background-color:#000000"></div></td>
+                <td><div style="width:100px;height:20px;background-color:#c5d4e8"></div></td>
                 <td>enter section name</td> 
                 </tr>
                 
