@@ -73,3 +73,7 @@ padding: 20px ;
 .o-techdocs-content img:not(.transparent) {
 	border:none;
 }
+
+.o-techdocs-leadbody {
+	font-size:20px;
+}
