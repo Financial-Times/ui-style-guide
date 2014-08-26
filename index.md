@@ -3,11 +3,12 @@ layout: default
 title: Home
 section: Section 1
 ---
-![Demo code here]({{site.baseurl}}/img/banner.png)
-<div class="o-techdocs-leadbody">
+
+![UI Style guide banner]({{site.baseurl}}/img/banner.png)]
+<p class="o-techdocs-leadbody">
             The following pages show all the component parts and elements that go to create an Financial Times web page. The sister site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, only contains the physical code elements needed to make the parts of an app, website or digital product this page describes the rules on layout and structure.
             
-</div>
+</p>
 
 ##Origami Grid
 
@@ -244,6 +245,66 @@ Below is a table of the FT Greys following the numbering system.
                 </tr>
             </table>
 
+###FT Weekend Colours
+These colours are only to be used for sections within the FT weekend. They're not to be used anywhere else.
+
+<table class='o-techdocs-table' style="width:100%;">
+                <tr>
+                <th>Name</th>
+                <th>Hex</th>
+                <th>Colour swatch</th>
+                <th>Example use</th>   
+                </tr>
+                <tr>
+                <td>Section Green</td>
+                <td>#09a25c</td>
+                <td><div style="width:100px;height:20px;background-color:#b0b0b0"></div></td>
+                <td>House and Home</td>   
+                </tr>
+                
+                <tr>
+                <td>Section Light Green</td>
+                <td>#a1dbb2</td>
+                <td><div style="width:100px;height:20px;background-color:#999"></div></td>
+                <td>enter section name</td> 
+                </tr>
+                
+                <tr>
+                <td>Section Red</td>
+                <td>#cc0033</td>
+                <td><div style="width:100px;height:20px;background-color:#777"></div></td>
+                <td>enter section name</td> 
+                </tr>
+                
+                <tr>
+                <td>Section Purple</td>
+                <td>#92288f</td>
+                <td><div style="width:100px;height:20px;background-color:#333"></div></td>
+                <td>enter section name</td> 
+                </tr>
+                
+                <tr>
+                <td>Section Light Purple</td>
+                <td>#ebcaec</td>
+                <td><div style="width:100px;height:20px;background-color:#000000"></div></td>
+                <td>enter section name</td> 
+                </tr>
+                
+                <tr>
+                <td>Section Blue</td>
+                <td>#0e6dcc</td>
+                <td><div style="width:100px;height:20px;background-color:#000000"></div></td>
+                <td>enter section name</td> 
+                </tr>
+                
+                <tr>
+                <td>Section Light Blue</td>
+                <td>#c5d4e8</td>
+                <td><div style="width:100px;height:20px;background-color:#000000"></div></td>
+                <td>enter section name</td> 
+                </tr>
+                
+            </table>
 
 
 ###Other Colours

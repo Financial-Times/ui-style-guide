@@ -69,3 +69,7 @@ padding: 20px ;
 .o-ft-header__nav--primary-theme [data-o-hierarchical-nav-level]:not([data-o-hierarchical-nav-level='1']) {
 	margin: -1px 0 0 4px;
 }
+
+.o-techdocs-content img:not(.transparent) {
+	border:none;
+}
