@@ -4,11 +4,11 @@ title: Home
 section: Section 1
 ---
 
-![UI Style guide banner]({{site.baseurl}}/img/banner.png)]
-<p class="o-techdocs-leadbody">
+
+<div class="o-techdocs-leadbody">
             The following pages show all the component parts and elements that go to create an Financial Times web page. The sister site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, only contains the physical code elements needed to make the parts of an app, website or digital product this page describes the rules on layout and structure.
             
-</p>
+</div>
 
 ##Origami Grid
 
