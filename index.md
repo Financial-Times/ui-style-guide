@@ -7,9 +7,14 @@ section: Section 1
 ![UI Style guide banner]({{site.baseurl}}/img/banner.png)
 
 <div class="o-techdocs-leadbody">
-            The following pages show all the component parts and elements that go to create an Financial Times web page. The sister site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, only contains the physical code elements needed to make the parts of an app, website or digital product this page describes the rules on layout and structure.
+            The following pages show all the component parts and elements that go to create a Financial Times web page. The sister site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, contains the physical code needed to make the parts of an FT app, website or digital product. This site describes the rules on layout, structure and how to present the various components.
             
 </div>
+##FT Square
+
+Many digital products often use a square icon to represent their band. There is only one version of the FT square please do not use a copied version or the print version.
+
+![UI Style guide banner]({{site.baseurl}}/img/ft-square.png)
 
 ##Origami Grid
 
