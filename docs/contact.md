@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: noleftnav
 title: Design UX Team
 section: Section 1
 permalink: /docs/contact/

@@ -512,6 +512,7 @@ The width and height will be controlled by the content inside these overlays.
 
 These overlays are needed to deliver interactions and FT tools and services. Examples are things such as FT Clippings (our save-for-later service), social sharing options, email this and gift article. Only use this overlay if you want to specifically interupt the users flow - you must have a valid reason for this. 
 
+
 ![Demo code here]({{site.baseurl}}/img/democode.fw.png)
 
 **Closing** - users can click on the close button in the top right or click off the box.
@@ -523,7 +524,7 @@ These overlays are needed to deliver interactions and FT tools and services. Exa
 **Heading** - all modal overlays should have a heading. Keep it short, long titles will not look nice at smaller screen sizes.  
 
 
-###Smallscale Overlays
+###Compact Overlays
 
 These overlays are used for minor page interactions. Similiar to tooltips these should be small and just pop up over a small area that the user has interacted with. They should never be implemented as hover. 
 
@@ -536,6 +537,42 @@ An arrow should appear pointing to the original point where the user clicked. Th
 **Heading** - headings are optional on smallscale, if needed keep the text short. The heading with a coloured background is NOT to be used.
 
 **Scale** - as the name says do not make smallscale overlays too big in proportion to your products screensize
+
+<table class='o-techdocs-table'>
+                <tr>
+                <td>Overlay type</td>
+                <td>No Header</td>
+                <td>Shaded header</td>
+                <td>Non-shaded header</td>
+                <td>Side Arrow</td>
+                </tr>
+                
+                <tr>
+                <td>Standard</td>
+                <td>No Header</td>
+                <td>Shaded header</td>
+                <td>Non-shaded header</td>
+                <td>Side Arrow</td>
+                </tr>
+                
+                <tr>
+                <td>Modal</td>
+                <td>No Header</td>
+                <td>Shaded header</td>
+                <td>Non-shaded header</td>
+                <td>Side Arrow</td>
+                </tr>
+                
+                <tr>
+                <td>Compact</td>
+                <td>No Header</td>
+                <td>Shaded header</td>
+                <td>Non-shaded header</td>
+                <td>Side Arrow</td>
+                </tr>
+                
+</table>
+
 
 
 
