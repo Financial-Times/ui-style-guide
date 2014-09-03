@@ -2,6 +2,11 @@
 
 Please visit http://financial-times.github.io/ui-style-guide to view the site
 
+## Prerequisites
+
+- Install node and npm from [npmjs.org](http://npmjs.org).  Check that it's installed by running `node --version`.
+- Install [origami-build-tools](https://github.com/Financial-Times/origami-build-tools).
+
 ## Building
 
 Since this is a GitHub pages site, built CSS and JS bundles must be committed to the repository.  We store them in `buildcache` to avoid any confusion - these files should not be edited.  To regenerate them, use Grunt:

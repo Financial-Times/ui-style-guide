@@ -6,7 +6,7 @@ permalink: /docs/legacy/
 ---
 # Legacy FT site (Falcon)
 
-The current version of the FT website can often be referred to as the Falcon. It is not responsive but still adhere's to a grid system. OVerlays, buttons and other elements are different to Origami
+The current version of the FT website can often be referred to as the Falcon. It is not responsive but still adhere's to a grid system. Overlays, buttons and other elements are different to Origami
 
 ##Grid
 The grid is based around the retrictive width of advertising on FT.com.
