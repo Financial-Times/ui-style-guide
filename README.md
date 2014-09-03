@@ -5,7 +5,7 @@ Please visit http://financial-times.github.io/ui-style-guide to view the site
 ## Prerequisites
 
 - Install node and npm from [npmjs.org](http://npmjs.org).  Check that it's installed by running `node --version`.
-- Install bower by running `npm install -g bower`.  Check that it's installed by running `bower --version`.
+- Install [origami-build-tools](https://github.com/Financial-Times/origami-build-tools).
 
 ## Building
 
