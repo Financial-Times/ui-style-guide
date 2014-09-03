@@ -11,6 +11,7 @@ section: Section 1
             
 </div>
 
+
 ##FT Square
 
 Many services and digital require a square icon to represent brands digitally. There is only one version of the FT square please do not use a copied imitation or the print version.
@@ -573,6 +574,9 @@ An arrow should appear pointing to the original point where the user clicked. Th
                 
 </table>
 
+##Aside - Right-hand Rail
+Beside an article you can insert ancillary content beside an article. These will often be stacked on top of each other to form what's commonly called the ""right-hand rail". 
 
+<iframe height='400' frameborder='0' width="100%" src='http://jsbin.com/sebohekuluge/1/'></iframe>
 
 
