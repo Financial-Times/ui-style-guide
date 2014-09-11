@@ -500,7 +500,13 @@ Below is the style for when you want to display important information related to
 
 ##Overlays
 
-Ft.com currently uses a series of legacy overlay styles. Do not in any circumstances reproduce any of these legacy overlays.
+FT.com currently uses a series of legacy overlay styles. Do not in any circumstances reproduce any of these legacy overlays.
+
+###Content inside overlays
+
+Always put buttons in bottom right.
+
+<iframe frameborder='0' width="100%" src='http://jsbin.com/gimox/1/quiet'></iframe>
 
 ###Barrier Overlay
 Users who arrive at the FT and haven't registered their email will get a barrier overlay. these overlays contain marketing information explaining why they cannot see the page content and paywall information with subscription information.
@@ -574,9 +580,9 @@ An arrow should appear pointing to the original point where the user clicked. Th
                 
 </table>
 
-##Aside - Right-hand Rail
+##Aside: Right-hand Rail
 Beside an article you can insert ancillary content beside an article. These will often be stacked on top of each other to form what's commonly called the ""right-hand rail". 
 
-<iframe height='400' frameborder='0' width="100%" src='http://jsbin.com/sebohekuluge/1/'></iframe>
+<iframe height='400' frameborder='0' width="100%" src='http://jsbin.com/sebohekuluge/1/quiet'></iframe>
 
 
