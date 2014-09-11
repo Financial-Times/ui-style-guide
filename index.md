@@ -583,6 +583,6 @@ An arrow should appear pointing to the original point where the user clicked. Th
 ##Aside: Right-hand Rail
 Beside an article you can insert ancillary content beside an article. These will often be stacked on top of each other to form what's commonly called the ""right-hand rail". 
 
-<iframe height='400' frameborder='0' width="100%" src='http://jsbin.com/sebohekuluge/1/quiet'></iframe>
+<iframe height='400' frameborder='0' width="100%" src='http://jsbin.com/firok/1/quiet'></iframe>
 
 
