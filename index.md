@@ -6,6 +6,8 @@ section: Section 1
 
 ![UI Style guide banner]({{site.baseurl}}/img/banner.png)
 
+##Overview
+
 <div class="o-techdocs-leadbody">
             The following pages show all the component parts and elements that go to create a Financial Times web page. The sister site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, contains the physical code needed to make the parts of an FT app, website or digital product. This site describes the rules on layout, structure and how to present the various components.
             
@@ -14,42 +16,99 @@ section: Section 1
 
 ##FT Square
 
-Many services and digital require a square icon to represent brands digitally. There is only one version of the FT square please do not use a copied imitation or the print version.
+Many services and digital prodcuts will require a square icon to represent the FT brand. There is only one version of the FT square please do not use a copied imitation or the print version.
 
-![UI Style guide banner]({{site.baseurl}}/img/FT-square.png)
+![UI Style guide banner]({{site.baseurl}}/img/FT-square-usage.png)
+
+If you require this graphic please contact design@ft.com and a member of the design team can supply you with it.
 
 ##Origami Grid
 
-The Origami grid is designed to be responsive and works on a 12 column system. Margins and gutter widths between each column is controlled by the grid. Resizing and formatting is accounted for as you reduce the page width down through the FT’s various breakpoints.
+The Origami grid is designed to be responsive and works on a 12 column system. Margins and between each column is controlled by the grid. Outer margin on the left and right are also controlled by the grid. If your design has several elements which are flush left and flush right to the edge of the viewport that they align using the grid. Resizing and formatting can be simply controlled as you reduce the viewport width down through the FT’s various breakpoints.
 
-For technical implementation, setup and general paramters please see <a href="http://registry.origami.ft.com/components/o-grid@2.0.8">Origami o-grid module.</a>
+Below are the four breakpoints which come with o-grid
 
-Below is a demo link of the grid with columns displayed. There are a few key design characteristics. The gutters are 20 pixels and page margins on left and right alter depending on the screen size. The grid has three different scales; XL, L, M, S. There are breakpoints between each.
+<table style="width:100%;">
+                <tbody>
+                <tr>
+                <th>Scale name</th>
+                <th>o-grid indicator</th>
+                <th>Widths</th>
+                </tr>
 
-<a href="http://build.origami.ft.com/files/o-grid@2.1.0/demos/silent.html">Click here</a> to see a page showing the FT's responsive grid. 
+                <tr>
+                <td>Small</td>
+                <td>S</td>
+                <td>0 - 600</td>
+                </tr>
+                <tr>
+                <td>Medium</td>
+                <td>M</td>
+                <td>600 - 1000</td>
+                </tr>
+                
+                <tr>
+                <td>Large</td>
+                <td>L</td>
+                <td>1000 - 1400</td>
+                </tr>
+                
+                <tr>
+                <td>Extra Large</td>
+                <td>XL</td>
+                <td>1400+</td>
+                </tr>
+</tbody>
+</table>
 
-<iframe frameborder='0' width="100%" src='http://registry.origami.ft.com/components/o-grid@2.1.0/demos/visual/demos/silent.html?embed=1'></iframe>
+
+For technical implementation, setup and general paramters please see <a href="http://registry.origami.ft.com/components/o-grid">Origami o-grid component.</a>
+
+Below is a demo link of the grid with columns displayed. Note the following key design characteristics. The gutters are 20 pixels and page margins on left and right alter depending on the screen size.
+
+<iframe height="700" frameborder='0' width="100%" src='http://registry.origami.ft.com/components/o-grid@2.1.0/demos/visual/demos/silent.html?embed=1'></iframe>
+
+<a href="http://build.origami.ft.com/files/o-grid@2.1.0/demos/silent.html">Click here</a> to see a seperate page showing the this responsive grid. Designers can resize this to get column widths for any fixed screen size they need.
+
+If you require a PSD showing the basic grid at the main breakpoints please <a href="http://membership.ft.com/ui-style-guide/o-grid-demo.psd">click here.</a>
 
 
 ##Link Styles
-__Standard Links__ 
-FT standard links are always FT blue and turn Grey tint 5 on hover. This applies to all links in content or in any apps.
 
-<div class="o-ft-typography-body-wrapper" style="padding:20px;margin:20px 0;background-color:#fff1e0;">
-The valuation of the company was not <a style="color:#2e6e9e">disclosed</a> but it is likely to be more than $1bn, based on other fundraisings at this scale. The start-up’s last fundraising was in October 2013, when a large telecoms company led a <a style="color:#2e6e9e">$55m round</a> that also included money from international investors.
-</div>
+###Standard Links
 
-__Article Links__ 
-Article links are an inversion of standard links so appear black and turn blue on hover. When a user clicks on an article link they'll be taken to an FT article links can appear on the home page, section pages and for any other situation where articles appear.
-
-These colours can be retrieved from <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color module.</a>
+FT standard links are always FT blue and turn black on hover. This applies to all links in content or in any apps.
 
 
-##Colour Pallete
+<iframe height="300" width="100%" frameborder='0' scrolling='no' src='http://membership.ft.com/-ui-style-guide/demo-links.html'></iframe>
+
+
+###Article Links 
+Article links are an inversion of standard links so appear black and turn blue on hover. These style links appear on the FT home page and section pages. 
+
+Below is an example of how they typically appear. 
+
+<iframe height="300" width="100%" frameborder='0' scrolling='no' src='http://membership.ft.com/-ui-style-guide/article-link1.html'></iframe>
+
+
+
+##FT Top Twenty
+FT.com uses shows a list of articles on its section pages. This list is called the top 20. The first story is given more prominance with a larger size the following articles are reduced.
+
+Below is an example of how the first story appears in the top 20.
+
+<iframe height="300" width="100%" frameborder='0' scrolling='no' src='http://membership.ft.com/-ui-style-guide/article-link2.html'></iframe>
+
+Below is an example of how articles appear for the rest of the top 20.
+
+<iframe width="100%" frameborder='0' scrolling='no' src='http://membership.ft.com/-ui-style-guide/article-link1.html'></iframe>
+
+
+##Colour Palette
 
 The FT's signature colour is pink. It's been the colour of the paper for over 125 years. Physically the colour is actually shade of beige but this is used to best reproduce of the flagship colour of the paper. This colour has come to be a key brand signal marking the FT out from other products. As such, it is strongly suggested that you use FT pink when creating your design, product or app. 
 
-There are also a host of other colours in the FT's digital colour pallette. They are broken down into three principal groupings. All these colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color module.</a>
+There are also a host of other colours in the FT's digital colour palette. They are broken down into three principal groupings. All these colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color module.</a>
 
 ###Common Colours
 
@@ -261,7 +320,7 @@ These colours are only to be used for sections within the FT weekend. They're no
                 <th>Name</th>
                 <th>Hex</th>
                 <th>Colour swatch</th>
-                <th>Example use</th>   
+                <th>Use</th>   
                 </tr>
                 <tr>
                 <td>Section Green</td>
@@ -281,35 +340,35 @@ These colours are only to be used for sections within the FT weekend. They're no
                 <td>Section Red</td>
                 <td>#cc0033</td>
                 <td><div style="width:100px;height:20px;background-color:#cc0033"></div></td>
-                <td>Life and Arts</td> 
+                <td>FT Money</td> 
                 </tr>
                 
                 <tr>
                 <td>Section Purple</td>
                 <td>#92288f</td>
                 <td><div style="width:100px;height:20px;background-color:#92288f"></div></td>
-                <td>Culture</td> 
+                <td>Life and Arts</td> 
                 </tr>
                 
                 <tr>
                 <td>Section Light Purple</td>
                 <td>#ebcaec</td>
                 <td><div style="width:100px;height:20px;background-color:#ebcaec"></div></td>
-                <td>enter section name</td> 
+                <td>Life and Arts</td> 
                 </tr>
                 
                 <tr>
                 <td>Section Blue</td>
                 <td>#0e6dcc</td>
                 <td><div style="width:100px;height:20px;background-color:#0e6dcc"></div></td>
-                <td>enter section name</td> 
+                <td>FT Weekend Magazine</td> 
                 </tr>
                 
                 <tr>
                 <td>Section Light Blue</td>
                 <td>#c5d4e8</td>
                 <td><div style="width:100px;height:20px;background-color:#c5d4e8"></div></td>
-                <td>enter section name</td> 
+                <td>FT Weekend Magazinee</td> 
                 </tr>
                 
             </table>
@@ -341,7 +400,7 @@ Horizontal spacing, gutters and margins should be controlled by the Origami grid
 ##Fonts
 __Benton Sans__ 
 
-Benton is the FT's house font used in the newspaper and online. It is also used for all body text on general pages. General pages encompass all pages that are not article pages. 
+Benton is the FT's house font used in the newspaper and online. It is also used for all body text on generic pages. Generic pages encompass all service pages, tool pages and other ancillary pages which are not articles. 
 
 __Miller Display Bold__
 
@@ -353,7 +412,11 @@ Used for article headlines. It's not used by FT.com but can be seen on the FT we
 
 __Georgia__
 
-If Miller is not possible then the fall back font should be Georgia. If at all possible don’t use Georgia Italic
+Georgia is the standard article body font. If at all possible don’t use Georgia italic.
+
+__Clarion__
+
+Clarion is the standard article body font on the FT webapp only.
 
 __Arial / Helvetica__
 
@@ -420,7 +483,7 @@ __Legacy buttons__
 
 Please note there are a set of <a href="http://http://financial-times.github.io/ft-velcro">legacy</a> buttons widely in use. These are primarly for FT.com and have been deprecated in Origami.
 
-All Origami button styles can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-buttons module.</a>
+All Origami button styles can be retrieved from the <a href="http://registry.origami.ft.com/components/o-buttons">Origami o-buttons module.</a>
 
 ###Origami Buttons
 
@@ -506,7 +569,7 @@ FT.com currently uses a series of legacy overlay styles. Do not in any circumsta
 
 Always put buttons in bottom right.
 
-<iframe frameborder='0' width="100%" src='http://jsbin.com/gimox/1/quiet'></iframe>
+<iframe height="400" frameborder='0' width="100%" src='http://membership.ft.com/-ui-style-guide/overlay1.html'></iframe>
 
 ###Barrier Overlay
 Users who arrive at the FT and haven't registered their email will get a barrier overlay. these overlays contain marketing information explaining why they cannot see the page content and paywall information with subscription information.
@@ -583,6 +646,5 @@ An arrow should appear pointing to the original point where the user clicked. Th
 ##Aside: Right-hand Rail
 Beside an article you can insert ancillary content beside an article. These will often be stacked on top of each other to form what's commonly called the ""right-hand rail". 
 
-<iframe height='400' frameborder='0' width="100%" src='http://jsbin.com/firok/1/quiet'></iframe>
 
 
