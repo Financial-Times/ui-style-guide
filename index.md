@@ -82,6 +82,20 @@ FT standard links are always FT blue and turn black on hover. This applies to al
 
 <iframe height="300" width="100%" frameborder='0' scrolling='no' src='http://membership.ft.com/-ui-style-guide/demo-links.html'></iframe>
 
+##Header
+The Origami header caters for various different types mostly outlined in the regsitry documentation. There are however a few UI pointers on those variations.
+
+###Promo slot
+in the top right-hand side of the header is a space for a marketing promo ad. This will usually be advertising FT products, new tools and services or a subscriptions prompt. This promo slot only appears on FT.com sites. External products or sites do not have to use this slot.
+
+
+###Branded header
+If you're creating a product or sub-brand of the FT you must put and icon for the brand on the left-hand side. The FT square must go as the last icon on the right-hand side.
+
+The colour of the small narrow bar underneath the main header can be changed to your product or brand colour.
+
+
+
 
 ###Article Links 
 Article links are an inversion of standard links so appear black and turn blue on hover. These style links appear on the FT home page and section pages. 
@@ -106,9 +120,9 @@ Below is an example of how articles appear for the rest of the top 20.
 
 ##Colour Palette
 
-The FT's signature colour is pink. It's been the colour of the paper for over 125 years. Physically the colour is actually shade of beige but this is used to best reproduce of the flagship colour of the paper. This colour has come to be a key brand signal marking the FT out from other products. As such, it is strongly suggested that you use FT pink when creating your design, product or app. 
+The FT's signature colour is FT pink. It is strongly suggested that you use FT pink when creating your design, product or app. 
 
-There are also a host of other colours in the FT's digital colour palette. They are broken down into three principal groupings. All these colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color module.</a>
+There are a selection of other colours in the FT's digital colour palette. These are broken down into three principal groupings. All these colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors">Origami o-color module.</a>
 
 ###Common Colours
 
@@ -388,13 +402,9 @@ These colours can be retrieved from <a href="http://registry.origami.ft.com/comp
 
 A standard FT spacing unit is 20px.
 
-When laying out your product please give enough room to the page elements. Vertical spacing between elements should be consistent. Products presented with varying gaps between elements often look like mistakes with users sublimilally picking it up. The FT is premium brnad so you should strive to uphold accurate, consistent and neat presentation. Using our Ft spacing unit will help you achieve this.
+When laying out your product please give enough room to the page elements. Vertical spacing between elements should be consistent. Products presented with varying gaps between elements will look like mistakes. 
 
-Horizontal spacing, gutters and margins should be controlled by the Origami grid if possible. For vertical spacing you should use the FT spacing unit.
-
-
-
-
+Horizontal spacing, gutters and margins should be controlled by the Origami grid. For vertical spacing you should use the FT spacing unit.
 
 
 ##Fonts
@@ -487,7 +497,7 @@ All Origami button styles can be retrieved from the <a href="http://registry.ori
 
 ###Origami Buttons
 
-Origami buttons are designed to not be preset with any colour. If your product uses a specific colour pallete you can colour your buttons accordingly. Below are the recommended default settings.
+Buttons are designed to not be preset with any colour. If your product uses a specific colour palette you can colour your buttons accordingly. Below are the recommended default settings.
 
 
 ####Standard Origami Button
@@ -506,7 +516,7 @@ These buttons are only used for pages which require affirmative action. Examples
 
 ####Pagination
 
-Used for paging through content. e.g. search results
+Used for paging through content. e.g. search results. There are two scales depending on whether you're creating something for touch or not.
 
 <iframe width="100%" frameborder='0' scrolling='no' src='http://registry.origami.ft.com/components/o-ft-buttons@1.4.1/demos/visual/demos/pagination.html?embed=1'></iframe>
 
@@ -521,7 +531,7 @@ Simple on / off interactions will use the following design.
 
 Forms are designed to be responsive at different screen sizes. It’s very important that ample layout and spacing is given to ensure ease of use on touch devices.
 
-All the form elements can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-forms module.</a>
+All the form elements can be retrieved from the <a href="http://registry.origami.ft.com/components/o-ft-forms">Origami o-forms module.</a>
 
 ###Text input
 
@@ -529,9 +539,7 @@ We suggest always prepopulating the form field with suggestive text to help the 
 
 ###Two scales
 
-There are two scales of input available in Origami the “default” size should suffice for most platforms while the “Big”* scale is used for devices and scenarios where touch-based UI is required.
-
-*may change to better name
+There are two scales of input available in Origami the “default” size should suffice for most platforms while the big scale is used for devices and scenarios where touch-based UI is required.
 
 INSERT DEMO CODE HERE of the 2 scales types.
 
@@ -545,20 +553,12 @@ When laying out input fields in a form all fields must stack vertically. This is
 
 ###Multi Column Layout
 
-In exceptional cases a two column form can be used. For example, if your form is for a simple request for a name and email these two fields can be placed horizontally. When your form has more than four fields it's advised to use a single column layout. UX and design descretion is advised as you don't want to make your form difficult to read.
-
-Example 2 column layout for a competition.
+In exceptional cases a two column form can be used. For example, if your form is a simple request for a name and email these two fields can be placed horizontally. When your form has more than four fields it's advised to use a single column layout. Design discretion is advised as you don't want to make your form difficult to read.
 
 
 ###Input Level Errors
 
 These will always appear underneath the input field. Any information you need to present to explain an error should be written into the redbox displayed below the input field.
-
-###Page level information
-
-Below is the style for when you want to display important information related to a form. There is clear distinction 
-
-![Demo code here]({{site.baseurl}}/img/democode.fw.png)
 
 
 ##Overlays
@@ -643,8 +643,9 @@ An arrow should appear pointing to the original point where the user clicked. Th
                 
 </table>
 
-##Aside: Right-hand Rail
+##Right-hand Rail
 Beside an article you can insert ancillary content beside an article. These will often be stacked on top of each other to form what's commonly called the ""right-hand rail". 
 
+![Demo code here]({{site.baseurl}}/img/democode.fw.png)
 
 
