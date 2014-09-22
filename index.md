@@ -14,14 +14,6 @@ section: Section 1
 </div>
 
 
-##FT Square
-
-Many services and digital prodcuts will require a square icon to represent the FT brand. There is only one version of the FT square please do not use a copied imitation or the print version.
-
-![UI Style guide banner]({{site.baseurl}}/img/FT-square-usage.png)
-
-If you require this graphic please contact design@ft.com and a member of the design team can supply you with it.
-
 ##Origami Grid
 
 The Origami grid is designed to be responsive and works on a 12 column system. Margins and between each column is controlled by the grid. Outer margin on the left and right are also controlled by the grid. If your design has several elements which are flush left and flush right to the edge of the viewport that they align using the grid. Resizing and formatting can be simply controlled as you reduce the viewport width down through the FT’s various breakpoints.
