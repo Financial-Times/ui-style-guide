@@ -14,6 +14,8 @@ section: Section 1
 </div>
 
 
+
+
 ##Origami Grid
 
 The Origami grid is designed to be responsive and works on a 12 column system. Margins and between each column is controlled by the grid. Outer margin on the left and right are also controlled by the grid. If your design has several elements which are flush left and flush right to the edge of the viewport that they align using the grid. Resizing and formatting can be simply controlled as you reduce the viewport width down through the FT’s various breakpoints.
@@ -72,7 +74,7 @@ If you require a PSD showing the basic grid at the main breakpoints please <a hr
 FT standard links are always FT blue and turn black on hover. This applies to all links in content or in any apps.
 
 
-<iframe height="300" width="100%" frameborder='0' scrolling='no' src='http://membership.ft.com/-ui-style-guide/demo-links.html'></iframe>
+<iframe height="300" width="100%" frameborder='0' scrolling='no' src='../comps/demo-links.html'></iframe>
 
 ##Header
 The Origami header caters for various different types mostly outlined in the regsitry documentation. There are however a few UI pointers on those variations.
@@ -86,8 +88,9 @@ If you're creating a product or sub-brand of the FT you must put and icon for th
 
 The colour of the small narrow bar underneath the main header can be changed to your product or brand colour.
 
+<iframe height="300" width="100%" frameborder='0' scrolling='no' src='http://jsbin.com/goduy/2/quiet'></iframe>
 
-
+<a class="jsbin-embed" href="http://jsbin.com/goduy/2/embed?quiet">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Article Links 
 Article links are an inversion of standard links so appear black and turn blue on hover. These style links appear on the FT home page and section pages. 
