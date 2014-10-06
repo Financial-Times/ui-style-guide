@@ -89,10 +89,11 @@ padding: 20px ;
 
 .o-techdocs-footer {
 	background-color: #000000;
-padding: 10px;
-color: #ffffff;
-font-size: 14px;
-font-family: BentonSans, Helevetica, Arial, sans-serif;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: BentonSans, Helevetica, Arial, sans-serif;
+    margin:40px 0 0 0;
 }
 
 .o-techdocs-pull-right {
@@ -104,3 +105,5 @@ padding: 0 20px 0 0;
 .o-techdocs-layout {
 	min-height: 800px;
 }
+
+

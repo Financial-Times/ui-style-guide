@@ -74,7 +74,7 @@ If you require a PSD showing the basic grid at the main breakpoints please <a hr
 FT standard links are always FT blue and turn black on hover. This applies to all links in content or in any apps.
 
 
-<iframe height="300" width="100%" frameborder='0' scrolling='no' src='../comps/demo-links.html'></iframe>
+<iframe height="300" width="100%" frameborder='0' scrolling='no' src='comps/demo-links.html'></iframe>
 
 ##Header
 The Origami header caters for various different types mostly outlined in the regsitry documentation. There are however a few UI pointers on those variations.
@@ -82,22 +82,24 @@ The Origami header caters for various different types mostly outlined in the reg
 ###Promo slot
 in the top right-hand side of the header is a space for a marketing promo ad. This will usually be advertising FT products, new tools and services or a subscriptions prompt. This promo slot only appears on FT.com sites. External products or sites do not have to use this slot.
 
+<a class="jsbin-embed" href="http://jsbin.com/niyelo/6/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Branded header
-If you're creating a product or sub-brand of the FT you must put and icon for the brand on the left-hand side. The FT square must go as the last icon on the right-hand side.
+If you're creating a product or sub-brand of the FT please follow the below rules.
 
-The colour of the small narrow bar underneath the main header can be changed to your product or brand colour.
+* The icon/logo for the product goes on the left
+* The FT square must go as the last icon on the right-hand side. This also acts as a button taking users back to the FT.
+* A tagline can be inserted in the middle aligned left or right.
+* Use the small narrow bar underneath the main header apply your product or brand colour.
 
-<iframe height="300" width="100%" frameborder='0' scrolling='no' src='http://jsbin.com/goduy/2/quiet'></iframe>
-
-<a class="jsbin-embed" href="http://jsbin.com/goduy/2/embed?quiet">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/niyelo/4/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Article Links 
 Article links are an inversion of standard links so appear black and turn blue on hover. These style links appear on the FT home page and section pages. 
 
 Below is an example of how they typically appear. 
 
-<iframe height="300" width="100%" frameborder='0' scrolling='no' src='http://membership.ft.com/-ui-style-guide/article-link1.html'></iframe>
+<iframe width="100%" frameborder='0' scrolling='no' src='comps/article-link1.html'></iframe>
 
 
 
@@ -106,18 +108,18 @@ FT.com uses shows a list of articles on its section pages. This list is called t
 
 Below is an example of how the first story appears in the top 20.
 
-<iframe height="300" width="100%" frameborder='0' scrolling='no' src='http://membership.ft.com/-ui-style-guide/article-link2.html'></iframe>
+<iframe width="100%" frameborder='0' scrolling='no' src='comps/article-link2.html'></iframe>
 
 Below is an example of how articles appear for the rest of the top 20.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://membership.ft.com/-ui-style-guide/article-link1.html'></iframe>
+<iframe width="100%" frameborder='0' scrolling='no' src='comps/article-link1.html'></iframe>
 
 
 ##Colour Palette
 
 The FT's signature colour is FT pink. It is strongly suggested that you use FT pink when creating your design, product or app. 
 
-There are a selection of other colours in the FT's digital colour palette. These are broken down into three principal groupings. All these colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors">Origami o-color module.</a>
+There are a selection of other colours in the FT's digital colour palette. These are broken down into three principal groupings. All these colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors">Origami o-color component.</a>
 
 ###Common Colours
 
@@ -127,7 +129,7 @@ There are a selection of other colours in the FT's digital colour palette. These
 
 **Tint 1** - used to make the background colour of the Right-hand Rail 
 
-**Tint 3** - used to make the header modules in the Right-hand Rail 
+**Tint 3** - used to make the headers in the Right-hand Rail 
 
 ###Ancillary Colours
 These colours are generally used to create interactive graphics or for ancillary widgets, components and page elements outside of standard editorial content. THese colours should never be used on article text, headings or section pages.
@@ -391,7 +393,7 @@ __Green__ is typically used for arrows, positive actions on marketing pages
 
 __Red__ is used for warnings and emergency messaging
 
-These colours can be retrieved from <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color module.</a>
+These colours can be retrieved from <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color component.</a>
 
 ##Spacing
 
@@ -427,7 +429,7 @@ __Arial / Helvetica__
 
 This is the fallback standard font if Benton Sans is not available.
 
-All these fonts can be retrieved from the <a href="http://registry.origami.ft.com/components/o-fonts">Origami o-fonts module.</a>
+All these fonts can be retrieved from the <a href="http://registry.origami.ft.com/components/o-fonts">Origami o-fonts component.</a>
 
 
 ###Implementation Names
@@ -488,7 +490,7 @@ __Legacy buttons__
 
 Please note there are a set of <a href="http://http://financial-times.github.io/ft-velcro">legacy</a> buttons widely in use. These are primarly for FT.com and have been deprecated in Origami.
 
-All Origami button styles can be retrieved from the <a href="http://registry.origami.ft.com/components/o-buttons">Origami o-buttons module.</a>
+All Origami button styles can be retrieved from the <a href="http://registry.origami.ft.com/components/o-buttons">Origami o-buttons component.</a>
 
 ###Origami Buttons
 
@@ -526,7 +528,7 @@ Simple on / off interactions will use the following design.
 
 Forms are designed to be responsive at different screen sizes. It’s very important that ample layout and spacing is given to ensure ease of use on touch devices.
 
-All the form elements can be retrieved from the <a href="http://registry.origami.ft.com/components/o-ft-forms">Origami o-forms module.</a>
+All the form elements can be retrieved from the <a href="http://registry.origami.ft.com/components/o-ft-forms">Origami o-forms component.</a>
 
 ###Text input
 
@@ -558,13 +560,13 @@ These will always appear underneath the input field. Any information you need to
 
 ##Overlays
 
-FT.com currently uses a series of legacy overlay styles. Do not in any circumstances reproduce any of these legacy overlays.
+FT.com currently uses a series of legacy overlay styles. Do not in any circumstances reproduce any of these legacy overlays. Code can be retrieved from <a href="http://registry.origami.ft.com/components/o-overlay">Origami o-overlay component.</a>
 
 ###Content inside overlays
 
-Always put buttons in bottom right.
+Use the o-typography component to create text inside an overlay. Buttons should always appear aligned in bottom right as per the example below.
 
-<iframe height="400" frameborder='0' width="100%" src='http://membership.ft.com/-ui-style-guide/overlay1.html'></iframe>
+<iframe height='500' frameborder='0' width="100%" src='comps/overlay1.html'></iframe>
 
 ###Barrier Overlay
 Users who arrive at the FT and haven't registered their email will get a barrier overlay. these overlays contain marketing information explaining why they cannot see the page content and paywall information with subscription information.
@@ -580,13 +582,13 @@ These overlays are needed to deliver interactions and FT tools and services. Exa
 
 ![Demo code here]({{site.baseurl}}/img/democode.fw.png)
 
-**Closing** - users can click on the close button in the top right or click off the box.
+**Closing** - users can click on the close button in the top right __or__ click off the box.
 
-**Width** - recommended width for desktop is 500px. While the code is allowed to be flexible to any width do not let overlays strecth to be full width of the screen.
+**Width** - recommended width for desktop is **500px**. While the code is allowed to be flexible to any width do not let overlays strecth to be full width of the screen.
 
 **Height** - there is no restriction on height but likewise with width please start with a min-height of 200px
 
-**Heading** - all modal overlays should have a heading. Keep it short, long titles will not look nice at smaller screen sizes.  
+**Heading** - all modal overlays should have a heading. Keep the title short as long titles will not play nice at smaller screen sizes.  
 
 
 ###Compact Overlays
@@ -603,44 +605,15 @@ An arrow should appear pointing to the original point where the user clicked. Th
 
 **Scale** - as the name says do not make smallscale overlays too big in proportion to your products screensize
 
-<table class='o-techdocs-table'>
-                <tr>
-                <td>Overlay type</td>
-                <td>No Header</td>
-                <td>Shaded header</td>
-                <td>Non-shaded header</td>
-                <td>Side Arrow</td>
-                </tr>
-                
-                <tr>
-                <td>Standard</td>
-                <td>No Header</td>
-                <td>Shaded header</td>
-                <td>Non-shaded header</td>
-                <td>Side Arrow</td>
-                </tr>
-                
-                <tr>
-                <td>Modal</td>
-                <td>No Header</td>
-                <td>Shaded header</td>
-                <td>Non-shaded header</td>
-                <td>Side Arrow</td>
-                </tr>
-                
-                <tr>
-                <td>Compact</td>
-                <td>No Header</td>
-                <td>Shaded header</td>
-                <td>Non-shaded header</td>
-                <td>Side Arrow</td>
-                </tr>
-                
-</table>
 
 ##Right-hand Rail
-Beside an article you can insert ancillary content beside an article. These will often be stacked on top of each other to form what's commonly called the ""right-hand rail". 
+On FT.com there is a column to the right of the page which is known as the "Right-hand Rail". All ancillary content some related to the article and some promotional appears in this column. Modules are stacked on top of each other as in the example below.
 
-![Demo code here]({{site.baseurl}}/img/democode.fw.png)
+The modules can contain lists, article links, promo graphics or links to third party services. it is important to keep the padding, fonts, keading and spacing coherent on on-brand. Please use Origami's <a href="http://registry.origami.ft.com/components/o-typography">typography</a> component to keep all these type styles correct.
+
+The current Right-hand Rail on FT.com is aligned to a legacy grid but you can use the Origami<a href="http://registry.origami.ft.com/components/o-grid">grid</a> to create your own custom width.
+
+<iframe height='500' frameborder='0' width="100%" src='http://jsbin.com/puvew/1/embed?output'></iframe>
+
 
 
