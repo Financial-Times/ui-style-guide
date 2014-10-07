@@ -13,8 +13,8 @@ section: Section 1
             
 </div>
 
-
-
+##FT square
+The FT's brand is generally presented according to the rules outlined in the <a href="https://github.com/Financial-Times/ui-style-guide/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. White space, correct placement and other rules are outlined in that document. If you require an FT masthead or logo please contact the FT.com Design team at design@ft.com 
 
 ##Origami Grid
 
@@ -73,37 +73,16 @@ If you require a PSD showing the basic grid at the main breakpoints please <a hr
 
 FT standard links are always FT blue and turn black on hover. This applies to all links in content or in any apps.
 
-
-<iframe height="300" width="100%" frameborder='0' scrolling='no' src='comps/demo-links.html'></iframe>
-
-##Header
-The Origami header caters for various different types mostly outlined in the regsitry documentation. There are however a few UI pointers on those variations.
-
-###Promo slot
-in the top right-hand side of the header is a space for a marketing promo ad. This will usually be advertising FT products, new tools and services or a subscriptions prompt. This promo slot only appears on FT.com sites. External products or sites do not have to use this slot.
-
-<a class="jsbin-embed" href="http://jsbin.com/niyelo/6/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
-
-###Branded header
-If you're creating a product or sub-brand of the FT please follow the below rules.
-
-* The icon/logo for the product goes on the left
-* The FT square must go as the last icon on the right-hand side. This also acts as a button taking users back to the FT.
-* A tagline can be inserted in the middle aligned left or right.
-* Use the small narrow bar underneath the main header apply your product or brand colour.
-
-<a class="jsbin-embed" href="http://jsbin.com/niyelo/4/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<iframe width="100%" frameborder='0' scrolling='no' src='comps/demo-links.html'></iframe>
 
 ###Article Links 
 Article links are an inversion of standard links so appear black and turn blue on hover. These style links appear on the FT home page and section pages. 
 
-Below is an example of how they typically appear. 
+Below is an example of how they typically appear. The grey text underneath is the lead body text. This is usually a secondary piece of text further describing the article title. 
 
 <iframe width="100%" frameborder='0' scrolling='no' src='comps/article-link1.html'></iframe>
 
-
-
-##FT Top Twenty
+###FT top twenty links
 FT.com uses shows a list of articles on its section pages. This list is called the top 20. The first story is given more prominance with a larger size the following articles are reduced.
 
 Below is an example of how the first story appears in the top 20.
@@ -113,6 +92,32 @@ Below is an example of how the first story appears in the top 20.
 Below is an example of how articles appear for the rest of the top 20.
 
 <iframe width="100%" frameborder='0' scrolling='no' src='comps/article-link1.html'></iframe>
+
+##Header
+The Origami header caters for various different types mostly outlined in the regsitry documentation. There are however a few UI pointers on those variations.
+
+###Promo slot
+in the top right-hand side of the header is a space for a marketing promo ad. This will usually be advertising FT products, new tools and services or a subscriptions prompt. This promo slot only appears on FT.com sites. External products or sites do not have to use this slot. 
+
+<a class="jsbin-embed" href="http://jsbin.com/niyelo/8/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+###Branded header
+If you're creating a product or sub-brand of the FT please follow the following instructions.
+
+* The icon/logo for the product goes on the left
+* The FT square must go as the last icon on the right-hand side. This also acts as a button taking users back to the FT.
+* A tagline can be inserted in the middle aligned left or right.
+* Use the small narrow bar underneath the main header apply your product or brand colour.
+
+<a class="jsbin-embed" href="http://jsbin.com/niyelo/10/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+###Tools icons
+The header also caters for any tool icons you may want to insert such as search or account etc. These tools collapse under a menu icon at smaller screen sizes.
+
+View <a href="http://jsbin.com/cuposo/1">demonstration site</a> here.
+
+
+
 
 
 ##Colour Palette
@@ -132,7 +137,7 @@ There are a selection of other colours in the FT's digital colour palette. These
 **Tint 3** - used to make the headers in the Right-hand Rail 
 
 ###Ancillary Colours
-These colours are generally used to create interactive graphics or for ancillary widgets, components and page elements outside of standard editorial content. THese colours should never be used on article text, headings or section pages.
+These colours are generally used to create interactive graphics or for ancillary widgets, components and page elements outside of standard editorial content. These colours should never be used on article text, headings or section pages.
 
 <table class='o-techdocs-table' style="width:100%;">
                 <tr>
@@ -218,7 +223,7 @@ These colours are generally used to create interactive graphics or for ancillary
 
 
 ###Tints
-Use a combination of these tints to create your page elements and differentiate different page elements of your design. These tints are carefully slected to compliment the FT pink backgruond colour. If you are looking to encapsulate certain page elements with borders, boxes or background colours you must use these tints. THese tints are preferred to the FT grey pallette.
+Use a combination of these tints to create your page elements and differentiate different page elements of your design. These tints are carefully slected to compliment the FT pink backgruond colour. If you are looking to encapsulate certain page elements with borders, boxes or background colours you must use these tints. These tints are preferred to the FT grey pallette.
 
 Below is a table of the FT tints following the numbering system.
 
