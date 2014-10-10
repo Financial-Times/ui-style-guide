@@ -14,7 +14,11 @@ section: Section 1
 </div>
 
 ##FT square
-The FT's brand is generally presented according to the rules outlined in the <a href="https://github.com/Financial-Times/ui-style-guide/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. White space, correct placement and other rules are outlined in that document. If you require an FT masthead or logo please contact the FT.com Design team at design@ft.com 
+The FT's brand is generally presented according to the rules outlined in the <a href="https://github.com/Financial-Times/ui-style-guide/dwnld/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. White space, correct placement and other rules are outlined in that document. 
+
+
+
+If you require an FT masthead or logo please contact the FT.com Design team at design@ft.com 
 
 ##Origami Grid
 

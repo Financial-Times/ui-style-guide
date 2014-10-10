@@ -15,15 +15,13 @@ Full site width 972
 Right-hand Rail = 352
 Main content = 600
 
-For additional styles of Falcon design elements within Ft pages please consult the <a href="http://financial-times.github.io/ft-velcro/">FT Velcro style guide.</a>
+For additional styles of Falcon design elements within FT pages please consult the <a href="http://financial-times.github.io/ft-velcro/">FT Velcro style guide.</a>
 
 ###Designing on the grid
-Designers looking for a Photoshop grid document can download from the link below. 
-
-<a href="design.ft.com">FT PSD grid</a>
+Designers looking for a Photoshop grid document to layout designs can download <a href="https://github.com/Financial-Times/ui-style-guide/dwnld/DOC002-Grid-v1.psd.zip">here</a>.
 
 
-##links
+##Links
 
 ###Standard links
 Links on FT.com are FT blue and black on hover. There is no visited state colour
@@ -32,7 +30,7 @@ Links on FT.com are FT blue and black on hover. There is no visited state colour
 
 Article titles appear on the homepage and section pages. This always appear in black and FT blue on hover.
 
-##Colour pallette
+##Colour pallete
 
 There a 3 principal groups of colours used for FT products.
 
@@ -80,7 +78,6 @@ There are many different types of element that only appear in the Main Content C
 ####Page title (Primary Level)
 These are used on non-article pages to give the page a name. Note: Do not use standard article titles to create non-article page titles. This is referred to as a primary level item.
 
-![Non article page header]({{site.baseurl}}/img/non-article-pgheader.png)
 
 ####Secondary module title (Secondary Level)
 These appear most commonly on the homepage and different section home pages on the site (e.g. World, Companies, Markets, Global Economy etc). Section homepages are also commonly referred to as “index pages”. 
@@ -92,26 +89,17 @@ On the homepage for example the More Stories, Multimedia and Offers module use t
 ####Content bundle title (Tertiary Level)
 This title is a collection of stories or content about a similar subject or a series of content that is deemed editorially to be relevant to with each other. The example below shows a list of columnists but this could also be stories or anything else.
 
-![module]({{site.baseurl}}/img/content-bundle.png)
-
 ####Untitled content bundle (Tertiary Level)
 This is a list of content which wont necessarily have a title. There are already a few types in existence, examples below; midriff and lists
 
 ####Midriff
 A midriff is an small area that interrupts a list of articles to add some variation to the page layout. Midriffs are used to surface other content often unrelated to what’s on the page (but not always). The example below holds a list of articles from the UK section in the first column the left (A) and a single page Special Report in the second column on the right (B)
 
-![module]({{site.baseurl}}/img/midriff.png)
- 
-> ###Footer Rule
-> Insert footer under a module when it is followed by normal content. If a module is followed by another module do not use a footer. PASTE IMAGE
-
 ###Right-hand Rail Modules
 These modules are stacked on top of each other on the right-hand side of the page. They are always 6 grid columns wide or 342px. There are 2 types.
 
 #####Standard module header
 Each module has a header with a tinted background. The text inside the module header is always capitalised. Never use lowercase.
-
-![module]({{site.baseurl}}/img/midriff.png)
 
 #####Tabbed module header
 In certain circumstances the RHR module might need tabs. There two types;
@@ -120,18 +108,12 @@ __a) Minor Tabbed RHR module__
 
 This contains a major title with minor titles aligned right and an arrow underneath each item to indicate the selected state. See example.
 
-![module]({{site.baseurl}}/img/minor-tab.png)
-
 __b) Major Tabbed RHR module__
 
 This is only ever to be used for Fast FT
 
-![module]({{site.baseurl}}/img/fastFt-tab.png)
-
 #####Right Rail Module Containing Lists
 Items listed with in a RHR module should appear as follows.
-
-![module]({{site.baseurl}}/img/RHR-list.png)
 
 On FT.com the RHR modules can contain, for example;
 * RSS feed
