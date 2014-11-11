@@ -105,5 +105,25 @@ padding: 0 20px 0 0;
 .o-techdocs-layout {
 	min-height: 800px;
 }
+.sidebox {
+	float: left;
+	width:40%;
+}
+.mainbox {
+	float:left;
+	width:60%;
+}
+@media screen and (max-width:600px) {
 
+.sidebox {
+	float: none;
+	width:100%;
+}
+.mainbox {
+	float:none;
+	padding:0 20px;
+	width:100%;
+}
+
+}
 

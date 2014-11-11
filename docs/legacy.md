@@ -6,7 +6,7 @@ permalink: /docs/legacy/
 ---
 # Legacy FT site (Falcon)
 
-The current version of the FT website can often be referred to as the Falcon. It is not responsive but still adhere's to a grid system. Overlays, buttons and other elements are different to Origami
+The current version of the FT website can often be referred to as Falcon. It is not responsive but still adhere's to a grid system. Overlays, buttons and other elements are different to Origami.
 
 ##Grid
 The grid is based around the retrictive width of advertising on FT.com.
@@ -18,7 +18,7 @@ Main content = 600
 For additional styles of Falcon design elements within FT pages please consult the <a href="http://financial-times.github.io/ft-velcro/">FT Velcro style guide.</a>
 
 ###Designing on the grid
-Designers looking for a Photoshop grid document to layout designs can download <a href="https://github.com/Financial-Times/ui-style-guide/dwnld/DOC002-Grid-v1.psd.zip">here</a>.
+Designers looking for a Photoshop grid document to layout designs can download <a href="http://financial-times.github.io/ui-style-guide/dwnld/DOC002-Grid-v1.psd.zip">here</a>.
 
 
 ##Links
@@ -30,29 +30,22 @@ Links on FT.com are FT blue and black on hover. There is no visited state colour
 
 Article titles appear on the homepage and section pages. This always appear in black and FT blue on hover.
 
+
 ##Colour pallete
 
-There a 3 principal groups of colours used for FT products.
-
-###Common colours
+The current FT.com website uses the colour scheme outlined in Velcro's <a href="http://financial-times.github.io/ft-velcro/#colours">colour section.</a>
 
 **FT Pink** - the background colour for FT.com, webapp and all FT products. FT pink is a crucial and first requirement when designing FT digital products.
 
 **FT Blue** - used for links only
 
-**Tint 1** - used to make the background colour of the Right-hand Rail 
+**Tint 1** - used to make the background colour of the Right-hand Rail
 
 **Tint 3** - used to make the header modules in the Right-hand Rail 
 
 
 ###Tints
-Use a combination of these tints to create your page elements and differentiate different page elements. These tints are preferred to the exceptional colours in the Ancillary category below.
-
-Tint 1
-
-Tint 2
-
-Tint 3
+Use a combination of these tints to create your page elements and differentiate different page elements.
 
 ###Other colours
 
@@ -62,11 +55,11 @@ Green - typically used for arrows, positive actions on marketing pages
 
 Red - used for warnings and emergency messaging
 
-##spacing
+##Spacing
 
 To keep gaps between visual units on the page we've created a standard spacing unit. A standard FT spacing unit is 20px.
 
-##modules
+##Modules
 A module is a container that holds a piece of content. They exist in the Main Content Column or in the Right-hand Rail (RHR) column.
 
 All modules have a standard FT unit of space (20px) at the bottom.
@@ -82,15 +75,7 @@ These are used on non-article pages to give the page a name. Note: Do not use st
 ####Secondary module title (Secondary Level)
 These appear most commonly on the homepage and different section home pages on the site (e.g. World, Companies, Markets, Global Economy etc). Section homepages are also commonly referred to as “index pages”. 
 
-On the homepage for example the More Stories, Multimedia and Offers module use this style. See example below
-
-<img src="{{site.baseurl}}/img/multimedia.png" alt="module" width="836" height="362">
- 
-####Content bundle title (Tertiary Level)
-This title is a collection of stories or content about a similar subject or a series of content that is deemed editorially to be relevant to with each other. The example below shows a list of columnists but this could also be stories or anything else.
-
-####Untitled content bundle (Tertiary Level)
-This is a list of content which wont necessarily have a title. There are already a few types in existence, examples below; midriff and lists
+On the FT.com homepage for example the More Stories, Multimedia and Offers module use this style.
 
 ####Midriff
 A midriff is an small area that interrupts a list of articles to add some variation to the page layout. Midriffs are used to surface other content often unrelated to what’s on the page (but not always). The example below holds a list of articles from the UK section in the first column the left (A) and a single page Special Report in the second column on the right (B)

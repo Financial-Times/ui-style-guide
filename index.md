@@ -14,9 +14,7 @@ section: Section 1
 </div>
 
 ##FT square
-The FT's brand is generally presented according to the rules outlined in the <a href="https://github.com/Financial-Times/ui-style-guide/dwnld/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. White space, correct placement and other rules are outlined in that document. 
-
-
+The FT's brand is generally presented according to the rules outlined in the <a href="http://financial-times.github.io/ui-style-guide/dwnld/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. White space, correct placement and other rules are outlined in that document. 
 
 If you require an FT masthead or logo please contact the FT.com Design team at design@ft.com 
 
@@ -126,19 +124,62 @@ View <a href="http://jsbin.com/cuposo/1">demonstration site</a> here.
 
 ##Colour Palette
 
-The FT's signature colour is FT pink. It is strongly suggested that you use FT pink when creating your design, product or app. 
-
-There are a selection of other colours in the FT's digital colour palette. These are broken down into three principal groupings. All these colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors">Origami o-color component.</a>
+The FT's signature colour is FT pink. It is strongly suggested that you use FT pink when creating your design, product or app. For reference all colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors">Origami o-color component.</a>
 
 ###Common Colours
 
-**FT Pink** - the background colour for FT.com, webapp and all FT products. FT pink is crucial and should be the first requirement when designing FT digital products.
+Below are the 4 main colours used to layout FT pages. FT pink is the main coloured used to signify FT brand pages.
 
-**FT Blue** - used for links only
-
-**Tint 1** - used to make the background colour of the Right-hand Rail 
-
-**Tint 3** - used to make the headers in the Right-hand Rail 
+<table class='o-techdocs-table' style="width:100%;">
+                <tr>
+                <th>Name</th>
+                <th>Hex</th>
+                <th>Colour swatch</th>
+                <th>Example use</th>   
+                </tr>
+                
+                <tr>
+                <td>FT Pink</td>
+                <td>#fff1e0</td>
+                <td><div style="width:100px;height:20px;background-color:#fff1e0"></div></td>
+                <td>Background of FT.com, webapp and all FT products.</td>   
+                </tr>
+                
+                <tr>
+                <td>FT Blue</td>
+                <td>#2e6e9e</td>
+                <td><div style="width:100px;height:20px;background-color:#2e6e9e"></div></td>
+                <td>Used for all links</td>   
+                </tr>
+                
+                <tr>
+                <td>FT dark Blue</td>
+                <td>#275e86</td>
+                <td><div style="width:100px;height:20px;background-color:#275e86"></div></td>
+                <td>Darker blue for hover on stand out buttons</td>   
+                </tr>
+                
+                <tr>
+                <td>FT Pink Tint 1</td>
+                <td>#f6e9d8</td>
+                <td><div style="width:100px;height:20px;background-color:#f6e9d8"></div></td>
+                <td>Used on the right-hand rail background colour</td>   
+                </tr>
+                
+                <tr>
+                <td>FT Pink Tint 2</td>
+                <td>#e9decf</td>
+                <td><div style="width:100px;height:20px;background-color:#e9decf"></div></td>
+                <td>Used for background on headers in the right-hand rail</td>   
+                </tr>
+                
+                <tr>
+                <td>FT Claret</td>
+                <td>#9e2f50</td>
+                <td><div style="width:100px;height:20px;background-color:#9e2f50"></div></td>
+                <td>Accent colour</td>   
+                </tr>
+</table>
 
 ###Ancillary Colours
 These colours are generally used to create interactive graphics or for ancillary widgets, components and page elements outside of standard editorial content. These colours should never be used on article text, headings or section pages.
@@ -150,7 +191,7 @@ These colours are generally used to create interactive graphics or for ancillary
                 <th>Colour swatch</th>
                 <th>Example use</th>   
                 </tr>
-                
+                <!--
                 <tr>
                 <td>Orange tint1</td>
                 <td>#eda45e</td>
@@ -207,12 +248,12 @@ These colours are generally used to create interactive graphics or for ancillary
                 <td><div style="width:100px;height:20px;background-color:#c1b8b4"></div></td>
                 <td>Interactive graphics and other such uses</td> 
                 </tr>
-                
+                -->
                 <tr>
                 <td>Red</td>
                 <td>#c00</td>
                 <td><div style="width:100px;height:20px;background-color:#c00"></div></td>
-                <td>Errors and ngative alerting messages.</td> 
+                <td>Errors and negative alerting messages.</td> 
                 </tr>
                 
                 <tr>
@@ -272,9 +313,7 @@ Below is a table of the FT tints following the numbering system.
                 <td><div style="width:100px;height:20px;background-color:#74736c"></div></td>
                 <td>FT.com nav bar</td> 
                 </tr>
-            </table>
-
-These tints are preferred to the exceptional colours in the Ancillary category below.  
+            </table> 
 
 
 ###Greys
@@ -394,16 +433,6 @@ These colours are only to be used for sections within the FT weekend. They're no
             </table>
 
 
-###Other Colours
-
-__Claret__ is used for Special Report titles. This colour can be used as an accent colour for elements and designs that specifically need to stand-out strongly. FT Tints are used to seperate page elements and designs. Be warned that the Claret is used sparingly so don’t over-do it. 
-
-__Green__ is typically used for arrows, positive actions on marketing pages
-
-__Red__ is used for warnings and emergency messaging
-
-These colours can be retrieved from <a href="http://registry.origami.ft.com/components/o-colors@2.3.6">Origami o-color component.</a>
-
 ##Spacing
 
 A standard FT spacing unit is 20px.
@@ -416,15 +445,11 @@ Horizontal spacing, gutters and margins should be controlled by the Origami grid
 ##Fonts
 __Benton Sans__ 
 
-Benton is the FT's house font used in the newspaper and online. It is also used for all body text on generic pages. Generic pages encompass all service pages, tool pages and other ancillary pages which are not articles. 
+Benton is the FT's house font online. It is also used for all body text on generic pages such service pages, tool pages and other ancillary pages which are not articles. 
 
-__Miller Display Bold__
+__Miller Display Bold__ and __Miller Display Bolder__
 
-Used for article headlines. It's not used by FT.com but can be seen on the FT webapp.
-
-__Miller Display Bolder__
-
-Used for article headlines. It's not used by FT.com but can be seen on the FT webapp.
+Used for article headlines on the FT webapp.
 
 __Georgia__
 
@@ -432,13 +457,13 @@ Georgia is the standard article body font. If at all possible don’t use Georgi
 
 __Clarion__
 
-Clarion is the standard article body font on the FT webapp only.
+Clarion is the standard article body font on the FT webapp.
 
 __Arial / Helvetica__
 
-This is the fallback standard font if Benton Sans is not available.
+If Benton Sans is not available these fonts can be used as a fallback.
 
-All these fonts can be retrieved from the <a href="http://registry.origami.ft.com/components/o-fonts">Origami o-fonts component.</a>
+All fonts can be retrieved from the <a href="http://registry.origami.ft.com/components/o-fonts">Origami o-fonts component.</a>
 
 
 ###Implementation Names
@@ -543,29 +568,20 @@ All the form elements can be retrieved from the <a href="http://registry.origami
 
 We suggest always prepopulating the form field with suggestive text to help the user.
 
-###Two scales
+<iframe width="100%" frameborder='0' scrolling='no' src='http://jsbin.com/payela/3/edit?output'></iframe>
 
-There are two scales of input available in Origami the “default” size should suffice for most platforms while the big scale is used for devices and scenarios where touch-based UI is required.
+###Multi column layout
 
-INSERT DEMO CODE HERE of the 2 scales types.
-
-![Demo code here]({{site.baseurl}}/img/democode.fw.png)
-
-
-###Input Fields
-
-When laying out input fields in a form all fields must stack vertically. This is the easiest way to read and complete a form.
-
-
-###Multi Column Layout
+When laying out input fields in a form all fields must stack vertically. This is the easiest way to read and complete a form. 
 
 In exceptional cases a two column form can be used. For example, if your form is a simple request for a name and email these two fields can be placed horizontally. When your form has more than four fields it's advised to use a single column layout. Design discretion is advised as you don't want to make your form difficult to read.
 
 
-###Input Level Errors
+###Input error message
 
-These will always appear underneath the input field. Any information you need to present to explain an error should be written into the redbox displayed below the input field.
+These will always appear underneath the input field. The error message should be understandable to the average user and give them a clue how to correct any mistake.
 
+<iframe width="100%" frameborder='0' scrolling='no' src='http://jsbin.com/soleye/2/edit?output'></iframe>
 
 ##Overlays
 
