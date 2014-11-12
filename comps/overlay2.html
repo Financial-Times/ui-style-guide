@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="o-useragent-ie7 o-hoverable-on"> <![endif]-->
+<!--[if IE 8]>         <html class="o-useragent-ie8 o-hoverable-on"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="o-hoverable-on"> <!--<![endif]-->
+<head>
+<meta name="description" content="Overlay" />
+    <meta charset="utf-8">
+    <title>o-overlay</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <style>body { margin: 0; }.demo-js .o--if-nojs { display: none; }</style>
+    <link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=o-overlay@1.0.1:/demos/src/demo.scss">
+    <link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=o-ft-buttons@^1.5.4,o-ft-typography@^1.12.3" />
+</head>
+<body class="o-hoverable-on">
+  <script src="//polyfill.webservices.ft.com/v1/polyfill.min.js"></script>
+    
+  <!-- relevent code I need to create UISG composite -->
+  
+  <div class="o-overlay-shadow"></div>
+    
+  
+  
+ 
+    <div class="o-overlay o-overlay--modal o-ft-typography-body-wrapper" style="margin-left: -250px; margin-top: -150px;width:500px;">
+        
+        <header class="o-overlay__heading o-overlay__heading--shaded">
+            <button class="o-overlay__close">
+                <div class="o-overlay__close-icon"></div>
+            </button>
+            <span role="heading" class="o-overlay__title">Subscribe to the Financial Times</span>
+        </header>
+         
+        <section class="o-overlay__content">
+		<p>Would you lilke to read this article then simple register for FREE and you can read 8 articles a month at any time and on any section of FT.com. <br><br>You can also sign up for alerts when your keyword is mentioned in an FT article.</p>
+		
+        <p style="float:right;">
+          <span style="padding-right:20px;"><a href="#">Buy a subscription</a></span>
+          <button style="" class="o-ft-buttons o-ft-buttons--standout o-ft-buttons--big">Register</button>
+        </p>
+            
+	   </section>
+    </div>
+    
+
+
+  
+  
+  
+    <script src="//build.origami.ft.com/bundles/js?modules=o-overlay@1.0.1:/demos/src/demo.js"></script>
+    <script src="//registry.origami.ft.com/embedapi?autoload=resize"></script>
+</body>
+</html>

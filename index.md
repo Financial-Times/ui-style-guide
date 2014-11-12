@@ -568,7 +568,7 @@ All the form elements can be retrieved from the <a href="http://registry.origami
 
 We suggest always prepopulating the form field with suggestive text to help the user.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://jsbin.com/payela/3/edit?output'></iframe>
+<a class="jsbin-embed" href="http://jsbin.com/payela/4/embed?output">o-ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Multi column layout
 
@@ -581,7 +581,7 @@ In exceptional cases a two column form can be used. For example, if your form is
 
 These will always appear underneath the input field. The error message should be understandable to the average user and give them a clue how to correct any mistake.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://jsbin.com/soleye/2/edit?output'></iframe>
+<a class="jsbin-embed" href="http://jsbin.com/soleye/3/embed?output">o-ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ##Overlays
 
@@ -593,19 +593,15 @@ Use the o-typography component to create text inside an overlay. Buttons should 
 
 <iframe height='500' frameborder='0' width="100%" src='comps/overlay1.html'></iframe>
 
-###Barrier Overlay
-Users who arrive at the FT and haven't registered their email will get a barrier overlay. these overlays contain marketing information explaining why they cannot see the page content and paywall information with subscription information.
-
-![Demo code here]({{site.baseurl}}/img/democode.fw.png)
-
 The width and height will be controlled by the content inside these overlays.
 
 ###Modal Overlays
 
 These overlays are needed to deliver interactions and FT tools and services. Examples are things such as FT Clippings (our save-for-later service), social sharing options, email this and gift article. Only use this overlay if you want to specifically interupt the users flow - you must have a valid reason for this. 
 
+<iframe height='500' frameborder='0' width="100%" src='comps/overlay2.html'></iframe>
 
-![Demo code here]({{site.baseurl}}/img/democode.fw.png)
+Users who arrive at the FT and haven't registered their email will get a barrier overlay. these overlays contain marketing information explaining why they cannot see the page content and paywall information with subscription information.
 
 **Closing** - users can click on the close button in the top right __or__ click off the box.
 
@@ -622,11 +618,11 @@ These overlays are used for minor page interactions. Similiar to tooltips these 
 
 An arrow should appear pointing to the original point where the user clicked. This arrow can be placed on the top or bottom or left and right of the overlay.
 
-![Demo code here]({{site.baseurl}}/img/democode.fw.png)
+<a class="jsbin-embed" href="http://jsbin.com/pigoca/5/embed?output">o-overlay: overlay-with-arrow demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 **Closing** - users can click on the close button in the top right or click off the box.
 
-**Heading** - headings are optional on smallscale, if needed keep the text short. The heading with a coloured background is NOT to be used.
+**Heading** - a heading with a coloured background is NOT to be used.
 
 **Scale** - as the name says do not make smallscale overlays too big in proportion to your products screensize
 
