@@ -11,9 +11,15 @@ The current version of the FT website can often be referred to as Falcon. It is 
 ##Grid
 The grid is based around the retrictive width of advertising on FT.com.
 
-Full site width 972
+
+Full site width = 972
+
+
 Right-hand Rail = 352
+
+
 Main content = 600
+
 
 For additional styles of Falcon design elements within FT pages please consult the <a href="http://financial-times.github.io/ft-velcro/">FT Velcro style guide.</a>
 

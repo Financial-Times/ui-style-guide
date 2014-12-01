@@ -24,12 +24,17 @@
                           <a href="http://www.ft.com"><abbr title="Financial Times">FT</abbr></a>
                           <span class="o-techdocs__logo"></span>
                       </div> -->
-                      <h1 class="o-ft-header__title">{{site.name}}</h1>
+                      <h1 class="o-ft-header__title">
+                          <a href="{{ site.baseurl }}/">
+                          <span class="origami-logo"></span>
+                          <!--<img style="margin:0 20px 0 0" src="img/logo.png" width=80 height=80 />-->
+                          {{site.name}}
+                          </a>
+                      </h1>
                   </div>
                   <nav class="o-ft-header__primary__center o-hierarchical-nav o-ft-header__nav--primary-theme" data-o-component="o-hierarchical-nav">
                     <ul data-o-hierarchical-nav-level="1">
-                      <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true">
-                      <a href="{{ site.baseurl }}/">Home</a></li>
+                      
 
                       <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/accessibility">Accessibility</a></li>
 
