@@ -624,7 +624,7 @@ An arrow should appear pointing to the original point where the user clicked. Th
 
 **Heading** - a heading with a coloured background is NOT to be used.
 
-**Scale** - as the name says do not make smallscale overlays too big in proportion to your products screensize
+**Scale** - as the name says do not make compact overlays too big in proportion to your products screensize
 
 
 
