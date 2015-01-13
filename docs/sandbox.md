@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Home
+title: sandbox
 section: Section 1
+permalink: /docs/sandbox/
 ---
 
 ![UI Style guide banner]({{site.baseurl}}/img/banner.png)
