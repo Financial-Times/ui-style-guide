@@ -633,7 +633,9 @@ There are two sizes or radio button. The smaller size button is to be used on de
 
 ####Check boxes
 
-Simple on / off interactions will use the following design.
+A check box allows the user to turn an option on or off and allows the user to choose multiple options unlike radio buttons which is only one. The checkbox has wording describing the meaning of it next to it.
+
+There are two sizes or check boxes. The smaller size check box is to be used on desktop devices and the larger size check box is to be used on all mobile and tablet devices. 
 
 <iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/grouped.html?embed=1'></iframe>
 
