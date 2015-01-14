@@ -631,13 +631,13 @@ There are two sizes or radio button. The smaller size button is to be used on de
 
 <a class="jsbin-embed" href="http://jsbin.com/mahuze/1/embed">o-ft-forms: radios demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-####Check boxes
+####Checkboxes
 
-A check box allows the user to turn an option on or off and allows the user to choose multiple options unlike radio buttons which is only one. The checkbox has wording describing the meaning of it next to it.
+A checkbox allows the user to turn an option on or off and allows the user to choose multiple options unlike radio buttons which is only one. The checkbox has wording describing the meaning of it next to it.
 
-There are two sizes or check boxes. The smaller size check box is to be used on desktop devices and the larger size check box is to be used on all mobile and tablet devices. 
+There are two sizes or checkboxes. The smaller size checkbox is to be used on desktop devices and the larger size checkbox is to be used on all mobile and tablet devices. 
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/grouped.html?embed=1'></iframe>
+<a class="jsbin-embed" href="http://jsbin.com/cojofi/1/embed?output">o-ft-forms: checkboxes demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ##Forms
 
