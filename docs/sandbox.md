@@ -627,6 +627,8 @@ Simple on / off interactions will use the following design.
 
 A radio button is an button allowing the user to select only one of a predefineds set of options. The radio button is always arranged in a selection of two or more and each button is accompanied by a label describing the choice.
 
+There are two sizes or radio button. The smaller size button is to be used on desktop devices and the larger size button is to be used on all mobile and tablet devices. 
+
 <iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/grouped.html?embed=1'></iframe>
 
 ####Check boxes
