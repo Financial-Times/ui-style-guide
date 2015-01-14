@@ -9,20 +9,22 @@ section: Section 1
 ##Overview
 
 <div class="o-techdocs-leadbody">
-            The following pages show all the component parts and elements that go to create a Financial Times web page. The sister site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, contains the physical code needed to make the parts of an FT app, website or digital product. This site describes the rules on layout, structure and how to present the various components.
+            This site lists component parts and elements that are used to create pages in Financial Times digital products. It provides style guidance on usage and layout, whilst describing options available to select within components. It's primarily aimed at designers and front-end developers wanting to find out how to make use of our Orgigami set of standards when building FT products.
+            
+            The companion to this site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, contains the code and technical guidance needed to implement these components, and is aimed primarily at developers wishing to use Origami within a product.
+            
+            To find out more about Origami, including an overview, developer guide and syntax standards, go to the <a href="http://origami.ft.com">Origami homepage</a>.
             
 </div>
 
-##FT square
-The FT's brand is generally presented according to the rules outlined in the <a href="http://financial-times.github.io/ui-style-guide/dwnld/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. White space, correct placement and other rules are outlined in that document. 
+##FT branding
+A guide to the Financial Times' corporate branding is contained in a separate document, the <a href="http://financial-times.github.io/ui-style-guide/dwnld/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. Guidance is given in the use of the logotypes, including correct placement and treatment. 
 
-If you require an FT masthead or logo please contact the FT.com Design team at design@ft.com 
+If you require an FT masthead or logo file, please contact the FT.com Design & UX team at design@ft.com 
 
 ##Origami Grid
 
-The Origami grid is designed to be responsive and works on a 12 column system. Margins and between each column is controlled by the grid. Outer margin on the left and right are also controlled by the grid. If your design has several elements which are flush left and flush right to the edge of the viewport that they align using the grid. Resizing and formatting can be simply controlled as you reduce the viewport width down through the FT’s various breakpoints.
-
-Below are the four breakpoints which come with o-grid
+The Origami grid is a responsive 12-column system. Resizing and formatting can be controlled as you reduce the viewport width down through the FT’s various breakpoints. Below are the four breakpoints which are used with o-grid.
 
 <table style="width:100%;">
                 <tbody>
@@ -58,9 +60,9 @@ Below are the four breakpoints which come with o-grid
 </table>
 
 
-For technical implementation, setup and general paramters please see <a href="http://registry.origami.ft.com/components/o-grid">Origami o-grid component.</a>
+For technical implementation, setup and general parameters, please see <a href="http://registry.origami.ft.com/components/o-grid">Origami o-grid component.</a>
 
-Below is a demo link of the grid with columns displayed. Note the following key design characteristics. The gutters are 20 pixels and page margins on left and right alter depending on the screen size.
+Below is a demo link of the grid with columns displayed. Note the following key design characteristics; the gutters are 20 pixels and page margins on left and right alter depending on the screen size.
 
 <iframe height="700" frameborder='0' width="100%" src='http://registry.origami.ft.com/components/o-grid@2.1.0/demos/visual/demos/silent.html?embed=1'></iframe>
 
@@ -71,32 +73,22 @@ If you require a PSD showing the basic grid at the main breakpoints please <a hr
 
 ##Link Styles
 
-###Standard Links
+###Standard links
 
-FT standard links are always FT blue and turn black on hover. This applies to all links in content or in any apps.
+FT standard links are coloured FT Blue and turn black on hover. This applies to standard inline links in any product or app, unless other rules take precedence in a given situation.
 
 <iframe width="100%" frameborder='0' scrolling='no' src='comps/demo-links.html'></iframe>
 
-###Article Links 
-Article links are an inversion of standard links so appear black and turn blue on hover. These style links appear on the FT home page and section pages. 
+###Article headline links 
+Article headline links use an inversion of the standard link colours, so appear black initially and turn blue on hover. These style links appear on the FT home page and section pages. 
 
-Below is an example of how they typically appear. The grey text underneath is the lead body text. This is usually a secondary piece of text further describing the article title. 
-
-<iframe width="100%" frameborder='0' scrolling='no' src='comps/article-link1.html'></iframe>
-
-###FT top twenty links
-FT.com uses shows a list of articles on its section pages. This list is called the top 20. The first story is given more prominance with a larger size the following articles are reduced.
-
-Below is an example of how the first story appears in the top 20.
-
-<iframe width="100%" frameborder='0' scrolling='no' src='comps/article-link2.html'></iframe>
-
-Below is an example of how articles appear for the rest of the top 20.
+Below is an example of how they typically appear. The grey text underneath is the lead body text, a secondary piece of text further describing the article content. 
 
 <iframe width="100%" frameborder='0' scrolling='no' src='comps/article-link1.html'></iframe>
+
 
 ##Header
-The Origami header caters for various different types mostly outlined in the regsitry documentation. There are however a few UI pointers on those variations.
+The Origami header caters for various different use cases, mostly outlined in the Regsitry documentation. There are however a few UI pointers on those variations.
 
 ###Promo slot
 in the top right-hand side of the header is a space for a marketing promo ad. This will usually be advertising FT products, new tools and services or a subscriptions prompt. This promo slot only appears on FT.com sites. External products or sites do not have to use this slot. 
@@ -104,17 +96,17 @@ in the top right-hand side of the header is a space for a marketing promo ad. Th
 <a class="jsbin-embed" href="http://jsbin.com/niyelo/8/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Branded header
-If you're creating a product or sub-brand of the FT please follow the following instructions.
+If you're creating a product or sub-brand of the FT, please follow the following instructions.
 
 * The icon/logo for the product goes on the left
 * The FT square must go as the last icon on the right-hand side. This also acts as a button taking users back to the FT.
-* A tagline can be inserted in the middle aligned left or right.
-* Use the small narrow bar underneath the main header apply your product or brand colour.
+* A tagline can be inserted in the middle, aligned either left or right.
+* Use the shallow bar underneath the main header apply your product or brand colour.
 
 <a class="jsbin-embed" href="http://jsbin.com/niyelo/10/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Tools icons
-The header also caters for any tool icons you may want to insert such as search or account etc. These tools collapse under a menu icon at smaller screen sizes.
+The header also caters for any tool icons you may want to insert, such as for Search or Account etc. These tools collapse into a Menu icon at smaller screen sizes.
 
 View <a href="http://jsbin.com/cuposo/1">demonstration site</a> here.
 
@@ -124,11 +116,11 @@ View <a href="http://jsbin.com/cuposo/1">demonstration site</a> here.
 
 ##Colour Palette
 
-The FT's signature colour is FT pink. It is strongly suggested that you use FT pink when creating your design, product or app. For reference all colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors">Origami o-color component.</a>
+The FT's signature colour is FT Pink. It is strongly suggested that you use FT Pink when creating your design, product or app. For reference, all colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors">Origami o-color component.</a>
 
-###Common Colours
+###Common colours
 
-Below are the 4 main colours used to layout FT pages. FT pink is the main coloured used to signify FT brand pages.
+Below are the main colours used across FT pages. FT Pink is the main colour used to signify FT brand pages.
 
 <table class='o-techdocs-table' style="width:100%;">
                 <tr>
@@ -142,18 +134,18 @@ Below are the 4 main colours used to layout FT pages. FT pink is the main colour
                 <td>FT Pink</td>
                 <td>#fff1e0</td>
                 <td><div style="width:100px;height:20px;background-color:#fff1e0"></div></td>
-                <td>Background of FT.com, webapp and all FT products.</td>   
+                <td>Background of FT.com, webapp and other FT products.</td>   
                 </tr>
                 
                 <tr>
                 <td>FT Blue</td>
                 <td>#2e6e9e</td>
                 <td><div style="width:100px;height:20px;background-color:#2e6e9e"></div></td>
-                <td>Used for all links</td>   
+                <td>Used for link text and buttons</td>   
                 </tr>
                 
                 <tr>
-                <td>FT dark Blue</td>
+                <td>FT Dark Blue</td>
                 <td>#275e86</td>
                 <td><div style="width:100px;height:20px;background-color:#275e86"></div></td>
                 <td>Darker blue for hover on stand out buttons</td>   
@@ -163,14 +155,14 @@ Below are the 4 main colours used to layout FT pages. FT pink is the main colour
                 <td>FT Pink Tint 1</td>
                 <td>#f6e9d8</td>
                 <td><div style="width:100px;height:20px;background-color:#f6e9d8"></div></td>
-                <td>Used on the right-hand rail background colour</td>   
+                <td>Used as subtle background colour for large areas of content, such as the right-hand rail on FT.com</td>
                 </tr>
                 
                 <tr>
                 <td>FT Pink Tint 2</td>
                 <td>#e9decf</td>
                 <td><div style="width:100px;height:20px;background-color:#e9decf"></div></td>
-                <td>Used for background on headers in the right-hand rail</td>   
+                <td>Used as the background on module title headers</td>   
                 </tr>
                 
                 <tr>
@@ -181,8 +173,10 @@ Below are the 4 main colours used to layout FT pages. FT pink is the main colour
                 </tr>
 </table>
 
-###Ancillary Colours
-These colours are generally used to create interactive graphics or for ancillary widgets, components and page elements outside of standard editorial content. These colours should never be used on article text, headings or section pages.
+###Positive/Negative colours
+These colours are generally used to indicate a positive or negative visually. They are used to indicate a rise or fall in value, for example of a stock price. They can be used for both text and accompanying graphics/arrows in this case.
+
+They can also be used to indicate a confirmation or error, for example in form elements.
 
 <table class='o-techdocs-table' style="width:100%;">
                 <tr>
@@ -253,14 +247,14 @@ These colours are generally used to create interactive graphics or for ancillary
                 <td>Red</td>
                 <td>#c00</td>
                 <td><div style="width:100px;height:20px;background-color:#c00"></div></td>
-                <td>Errors and negative alerting messages.</td> 
+                <td>Errors and negative alerting messages. Also a decrease in value, eg of a stock price.</td> 
                 </tr>
                 
                 <tr>
                 <td>Green</td>
                 <td>#458b00</td>
                 <td><div style="width:100px;height:20px;background-color:#458b00"></div></td>
-                <td>Affirmative input and feedback e.g. forms</td> 
+                <td>Affirmative input and feedback e.g. forms. Also an increase in value, eg of a stock price</td> 
                 </tr>
 
             </table>
@@ -268,9 +262,9 @@ These colours are generally used to create interactive graphics or for ancillary
 
 
 ###Tints
-Use a combination of these tints to create your page elements and differentiate different page elements of your design. These tints are carefully slected to compliment the FT pink backgruond colour. If you are looking to encapsulate certain page elements with borders, boxes or background colours you must use these tints. These tints are preferred to the FT grey pallette.
+Use a combination of these tints to create your page elements and differentiate page elements within your design. These tints are carefully selected to compliment the FT pink background colour. If you are looking to encapsulate certain page elements with borders, boxes or background colours, you shouldt use these tints. These tints are preferred to the FT grey palette in most cases.
 
-Below is a table of the FT tints following the numbering system.
+Below is a table of the FT Tints, numbered by increasing density.
 
 <table class='o-techdocs-table' style="width:100%;">
                 <tr>
@@ -319,7 +313,7 @@ Below is a table of the FT tints following the numbering system.
 ###Greys
 Greys can be used on pages that employ a reversed colour scheme or dark styling. An example is video.ft.com They're also used for the FT's secondary button styles.
 
-Below is a table of the FT Greys following the numbering system.
+Below is a table of the FT Greys, numbered by increasing density.
 
 <table class='o-techdocs-table' style="width:100%;">
                 <tr>
@@ -372,7 +366,7 @@ Below is a table of the FT Greys following the numbering system.
             </table>
 
 ###FT Weekend Colours
-These colours are only to be used for sections within the FT weekend. They're not to be used anywhere else.
+These colours are only to be used for sections within FT weekend to represent editorial sections.
 
 <table class='o-techdocs-table' style="width:100%;">
                 <tr>
@@ -437,38 +431,52 @@ These colours are only to be used for sections within the FT weekend. They're no
 
 A standard FT spacing unit is 20px.
 
-When laying out your product please give enough room to the page elements. Vertical spacing between elements should be consistent. Products presented with varying gaps between elements will look like mistakes. 
+When laying out your product please give enough room to the page elements. Vertical spacing between elements should be consistent. 
 
 Horizontal spacing, gutters and margins should be controlled by the Origami grid. For vertical spacing you should use the FT spacing unit.
 
 
-##Fonts
-__Benton Sans__ 
+##Fonts/Typefaces
 
-Benton is the FT's house font online. It is also used for all body text on generic pages such service pages, tool pages and other ancillary pages which are not articles. 
+###Serif typefaces
+
+Serif fonts are generally used to display editorial headlines and body copy. They may also be used for large titles on other products occasionally, but despite a general impression that the FT uses serif fonts for all or most text across its digital products, this generally isn't the case and they tend to be reserved to indicate editorial content.
 
 __Miller Display Bold__ and __Miller Display Bolder__
 
-Used for article headlines on the FT webapp.
+Miller is used for titles. This could be article headlines or, less commonly, a page or product title. It is generally used at a minimum of 16px. Where headlines are displayed smaller than this, a sans-serif font is generally used instead, even for article headlines, for example in a list within a module or on a search results page.
 
-__Georgia__
-
-Georgia is the standard article body font. If at all possible don’t use Georgia italic.
+Where custom fonts can't be used, Georgia is used as a fallback.
 
 __Clarion__
 
-Clarion is the standard article body font on the FT webapp.
+Clarion is used for article body copy only on some products, such as the FT Web App. Where custom fonts can't be used, Georgia is used as a fallback.
 
-__Arial / Helvetica__
+__Georgia__
 
-If Benton Sans is not available these fonts can be used as a fallback.
+Georgia is the standard article body font and fallback for Miller and Clarion where custom fonts can't be used.
+
+
+###Sans-serif typefaces
+
+Sans-serif fonts are used widely for non-editorial text. This includes module titles, bylines and date stamps etc within editorial articles, as well as all other content such as navigation, footers and service and tool pages.
+
+When article headlines are shown at a size below 16px, sans-serif fonts are used in preference to Miller or Georgia.
+
+__Benton Sans__ 
+
+Benton is used widely as our preferred sans-serif font. Where custom fonts can't be used, Arial is used as a fallback.
+
+__Arial__
+
+Arial is used as a fallback for Benton where custom fonts can't be used
 
 All fonts can be retrieved from the <a href="http://registry.origami.ft.com/components/o-fonts">Origami o-fonts component.</a>
 
 
 ###Implementation Names
 
-Fonts used by development differ in name to the font names installed for design software. All font names above are accoding to the CSS names for fonts. Below is a table of the CSS names compared to actual font names locally used by design software. Under contractual agreement copies of these fonts cannot be distributed to third parties.
+Below is a table of the Origami CSS names used for the various fonts and weights. Under contractual agreement copies of these fonts cannot be distributed to third parties.
 
 <table class='o-techdocs-table'>
                 <tr>
