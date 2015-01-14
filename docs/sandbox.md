@@ -637,7 +637,7 @@ A checkbox allows the user to turn an option on or off and allows the user to ch
 
 There are two sizes or checkboxes. The smaller size checkbox is to be used on desktop devices and the larger size checkbox is to be used on all mobile and tablet devices. 
 
-<a class="jsbin-embed" href="http://jsbin.com/cojofi/1/embed">o-ft-forms: checkboxes demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/cojofi/1/embed?output">o-ft-forms: checkboxes demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ##Forms
 
