@@ -629,7 +629,7 @@ A radio button is an button allowing the user to select only one of a predefined
 
 There are two sizes or radio button. The smaller size button is to be used on desktop devices and the larger size button is to be used on all mobile and tablet devices. 
 
-<a class="jsbin-embed" href="http://jsbin.com/mahuze/1/embed?html,output">o-ft-forms: radios demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/mahuze/1/embed">o-ft-forms: radios demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ####Check boxes
 
