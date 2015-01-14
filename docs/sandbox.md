@@ -623,6 +623,18 @@ Simple on / off interactions will use the following design.
 
 <iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/grouped.html?embed=1'></iframe>
 
+####Radio buttons
+
+A radio button is an button allowing the user to select only one of a predefineds set of options. The radio button is always arranged in a selection of two or more and each button is accompanied by a label describing the choice.
+
+<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/grouped.html?embed=1'></iframe>
+
+####Check boxes
+
+Simple on / off interactions will use the following design.
+
+<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/grouped.html?embed=1'></iframe>
+
 ##Forms
 
 Forms are designed to be responsive at different screen sizes. It’s very important that ample layout and spacing is given to ensure ease of use on touch devices.
