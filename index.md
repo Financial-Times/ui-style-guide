@@ -9,9 +9,11 @@ section: Section 1
 ##Overview
 
 <div class="o-techdocs-leadbody">
-            This site lists component parts and elements that are used to create pages in Financial Times digital products. It provides style guidance on usage and layout, whilst describing options available to select within components. It's primarily aimed at designers and front-end developers wanting to find out how to make use of our Orgigami set of standards when building FT products.
+            This site lists component parts and elements that are used to create pages in Financial Times digital products. It provides style guidance on usage and layout, whilst describing options available to select within components. It's primarily aimed at designers and front-end developers wanting to find out how to make use of our Origami set of standards when building FT products.
+            
             
             The companion to this site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, contains the code and technical guidance needed to implement these components, and is aimed primarily at developers wishing to use Origami within a product.
+            
             
             To find out more about Origami, including an overview, developer guide and syntax standards, go to the <a href="http://origami.ft.com">Origami homepage</a>.
             
