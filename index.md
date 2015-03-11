@@ -545,7 +545,7 @@ Buttons are designed to not be preset with any colour. If your product uses a sp
 
 These buttons have hollow colouring and are the default for standard button interactions.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/individual.html'></iframe>
+<iframe style='width:100%' frameborder='0' scrolling='no' src='http://registry.origami.ft.com/components/o-buttons@1.8.1/demos/visual/demos/individual.html?embed=1'></iframe>
 
 
 
@@ -553,20 +553,20 @@ These buttons have hollow colouring and are the default for standard button inte
 
 These buttons are only used for pages which require affirmative action. Examples would be on marketing pages, product purchasing pages, sign-up pages and as sign-in buttons.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/individual-standout.html?embed=1'></iframe>
+<iframe style='width:100%' frameborder='0' scrolling='no' src='http://registry.origami.ft.com/components/o-buttons@1.8.1/demos/visual/demos/individual-standout.html?embed=1'></iframe>
 
 ####Pagination
 
 Used for paging through content. e.g. search results. There are two scales depending on whether you're creating something for touch or not.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/pagination.html?embed=1'></iframe>
+<iframe style='width:100%' frameborder='0' scrolling='no' src='http://registry.origami.ft.com/components/o-buttons@1.8.1/demos/visual/demos/pagination.html?embed=1'></iframe>
 
 
 ####Toggle buttons / multi toggle
 
 Simple on / off interactions will use the following design.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/grouped.html?embed=1'></iframe>
+<iframe style='width:100%' frameborder='0' scrolling='no' src='http://registry.origami.ft.com/components/o-buttons@1.8.1/demos/visual/demos/grouped.html?embed=1'></iframe>
 
 ##Forms
 
