@@ -9,14 +9,14 @@ section: Section 1
 ##Overview
 
 <div class="o-techdocs-leadbody">
-            This site lists component parts and elements that are used to create pages in Financial Times digital products. It provides style guidance on usage and layout, whilst describing options available to select within components. It's primarily aimed at designers and front-end developers wanting to find out how to make use of our Origami set of standards when building FT products.
-            
-            
-            The companion to this site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, contains the code and technical guidance needed to implement these components, and is aimed primarily at developers wishing to use Origami within a product.
-            
-            
-            To find out more about Origami, including an overview, developer guide and syntax standards, go to the <a href="http://origami.ft.com">Origami homepage</a>.
-            
+			This site lists component parts and elements that are used to create pages in Financial Times digital products. It provides style guidance on usage and layout, whilst describing options available to select within components. It's primarily aimed at designers and front-end developers wanting to find out how to make use of our Origami set of standards when building FT products.
+			
+			
+			The companion to this site, the <a href="http://registry.origami.ft.com/components">Origami Registry</a>, contains the code and technical guidance needed to implement these components, and is aimed primarily at developers wishing to use Origami within a product.
+			
+			
+			To find out more about Origami, including an overview, developer guide and syntax standards, go to the <a href="http://origami.ft.com">Origami homepage</a>.
+			
 </div>
 
 ##FT branding
@@ -29,44 +29,44 @@ If you require an FT masthead or logo file, please contact the FT.com Design & U
 The Origami grid is a responsive 12-column system. Resizing and formatting can be controlled as you reduce the viewport width down through the FT’s various breakpoints. Below are the four breakpoints which are used with o-grid.
 
 <table style="width:100%;">
-                <tbody>
-                <tr>
-                <th>Scale name</th>
-                <th>o-grid indicator</th>
-                <th>Widths</th>
-                </tr>
+				<tbody>
+				<tr>
+				<th>Scale name</th>
+				<th>o-grid indicator</th>
+				<th>Widths</th>
+				</tr>
 
-                <tr>
-                <td>Small</td>
-                <td>S</td>
-                <td>0 - 600</td>
-                </tr>
-                <tr>
-                <td>Medium</td>
-                <td>M</td>
-                <td>600 - 1000</td>
-                </tr>
-                
-                <tr>
-                <td>Large</td>
-                <td>L</td>
-                <td>1000 - 1400</td>
-                </tr>
-                
-                <tr>
-                <td>Extra Large</td>
-                <td>XL</td>
-                <td>1400+</td>
-                </tr>
+				<tr>
+				<td>Small</td>
+				<td>S</td>
+				<td>0 - 290</td>
+				</tr>
+				<tr>
+				<td>Medium</td>
+				<td>M</td>
+				<td>490 +</td>
+				</tr>
+				
+				<tr>
+				<td>Large</td>
+				<td>L</td>
+				<td>970 +</td>
+				</tr>
+				
+				<tr>
+				<td>Extra Large</td>
+				<td>XL</td>
+				<td>1210 +</td>
+				</tr>
 </tbody>
 </table>
 
 
 For technical implementation, setup and general parameters, please see <a href="http://registry.origami.ft.com/components/o-grid">Origami o-grid component.</a>
 
-Below is a demo link of the grid with columns displayed. Note the following key design characteristics; the gutters are 20 pixels and page margins on left and right alter depending on the screen size.
+Below is a demo link of the grid with columns displayed. Note the following key design characteristics; the gutters are 10 pixels on page margins on left and right, which alter depending on the screen size.
 
-<iframe height="700" frameborder='0' width="100%" src='http://registry.origami.ft.com/components/o-grid@2.1.0/demos/visual/demos/silent.html?embed=1'></iframe>
+<iframe height="700" frameborder='0' width="100%" src='http://registry.origami.ft.com/components/o-grid@3.0.3/demos/visual/demos/silent.html?embed=1'></iframe>
 
 <a href="http://build.origami.ft.com/files/o-grid@2.1.0/demos/silent.html">Click here</a> to see a seperate page showing the this responsive grid. Designers can resize this to get column widths for any fixed screen size they need.
 
@@ -125,54 +125,54 @@ The FT's signature colour is FT Pink. It is strongly suggested that you use FT P
 Below are the main colours used across FT pages. FT Pink is the main colour used to signify FT brand pages.
 
 <table class='o-techdocs-table' style="width:100%;">
-                <tr>
-                <th>Name</th>
-                <th>Hex</th>
-                <th>Colour swatch</th>
-                <th>Example use</th>   
-                </tr>
-                
-                <tr>
-                <td>FT Pink</td>
-                <td>#fff1e0</td>
-                <td><div style="width:100px;height:20px;background-color:#fff1e0"></div></td>
-                <td>Background of FT.com, webapp and other FT products.</td>   
-                </tr>
-                
-                <tr>
-                <td>FT Blue</td>
-                <td>#2e6e9e</td>
-                <td><div style="width:100px;height:20px;background-color:#2e6e9e"></div></td>
-                <td>Used for link text and buttons</td>   
-                </tr>
-                
-                <tr>
-                <td>FT Dark Blue</td>
-                <td>#275e86</td>
-                <td><div style="width:100px;height:20px;background-color:#275e86"></div></td>
-                <td>Darker blue for hover on stand out buttons</td>   
-                </tr>
-                
-                <tr>
-                <td>FT Pink Tint 1</td>
-                <td>#f6e9d8</td>
-                <td><div style="width:100px;height:20px;background-color:#f6e9d8"></div></td>
-                <td>Used as subtle background colour for large areas of content, such as the right-hand rail on FT.com</td>
-                </tr>
-                
-                <tr>
-                <td>FT Pink Tint 2</td>
-                <td>#e9decf</td>
-                <td><div style="width:100px;height:20px;background-color:#e9decf"></div></td>
-                <td>Used as the background on module title headers</td>   
-                </tr>
-                
-                <tr>
-                <td>FT Claret</td>
-                <td>#9e2f50</td>
-                <td><div style="width:100px;height:20px;background-color:#9e2f50"></div></td>
-                <td>Accent colour</td>   
-                </tr>
+				<tr>
+				<th>Name</th>
+				<th>Hex</th>
+				<th>Colour swatch</th>
+				<th>Example use</th>   
+				</tr>
+				
+				<tr>
+				<td>FT Pink</td>
+				<td>#fff1e0</td>
+				<td><div style="width:100px;height:20px;background-color:#fff1e0"></div></td>
+				<td>Background of FT.com, webapp and other FT products.</td>   
+				</tr>
+				
+				<tr>
+				<td>FT Blue</td>
+				<td>#2e6e9e</td>
+				<td><div style="width:100px;height:20px;background-color:#2e6e9e"></div></td>
+				<td>Used for link text and buttons</td>   
+				</tr>
+				
+				<tr>
+				<td>FT Dark Blue</td>
+				<td>#275e86</td>
+				<td><div style="width:100px;height:20px;background-color:#275e86"></div></td>
+				<td>Darker blue for hover on stand out buttons</td>   
+				</tr>
+				
+				<tr>
+				<td>FT Pink Tint 1</td>
+				<td>#f6e9d8</td>
+				<td><div style="width:100px;height:20px;background-color:#f6e9d8"></div></td>
+				<td>Used as subtle background colour for large areas of content, such as the right-hand rail on FT.com</td>
+				</tr>
+				
+				<tr>
+				<td>FT Pink Tint 2</td>
+				<td>#e9decf</td>
+				<td><div style="width:100px;height:20px;background-color:#e9decf"></div></td>
+				<td>Used as the background on module title headers</td>   
+				</tr>
+				
+				<tr>
+				<td>FT Claret</td>
+				<td>#9e2f50</td>
+				<td><div style="width:100px;height:20px;background-color:#9e2f50"></div></td>
+				<td>Accent colour</td>   
+				</tr>
 </table>
 
 ###Positive/Negative colours
@@ -181,85 +181,85 @@ These colours are generally used to indicate a positive or negative visually. Th
 They can also be used to indicate a confirmation or error, for example in form elements.
 
 <table class='o-techdocs-table' style="width:100%;">
-                <tr>
-                <th>Name</th>
-                <th>Hex</th>
-                <th>Colour swatch</th>
-                <th>Example use</th>   
-                </tr>
-                <!--
-                <tr>
-                <td>Orange tint1</td>
-                <td>#eda45e</td>
-                <td><div style="width:100px;height:20px;background-color:#eda45e"></div></td>
-                <td>Interactive graphics and other such uses</td>   
-                </tr>
-                
-                <tr>
-                <td>Yellow tint1</td>
-                <td>#eed485</td>
-                <td><div style="width:100px;height:20px;background-color:#eed485"></div></td>
-                <td>Interactive graphics and other such uses</td> 
-                </tr>
-                
-                <tr>
-                <td>Bluegreen tint1</td>
-                <td>#819e9a</td>
-                <td><div style="width:100px;height:20px;background-color:#819e9a"></div></td>
-                <td>Interactive graphics and other such uses</td> 
-                </tr>
-                
-                <tr>
-                <td>Purple tint1</td>
-                <td>#936971</td>
-                <td><div style="width:100px;height:20px;background-color:#936971"></div></td>
-                <td>Interactive graphics and other such uses</td> 
-                </tr>
-                
-                
-                <tr>
-                <td>Purple tint2</td>
-                <td>#737e7e</td>
-                <td><div style="width:100px;height:20px;background-color:#737e7e"></div></td>
-                <td>Interactive graphics and other such uses</td> 
-                </tr>
+				<tr>
+				<th>Name</th>
+				<th>Hex</th>
+				<th>Colour swatch</th>
+				<th>Example use</th>   
+				</tr>
+				<!--
+				<tr>
+				<td>Orange tint1</td>
+				<td>#eda45e</td>
+				<td><div style="width:100px;height:20px;background-color:#eda45e"></div></td>
+				<td>Interactive graphics and other such uses</td>   
+				</tr>
+				
+				<tr>
+				<td>Yellow tint1</td>
+				<td>#eed485</td>
+				<td><div style="width:100px;height:20px;background-color:#eed485"></div></td>
+				<td>Interactive graphics and other such uses</td> 
+				</tr>
+				
+				<tr>
+				<td>Bluegreen tint1</td>
+				<td>#819e9a</td>
+				<td><div style="width:100px;height:20px;background-color:#819e9a"></div></td>
+				<td>Interactive graphics and other such uses</td> 
+				</tr>
+				
+				<tr>
+				<td>Purple tint1</td>
+				<td>#936971</td>
+				<td><div style="width:100px;height:20px;background-color:#936971"></div></td>
+				<td>Interactive graphics and other such uses</td> 
+				</tr>
+				
+				
+				<tr>
+				<td>Purple tint2</td>
+				<td>#737e7e</td>
+				<td><div style="width:100px;height:20px;background-color:#737e7e"></div></td>
+				<td>Interactive graphics and other such uses</td> 
+				</tr>
 
-                <tr>
-                <td>Brown tint1</td>
-                <td>#94826b</td>
-                <td><div style="width:100px;height:20px;background-color:#94826b"></div></td>
-                <td>Interactive graphics and other such uses</td> 
-                </tr>
-                
-                <tr>
-                <td>Green tint1</td>
-                <td>#a6a471</td>
-                <td><div style="width:100px;height:20px;background-color:#a6a471"></div></td>
-                <td>Interactive graphics and other such uses</td> 
-                </tr>
-                
-                <tr>
-                <td>Silver tint1</td>
-                <td>#c1b8b4</td>
-                <td><div style="width:100px;height:20px;background-color:#c1b8b4"></div></td>
-                <td>Interactive graphics and other such uses</td> 
-                </tr>
-                -->
-                <tr>
-                <td>Red</td>
-                <td>#c00</td>
-                <td><div style="width:100px;height:20px;background-color:#c00"></div></td>
-                <td>Errors and negative alerting messages. Also a decrease in value, eg of a stock price.</td> 
-                </tr>
-                
-                <tr>
-                <td>Green</td>
-                <td>#458b00</td>
-                <td><div style="width:100px;height:20px;background-color:#458b00"></div></td>
-                <td>Affirmative input and feedback e.g. forms. Also an increase in value, eg of a stock price</td> 
-                </tr>
+				<tr>
+				<td>Brown tint1</td>
+				<td>#94826b</td>
+				<td><div style="width:100px;height:20px;background-color:#94826b"></div></td>
+				<td>Interactive graphics and other such uses</td> 
+				</tr>
+				
+				<tr>
+				<td>Green tint1</td>
+				<td>#a6a471</td>
+				<td><div style="width:100px;height:20px;background-color:#a6a471"></div></td>
+				<td>Interactive graphics and other such uses</td> 
+				</tr>
+				
+				<tr>
+				<td>Silver tint1</td>
+				<td>#c1b8b4</td>
+				<td><div style="width:100px;height:20px;background-color:#c1b8b4"></div></td>
+				<td>Interactive graphics and other such uses</td> 
+				</tr>
+				-->
+				<tr>
+				<td>Red</td>
+				<td>#c00</td>
+				<td><div style="width:100px;height:20px;background-color:#c00"></div></td>
+				<td>Errors and negative alerting messages. Also a decrease in value, eg of a stock price.</td> 
+				</tr>
+				
+				<tr>
+				<td>Green</td>
+				<td>#458b00</td>
+				<td><div style="width:100px;height:20px;background-color:#458b00"></div></td>
+				<td>Affirmative input and feedback e.g. forms. Also an increase in value, eg of a stock price</td> 
+				</tr>
 
-            </table>
+			</table>
 
 
 
@@ -269,47 +269,47 @@ Use a combination of these tints to create your page elements and differentiate 
 Below is a table of the FT Tints, numbered by increasing density.
 
 <table class='o-techdocs-table' style="width:100%;">
-                <tr>
-                <th>Name</th>
-                <th>Hex</th>
-                <th>Colour swatch</th>
-                <th>Example use</th>   
-                </tr>
-                <tr>
-                <td>Pink tint 1</td>
-                <td>#f6e9d8</td>
-                <td><div style="width:100px;height:20px;background-color:#f6e9d8"></div></td>
-                <td>Right rail on FT.com</td>   
-                </tr>
-                
-                <tr>
-                <td>Pink tint 2</td>
-                <td>#e9decf</td>
-                <td><div style="width:100px;height:20px;background-color:#e9decf"></div></td>
-                <td>FT.com footer</td> 
-                </tr>
-                
-                <tr>
-                <td>Pink tint 3</td>
-                <td>#cec6b9</td>
-                <td><div style="width:100px;height:20px;background-color:#cec6b9"></div></td>
-                <td>Video tabs</td> 
-                </tr>
-                
-                <tr>
-                <td>Pink tint 4</td>
-                <td>#a7a59b</td>
-                <td><div style="width:100px;height:20px;background-color:#a7a59b"></div></td>
-                <td>FT.com nav bar</td> 
-                </tr>
-                
-                <tr>
-                <td>Pink tint 5</td>
-                <td>#74736c</td>
-                <td><div style="width:100px;height:20px;background-color:#74736c"></div></td>
-                <td>FT.com nav bar</td> 
-                </tr>
-            </table> 
+				<tr>
+				<th>Name</th>
+				<th>Hex</th>
+				<th>Colour swatch</th>
+				<th>Example use</th>   
+				</tr>
+				<tr>
+				<td>Pink tint 1</td>
+				<td>#f6e9d8</td>
+				<td><div style="width:100px;height:20px;background-color:#f6e9d8"></div></td>
+				<td>Right rail on FT.com</td>   
+				</tr>
+				
+				<tr>
+				<td>Pink tint 2</td>
+				<td>#e9decf</td>
+				<td><div style="width:100px;height:20px;background-color:#e9decf"></div></td>
+				<td>FT.com footer</td> 
+				</tr>
+				
+				<tr>
+				<td>Pink tint 3</td>
+				<td>#cec6b9</td>
+				<td><div style="width:100px;height:20px;background-color:#cec6b9"></div></td>
+				<td>Video tabs</td> 
+				</tr>
+				
+				<tr>
+				<td>Pink tint 4</td>
+				<td>#a7a59b</td>
+				<td><div style="width:100px;height:20px;background-color:#a7a59b"></div></td>
+				<td>FT.com nav bar</td> 
+				</tr>
+				
+				<tr>
+				<td>Pink tint 5</td>
+				<td>#74736c</td>
+				<td><div style="width:100px;height:20px;background-color:#74736c"></div></td>
+				<td>FT.com nav bar</td> 
+				</tr>
+			</table> 
 
 
 ###Greys
@@ -318,115 +318,115 @@ Greys can be used on pages that employ a reversed colour scheme or dark styling.
 Below is a table of the FT Greys, numbered by increasing density.
 
 <table class='o-techdocs-table' style="width:100%;">
-                <tr>
-                <th>Name</th>
-                <th>Hex</th>
-                <th>Colour swatch</th>
-                <th>Example use</th>   
-                </tr>
-                <tr>
-                <td>Grey tint 1</td>
-                <td>#b0b0b0</td>
-                <td><div style="width:100px;height:20px;background-color:#b0b0b0"></div></td>
-                <td>Desciption on video.ft.com</td>   
-                </tr>
-                
-                <tr>
-                <td>Grey tint 2</td>
-                <td>#999</td>
-                <td><div style="width:100px;height:20px;background-color:#999"></div></td>
-                <td>n/a</td> 
-                </tr>
-                
-                <tr>
-                <td>Grey tint 3</td>
-                <td>#777</td>
-                <td><div style="width:100px;height:20px;background-color:#777"></div></td>
-                <td>Date, bylines, bullets</td> 
-                </tr>
-                
-                <tr>
-                <td>Grey tint 4</td>
-                <td>#505050</td>
-                <td><div style="width:100px;height:20px;background-color:#505050"></div></td>
-                <td>Lead body text</td> 
-                </tr>
-                
-                <tr>
-                <td>Grey tint 5</td>
-                <td>#333</td>
-                <td><div style="width:100px;height:20px;background-color:#333"></div></td>
-                <td>Article body text</td> 
-                </tr>
-                
-                <tr>
-                <td>Black</td>
-                <td>#000000</td>
-                <td><div style="width:100px;height:20px;background-color:#000000"></div></td>
-                <td>FT.com nav bar</td> 
-                </tr>
-            </table>
+				<tr>
+				<th>Name</th>
+				<th>Hex</th>
+				<th>Colour swatch</th>
+				<th>Example use</th>   
+				</tr>
+				<tr>
+				<td>Grey tint 1</td>
+				<td>#b0b0b0</td>
+				<td><div style="width:100px;height:20px;background-color:#b0b0b0"></div></td>
+				<td>Desciption on video.ft.com</td>   
+				</tr>
+				
+				<tr>
+				<td>Grey tint 2</td>
+				<td>#999</td>
+				<td><div style="width:100px;height:20px;background-color:#999"></div></td>
+				<td>n/a</td> 
+				</tr>
+				
+				<tr>
+				<td>Grey tint 3</td>
+				<td>#777</td>
+				<td><div style="width:100px;height:20px;background-color:#777"></div></td>
+				<td>Date, bylines, bullets</td> 
+				</tr>
+				
+				<tr>
+				<td>Grey tint 4</td>
+				<td>#505050</td>
+				<td><div style="width:100px;height:20px;background-color:#505050"></div></td>
+				<td>Lead body text</td> 
+				</tr>
+				
+				<tr>
+				<td>Grey tint 5</td>
+				<td>#333</td>
+				<td><div style="width:100px;height:20px;background-color:#333"></div></td>
+				<td>Article body text</td> 
+				</tr>
+				
+				<tr>
+				<td>Black</td>
+				<td>#000000</td>
+				<td><div style="width:100px;height:20px;background-color:#000000"></div></td>
+				<td>FT.com nav bar</td> 
+				</tr>
+			</table>
 
 ###FT Weekend Colours
 These colours are only to be used for sections within FT weekend to represent editorial sections.
 
 <table class='o-techdocs-table' style="width:100%;">
-                <tr>
-                <th>Name</th>
-                <th>Hex</th>
-                <th>Colour swatch</th>
-                <th>Use</th>   
-                </tr>
-                <tr>
-                <td>Section Green</td>
-                <td>#09a25c</td>
-                <td><div style="width:100px;height:20px;background-color:#09a25c"></div></td>
-                <td>House and Home</td>   
-                </tr>
-                
-                <tr>
-                <td>Section Light Green</td>
-                <td>#a1dbb2</td>
-                <td><div style="width:100px;height:20px;background-color:#a1dbb2"></div></td>
-                <td>House and Home</td> 
-                </tr>
-                
-                <tr>
-                <td>Section Red</td>
-                <td>#cc0033</td>
-                <td><div style="width:100px;height:20px;background-color:#cc0033"></div></td>
-                <td>FT Money</td> 
-                </tr>
-                
-                <tr>
-                <td>Section Purple</td>
-                <td>#92288f</td>
-                <td><div style="width:100px;height:20px;background-color:#92288f"></div></td>
-                <td>Life and Arts</td> 
-                </tr>
-                
-                <tr>
-                <td>Section Light Purple</td>
-                <td>#ebcaec</td>
-                <td><div style="width:100px;height:20px;background-color:#ebcaec"></div></td>
-                <td>Life and Arts</td> 
-                </tr>
-                
-                <tr>
-                <td>Section Blue</td>
-                <td>#0e6dcc</td>
-                <td><div style="width:100px;height:20px;background-color:#0e6dcc"></div></td>
-                <td>FT Weekend Magazine</td> 
-                </tr>
-                
-                <tr>
-                <td>Section Light Blue</td>
-                <td>#c5d4e8</td>
-                <td><div style="width:100px;height:20px;background-color:#c5d4e8"></div></td>
-                <td>FT Weekend Magazinee</td> 
-                </tr>
-                
-            </table>
+				<tr>
+				<th>Name</th>
+				<th>Hex</th>
+				<th>Colour swatch</th>
+				<th>Use</th>   
+				</tr>
+				<tr>
+				<td>Section Green</td>
+				<td>#09a25c</td>
+				<td><div style="width:100px;height:20px;background-color:#09a25c"></div></td>
+				<td>House and Home</td>   
+				</tr>
+				
+				<tr>
+				<td>Section Light Green</td>
+				<td>#a1dbb2</td>
+				<td><div style="width:100px;height:20px;background-color:#a1dbb2"></div></td>
+				<td>House and Home</td> 
+				</tr>
+				
+				<tr>
+				<td>Section Red</td>
+				<td>#cc0033</td>
+				<td><div style="width:100px;height:20px;background-color:#cc0033"></div></td>
+				<td>FT Money</td> 
+				</tr>
+				
+				<tr>
+				<td>Section Purple</td>
+				<td>#92288f</td>
+				<td><div style="width:100px;height:20px;background-color:#92288f"></div></td>
+				<td>Life and Arts</td> 
+				</tr>
+				
+				<tr>
+				<td>Section Light Purple</td>
+				<td>#ebcaec</td>
+				<td><div style="width:100px;height:20px;background-color:#ebcaec"></div></td>
+				<td>Life and Arts</td> 
+				</tr>
+				
+				<tr>
+				<td>Section Blue</td>
+				<td>#0e6dcc</td>
+				<td><div style="width:100px;height:20px;background-color:#0e6dcc"></div></td>
+				<td>FT Weekend Magazine</td> 
+				</tr>
+				
+				<tr>
+				<td>Section Light Blue</td>
+				<td>#c5d4e8</td>
+				<td><div style="width:100px;height:20px;background-color:#c5d4e8"></div></td>
+				<td>FT Weekend Magazinee</td> 
+				</tr>
+				
+			</table>
 
 
 ##Spacing
@@ -481,50 +481,50 @@ All fonts can be retrieved from the <a href="http://registry.origami.ft.com/comp
 Below is a table of the Origami CSS names used for the various fonts and weights. Under contractual agreement copies of these fonts cannot be distributed to third parties.
 
 <table class='o-techdocs-table'>
-                <tr>
-                <th>CSS font name</th>
-                <th>Actual Font</th>  
-                </tr>
-                
-                <tr>
-                <td>Bentonsans lighter</td>
-                <td>Benton Sans Light</td>
-                </tr>
-                
-                <tr>
-                <td>Bentonsans bold</td>
-                <td>Benton Sans Bold</td>
-                </tr>
-                
-                <tr>
-                <td>Millerdisplay normal</td>
-                <td>Miller Display Regular</td>
-                </tr>
-                
-                <tr>
-                <td>Millerdisplay bold</td>
-                <td>Miller Display Semibold</td>
-                </tr>
-                
-                <tr>
-                <td>Millerdisplay bolder</td>
-                <td>Miller Display Bold</td>
-                </tr>
-                
-                <tr>
-                <td>Clarion normal</td>
-                <td>Clarion</td>
-                </tr>
-                
-                <tr>
-                <td>Clarion bold</td>
-                <td>Clarion Bold</td>
-                </tr>
-                
-                <tr>
-                <td>Clarion italic</td>
-                <td>Clarion Italic</td>
-                </tr>
+				<tr>
+				<th>CSS font name</th>
+				<th>Actual Font</th>  
+				</tr>
+				
+				<tr>
+				<td>Bentonsans lighter</td>
+				<td>Benton Sans Light</td>
+				</tr>
+				
+				<tr>
+				<td>Bentonsans bold</td>
+				<td>Benton Sans Bold</td>
+				</tr>
+				
+				<tr>
+				<td>Millerdisplay normal</td>
+				<td>Miller Display Regular</td>
+				</tr>
+				
+				<tr>
+				<td>Millerdisplay bold</td>
+				<td>Miller Display Semibold</td>
+				</tr>
+				
+				<tr>
+				<td>Millerdisplay bolder</td>
+				<td>Miller Display Bold</td>
+				</tr>
+				
+				<tr>
+				<td>Clarion normal</td>
+				<td>Clarion</td>
+				</tr>
+				
+				<tr>
+				<td>Clarion bold</td>
+				<td>Clarion Bold</td>
+				</tr>
+				
+				<tr>
+				<td>Clarion italic</td>
+				<td>Clarion Italic</td>
+				</tr>
 </table>
 
 
