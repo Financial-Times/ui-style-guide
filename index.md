@@ -70,7 +70,7 @@ Below is a demo link of the grid with columns displayed. Note the following key 
 
 <a href="http://build.origami.ft.com/files/o-grid@2.1.0/demos/silent.html">Click here</a> to see a seperate page showing the this responsive grid. Designers can resize this to get column widths for any fixed screen size they need.
 
-If you require a PSD showing the basic grid at the main breakpoints please <a href="/downloads/o-grid-demo.psd">click here.</a>
+If you require a PSD showing the basic grid at the main breakpoints please <a href="ui-style-guide/downloads/o-grid-demo.psd">click here.</a>
 
 
 ##Link Styles
