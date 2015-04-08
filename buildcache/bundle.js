@@ -9722,9 +9722,9 @@ function Header(rootEl) {
     var bodyDelegate,
         // Gets all nav elements in the header
         hierarchicalNavEls = [
-            rootEl.querySelector('.o-ft-header__nav--primary-theme'),
-            rootEl.querySelector('.o-ft-header__nav--secondary-theme'),
-            rootEl.querySelector('.o-ft-header__nav--tools-theme')
+            rootEl.querySelector('.ft-header__nav--primary-theme'),
+            rootEl.querySelector('.ft-header__nav--secondary-theme'),
+            rootEl.querySelector('.ft-header__nav--tools-theme')
         ].filter(function(el) {
             /* 
             *  Overflow is hidden by default on the tools and primary theme for it to resize properly on core experience
@@ -9740,7 +9740,7 @@ function Header(rootEl) {
         hierarchicalNavs = [];
 
     function init() {
-        rootEl.setAttribute('data-o-ft-header--js', '');
+        rootEl.setAttribute('data-ft-header--js', '');
         bodyDelegate = new DomDelegate(document.body);
         hierarchicalNavs = hierarchicalNavEls.map(function(el) {
             return new oHierarchicalNav(el);
@@ -9755,7 +9755,7 @@ function Header(rootEl) {
                 hierarchicalNavs[c].destroy();
             }
         }
-        rootEl.removeAttribute('data-o-ft-header--js');
+        rootEl.removeAttribute('data-ft-header--js');
     }
 
     init();
@@ -9770,7 +9770,7 @@ Header.prototype.createAllIn = function(el) {
     if (!el) {
         el = document.body;
     }
-    var headerEls = el.querySelectorAll('[data-o-component="o-ft-header"]:not([data-o-ft-header--js])'),
+    var headerEls = el.querySelectorAll('[data-o-component="ft-header"]:not([data-ft-header--js])'),
         headers = [];
     for (var c = 0, l = headerEls.length; c < l; c++) {
         headers.push(new Header(headerEls[c]));
@@ -10403,7 +10403,7 @@ require('./src/js/tables');
 require('./src/js/reveals');
 require('./src/js/permalinks');
 require('./src/js/gist-it');
-require("./../o-ft-header/main.js");
+require("./../ft-header/main.js");
 
 (function(){
 	"use strict";
@@ -10412,7 +10412,7 @@ require("./../o-ft-header/main.js");
 	});
 }());
 
-},{"./../o-ft-header/main.js":11,"./src/js/gist-it":19,"./src/js/nav":20,"./src/js/permalinks":21,"./src/js/reveals":22,"./src/js/tables":23}],19:[function(require,module,exports){
+},{"./../ft-header/main.js":11,"./src/js/gist-it":19,"./src/js/nav":20,"./src/js/permalinks":21,"./src/js/reveals":22,"./src/js/tables":23}],19:[function(require,module,exports){
 /*global $,require*/
 /**
  * Display Gist-it gists

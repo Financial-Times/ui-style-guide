@@ -95,7 +95,7 @@ The Origami header caters for various different use cases, mostly outlined in th
 ###Promo slot
 in the top right-hand side of the header is a space for a marketing promo ad. This will usually be advertising FT products, new tools and services or a subscriptions prompt. This promo slot only appears on FT.com sites. External products or sites do not have to use this slot. 
 
-<a class="jsbin-embed" href="http://jsbin.com/niyelo/8/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/niyelo/8/edit?output">ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Branded header
 If you're creating a product or sub-brand of the FT, please follow the following instructions.
@@ -105,7 +105,7 @@ If you're creating a product or sub-brand of the FT, please follow the following
 * A tagline can be inserted in the middle, aligned either left or right.
 * Use the shallow bar underneath the main header apply your product or brand colour.
 
-<a class="jsbin-embed" href="http://jsbin.com/niyelo/10/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/niyelo/10/edit?output">ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Tools icons
 The header also caters for any tool icons you may want to insert, such as for Search or Account etc. These tools collapse into a Menu icon at smaller screen sizes.
@@ -572,13 +572,13 @@ Simple on / off interactions will use the following design.
 
 Forms are designed to be responsive at different screen sizes. It’s very important that ample layout and spacing is given to ensure ease of use on touch devices.
 
-All the form elements can be retrieved from the <a href="http://registry.origami.ft.com/components/o-ft-forms">Origami o-forms component.</a>
+All the form elements can be retrieved from the <a href="http://registry.origami.ft.com/components/ft-forms">Origami o-forms component.</a>
 
 ###Text input
 
 We suggest always prepopulating the form field with suggestive text to help the user.
 
-<a class="jsbin-embed" href="http://jsbin.com/payela/4/embed?output">o-ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/payela/4/embed?output">ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Multi column layout
 
@@ -591,7 +591,7 @@ In exceptional cases a two column form can be used. For example, if your form is
 
 These will always appear underneath the input field. The error message should be understandable to the average user and give them a clue how to correct any mistake.
 
-<a class="jsbin-embed" href="http://jsbin.com/soleye/3/embed?output">o-ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/soleye/3/embed?output">ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ##Overlays
 

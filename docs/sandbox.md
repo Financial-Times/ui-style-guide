@@ -23,7 +23,7 @@ Insert a short summary piece of text on the high-level rules for the component h
 Summary piece of text on the rules for the item here.
 
 Next is the composite showing a visual of the item. This is where you'll post in your JSBin snippet.
-<a class="jsbin-embed" href="http://jsbin.com/soleye/3/embed?output">o-ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/soleye/3/embed?output">ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 Any additional notes displayed in the visual here.
 
 
@@ -166,7 +166,7 @@ The Origami header caters for various different types mostly outlined in the reg
 ###Promo slot
 in the top right-hand side of the header is a space for a marketing promo ad. This will usually be advertising FT products, new tools and services or a subscriptions prompt. This promo slot only appears on FT.com sites. External products or sites do not have to use this slot. 
 
-<a class="jsbin-embed" href="http://jsbin.com/niyelo/8/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/niyelo/8/edit?output">ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Branded header
 If you're creating a product or sub-brand of the FT please follow the following instructions.
@@ -176,7 +176,7 @@ If you're creating a product or sub-brand of the FT please follow the following 
 * A tagline can be inserted in the middle aligned left or right.
 * Use the small narrow bar underneath the main header apply your product or brand colour.
 
-<a class="jsbin-embed" href="http://jsbin.com/niyelo/10/edit?output">o-ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/niyelo/10/edit?output">ft-header: branded demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Tools icons
 The header also caters for any tool icons you may want to insert such as search or account etc. These tools collapse under a menu icon at smaller screen sizes.
@@ -600,7 +600,7 @@ Buttons are designed to not be preset with any colour. If your product uses a sp
 
 These buttons have hollow colouring and are the default for standard button interactions.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/individual.html'></iframe>
+<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/ft-buttons/demos/individual.html'></iframe>
 
 
 
@@ -608,20 +608,20 @@ These buttons have hollow colouring and are the default for standard button inte
 
 These buttons are only used for pages which require affirmative action. Examples would be on marketing pages, product purchasing pages, sign-up pages and as sign-in buttons.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/individual-standout.html?embed=1'></iframe>
+<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/ft-buttons/demos/individual-standout.html?embed=1'></iframe>
 
 ####Pagination
 
 Used for paging through content. e.g. search results. There are two scales depending on whether you're creating something for touch or not.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/pagination.html?embed=1'></iframe>
+<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/ft-buttons/demos/pagination.html?embed=1'></iframe>
 
 
 ####Toggle buttons / multi toggle
 
 Simple on / off interactions will use the following design.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/o-ft-buttons/demos/grouped.html?embed=1'></iframe>
+<iframe width="100%" frameborder='0' scrolling='no' src='http://build.origami.ft.com/files/ft-buttons/demos/grouped.html?embed=1'></iframe>
 
 ####Radio buttons
 
@@ -629,7 +629,7 @@ A radio button is an button allowing the user to select only one of a predefined
 
 There are two sizes or radio button. The smaller size button is to be used on desktop devices and the larger size button is to be used on all mobile and tablet devices. 
 
-<a class="jsbin-embed" href="http://jsbin.com/mahuze/1/embed?output">o-ft-forms: radios demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/mahuze/1/embed?output">ft-forms: radios demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ####Checkboxes
 
@@ -637,19 +637,19 @@ A checkbox allows the user to turn an option on or off and allows the user to ch
 
 There are two sizes or checkboxes. The smaller size checkbox is to be used on desktop devices and the larger size checkbox is to be used on all mobile and tablet devices. 
 
-<a class="jsbin-embed" href="http://jsbin.com/cojofi/1/embed?output">o-ft-forms: checkboxes demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/cojofi/1/embed?output">ft-forms: checkboxes demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ##Forms
 
 Forms are designed to be responsive at different screen sizes. It’s very important that ample layout and spacing is given to ensure ease of use on touch devices.
 
-All the form elements can be retrieved from the <a href="http://registry.origami.ft.com/components/o-ft-forms">Origami o-forms component.</a>
+All the form elements can be retrieved from the <a href="http://registry.origami.ft.com/components/ft-forms">Origami o-forms component.</a>
 
 ###Text input
 
 We suggest always prepopulating the form field with suggestive text to help the user.
 
-<a class="jsbin-embed" href="http://jsbin.com/payela/4/embed?output">o-ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/payela/4/embed?output">ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Multi column layout
 
@@ -662,7 +662,7 @@ In exceptional cases a two column form can be used. For example, if your form is
 
 These will always appear underneath the input field. The error message should be understandable to the average user and give them a clue how to correct any mistake.
 
-<a class="jsbin-embed" href="http://jsbin.com/soleye/3/embed?output">o-ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="http://jsbin.com/soleye/3/embed?output">ft-forms: text-inputs demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 
 

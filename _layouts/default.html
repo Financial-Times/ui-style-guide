@@ -4,91 +4,111 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }} - {{ site.name }}</title>
-        <meta name="viewport" content="width=device-width">
         <meta name="robots" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link href="{{ site.baseurl }}/buildcache/bundle.css" rel="stylesheet">
+	<!--
+			Perform your cuts the mustard test.
+			For information about what features come bundled with other
+			features in all browsers, see caniuse.com
+	-->
+	<script>
+		var cutsTheMustard = ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window);
+
+		if (cutsTheMustard) {
+			// Swap the `core` class on the HTML element for an `enhanced` one
+			// We're doing it early in the head to avoid a flash of unstyled content
+			document.documentElement.className = document.documentElement.className.replace(/\bcore\b/g, 'enhanced');
+		}
+	</script>
+
+	<style>
+		/* Hide any enhanced experience content when in core mode, and vice versa. */
+		.core .o--if-js,
+		.enhanced .o--if-no-js { display: none !important; }
+		
+		html {
+			/* Set a font family on the whole document */
+			font-family: BentonSans, sans-serif;
+		
+			/* Prevent navigation menus from creating
+			   extra space on sides of the page */
+			overflow-x: hidden;
+		}
+		
+		body {
+			/* Remove space around the document */
+			margin: 0;
+		}
+		
+		/* Add any other inline styles here */
+	</style>
+
+	<!--
+		Load the origami stylesheet, to avoid any flashes of unstyled content,
+		and also because stylesheet downloads can be parallelised by the browser.
+		If you have extracted the critical CSS into the inline CSS block above,
+		this could move to the end of the document.
+	-->
+	<link rel="stylesheet" href="http://build.origami.ft.com/bundles/css?modules=o-header@^3.0.3,o-fonts,o-ft-icons,o-techdocs@^4.0.0" />
+	<link href="{{ site.baseurl }}/buildcache/UISG-custom.css" rel="stylesheet">
+	<!--
+		Unconditionally load the polyfill service to provide the best support
+		possible for modern web standards.
+		Only features missing in this user agent will be filled.
+		If you want, you can provide a list of features to polyfill, otherwise
+		all features that can be polyfilled will be.
+		See the polyfill service home page for more details:
+		https://cdn.polyfill.io/
+	-->
+	<script src="//polyfill.webservices.ft.com/v1/polyfill.min.js"></script>
+
+	<!--
+		Load main JavaScript bundle (asynchronously, to make sure it's non-blocking)
+	-->
+	<script>
+		(function(src) {
+			if (cutsTheMustard) {
+				var o = document.createElement('script');
+				o.async = o.defer = true;
+				o.src = src;
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(o, s);
+			}
+		}('//build.origami.ft.com/bundles/js?modules=o-header@^3.0.3,o-techdocs@^4.0.0'));
+	</script>
+		
+<!--        <link href="{{ site.baseurl }}/buildcache/bundle.css" rel="stylesheet">-->
         
-        <link href="{{ site.baseurl }}/buildcache/UISG-custom.css" rel="stylesheet">
+        
         
         <script src='http://registry.origami.ft.com/embedapi'></script>
-        <link rel="stylesheet" href="http://build.origami.ft.com/bundles/css?modules=o-ft-typography@^1.12.2,o-header@^3.0.3" />
+        
+		
     </head>
     <body class='o-techdocs o-hoverable-on'>
 
-      <header data-o-component="o-ft-header" class="o-ft-header">
-          <div class="o-ft-header__container">
-              <div class="o-ft-header__primary">
-                  <div class="o-ft-header__primary__left">
-                      <!--<div class="o-ft-header__logo o-ft-header__logo--ft">
-                          <a href="http://www.ft.com"><abbr title="Financial Times">FT</abbr></a>
-                          <span class="o-techdocs__logo"></span>
-                      </div> -->
-                      <h1 class="o-ft-header__title">
-                          <a href="{{ site.baseurl }}/">
-                          <span class="origami-logo"></span>
-                          <!--<img style="margin:0 20px 0 0" src="img/logo.png" width=80 height=80 />-->
-                          {{site.name}}
-                          </a>
-                      </h1>
-                  </div>
-                  <nav class="o-ft-header__primary__center o-hierarchical-nav o-ft-header__nav--primary-theme" data-o-component="o-hierarchical-nav">
-                    <ul data-o-hierarchical-nav-level="1">
-                      
-
-                      <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/accessibility">Accessibility</a></li>
-
-                      <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/legacy">Legacy</a></li>
-
-                      <li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/contact">Contact</a></li>
-                                                
-                      <li data-more class="o-hierarchical-nav__parent"><a><span class="o-hierarchical-nav__more--if-some">More</span><span class="o-hierarchical-nav__more--if-all">Menu<!-- REMOVED UNTILL the ICON FONT WORKS AGAIN<i class="o-hierarchical-nav__parent__down-arrow"></i>--></span></a></li>
-                    </ul>
-                  </nav>
-                  <nav class="o-ft-header__primary__right o-hierarchical-nav o-ft-header__nav--tools-theme" data-o-component="o-hierarchical-nav" data-o-version="0.2.8">
-                    <ul data-o-hierarchical-nav-level="1"><!--
-                      --><li data-priority="-1"><a href="http://ft.com"><i class="o-ft-header__back-to-ft">Back to FT.com</i></a></li><!--
-                    --></ul>
-                  </nav>
-              </div>
-              <div class="o-ft-header__secondary"></div>
-          </div>
-      </header>  
-		
-		
-		
-		
-		<!---------------- new header ---->
-
-		
-		
-		
 		<header data-o-component="o-header" class="o-header">
-	<div class="o-header__container">
-		<div class="o-header__inner">
-			<div class="o-header__primary">
-				<div class="o-header__primary__left">
-	<div class="o-header__logo o-header__logo--ft">
-		
-		<a href="{{ site.baseurl }}/">
-                          <span class="origami-logo"></span>
-                          <!--<img style="margin:0 20px 0 0" src="img/logo.png" width=80 height=80 />-->
-                          {{site.name}}
-                          </a>
-		</a>
-	</div>
-</div>
-<div class="o-header__primary__center"><h2 class="o-header__tagline">UI Style Guide</h2></div>
+			<div class="o-header__container">
+				<div class="o-header__inner">
+					<div class="o-header__primary">
+						<a class="o-header__primary__left" href="{{ site.baseurl }}/">
+								<span class="origami-logo"></span>
+								<h1 class="o-header__title">{{site.name}}</h1>
+						</a>
 
-			<nav class="o-header__primary__right o-hierarchical-nav o-header__nav--tools-theme" data-o-component="o-hierarchical-nav">
-	<ul data-o-hierarchical-nav-level="1">
-		<li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/accessibility">Accessibility</a></li><!--
-		
-		--><li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/legacy">Legacy</a></li><!--
-		--><li data-priority="1" class="o-hierarchical-nav__parent" aria-selected="true"><a href="{{ site.baseurl }}/docs/contact">Contact</a></li>><!--
-		--><li data-priority="2"><a href="#void"><i class="demo__icon o-ft-icons-icon o-ft-icons-icon--profile"></i>Tool 4</a></li><!--
-		--><li data-more class="o-hierarchical-nav__parent"><a><span class="o-hierarchical-nav__more--if-some">More</span><span class="o-hierarchical-nav__more--if-all">Menu<!-- REMOVED UNTILL the ICON FONT WORKS AGAIN<i class="o-hierarchical-nav__parent__down-arrow"></i>--></span></a></li>
-</nav>
+						<nav class="o-header__primary__center o-hierarchical-nav o-header__nav--primary-theme" data-o-component="o-hierarchical-nav">
+
+							<ul data-o-hierarchical-nav-level="1">
+
+								<li data-priority="1"><a href="http://origami.ft.com/">Spec</a></li><!--
+
+							--><li data-priority="1"><a href="http://registry.origami.ft.com/components">Registry</a></li><!--
+							--><li data-priority="1" class="o-hierarchical-nav__parent"><a href="{{ site.baseurl }}/docs/legacy">Legacy</a></li><!--
+
+							--><li data-more class="o-hierarchical-nav__parent"><a><span class="o-hierarchical-nav__more--if-some">More</span><span class="o-hierarchical-nav__more--if-all">Menu<!-- REMOVED UNTILL the ICON FONT WORKS AGAIN<i class="o-hierarchical-nav__parent__down-arrow"></i>--></span></a></li>
+							</ul>
+						</nav>
 
 			</div>
 			<div class="o-header__secondary">
@@ -113,12 +133,19 @@
       </div>
 
       <div class='o-techdocs-footer'>
-        <p><a class='o-techdocs-pull-right' href='http://github.com/financial-times/ft-origami'>View project on Github</a>&copy; THE FINANCIAL TIMES LTD {{ site.time | date:'%Y' }}. FT and 'Financial Times' are trademarks of The Financial Times Ltd.</p>
+				<p><a class='o-techdocs-pull-right' href='http://github.com/financial-times/ft-origami'>View project on Github</a>&copy; THE FINANCIAL TIMES LTD {{ site.time | date:'%Y' }}. FT and 'Financial Times' are trademarks of The Financial Times Ltd.</p>
+
+		  			<h2>Contact</h2>
+		  		    <div class="UISGFooter">
+							  
+				    <p>All instructions in this guide are designed to help developers, product managers and digital agencies to get a handle on what the layout rules are for presenting FT content.</p>
+
+					<p>If you would like to contact anyone to get more details on anything in the style guide please contact the FT Design and UX team on the general email design[at]ft.com.</p>
+			       </div>
+		  
       </div>
 
       <script src='{{ site.baseurl }}/buildcache/bundle.js'></script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js'></script>
-      <script>prettyPrint();</script>
 
     </body>
 </html>

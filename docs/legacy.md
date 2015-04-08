@@ -24,7 +24,7 @@ Main content = 600
 For additional styles of Falcon design elements within FT pages please consult the <a href="http://financial-times.github.io/ft-velcro/">FT Velcro style guide.</a>
 
 ###Designing on the grid
-Designers looking for a Photoshop grid document to layout designs can download <a href="http://financial-times.github.io/ui-style-guide/dwnld/DOC002-Grid-v1.psd.zip">here</a>.
+Designers looking for a Photoshop grid document to layout designs can download <a href="http://financial-times.github.io/ui-style-guide/download/DOC002-Grid-v1.psd.zip">here</a>.
 
 
 ##Links
@@ -104,8 +104,6 @@ __b) Major Tabbed RHR module__
 This is only ever to be used for Fast FT
 
 #####Right Rail Module Containing Lists
-Items listed with in a RHR module should appear as follows.
-
 On FT.com the RHR modules can contain, for example;
 * RSS feed
 * Twitter feed
