@@ -115,6 +115,7 @@ padding: 20px ;
 	font-size:20px;
 }
 
+/* removed to reinstate Origami footer
 .o-techdocs-footer {
 	background-color: #333333;
     padding: 20px;
@@ -123,7 +124,10 @@ padding: 20px ;
     font-family: BentonSans, Helvetica, Arial, sans-serif;
     margin:40px 0 0 0;
 }
+*/
 
+
+/* footer area   */
 .UISGFooter {
 	-moz-column-count: 2;
 	-moz-column-gap: 20px;
@@ -133,10 +137,15 @@ padding: 20px ;
 	column-gap: 20px;
 }
 
+.footer-logo {
+	float: right;
+	padding: 0 0 20px 0;
+}
+
 .o-techdocs-pull-right {
 	text-decoration: none;
-color: #b0b0b0;
-padding: 0 20px 0 0;
+	color: #b0b0b0;
+	padding: 0 20px 0 0;
 }
 
 .o-techdocs-layout {
