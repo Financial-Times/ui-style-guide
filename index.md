@@ -20,7 +20,7 @@ section: Section 1
 </div>
 
 ##FT branding
-A guide to the Financial Times' corporate branding is contained in a separate document, the <a href="http://financial-times.github.io/ui-style-guide/dwnld/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. Guidance is given in the use of the logotypes, including correct placement and treatment. 
+A guide to the Financial Times' corporate branding is contained in a separate document, the <a href="http://financial-times.github.io/ui-style-guide/download/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. Guidance is given in the use of the logotypes, including correct placement and treatment. 
 
 If you require an FT masthead or logo file, please contact the FT.com Design & UX team at design@ft.com 
 
