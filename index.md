@@ -79,14 +79,14 @@ Below is a demo link of the grid with columns displayed. Note the following key 
 
 FT standard links are coloured FT Blue and turn black on hover. This applies to standard inline links in any product or app, unless other rules take precedence in a given situation.
 
-<iframe width="100%" frameborder='0' scrolling='no' src='comps/demo-links.html'></iframe>
+<a class="jsbin-embed" href="http://jsbin.com/naluva/3/embed?output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ###Article headline links 
 Article headline links use an inversion of the standard link colours, so appear black initially and turn blue on hover. These style links appear on the FT home page and section pages. 
 
 Below is an example of how they typically appear. The grey text underneath is the lead body text, a secondary piece of text further describing the article content. 
 
-<iframe width="100%" frameborder='0' scrolling='no' src='comps/article-link1.html'></iframe>
+<a class="jsbin-embed" href="http://jsbin.com/molozu/1/embed?output">ft-typography: titles demo</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 
 ##Header
