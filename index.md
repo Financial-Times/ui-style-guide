@@ -66,7 +66,7 @@ For technical implementation, setup and general parameters, please see <a href="
 
 Below is a demo link of the grid with columns displayed. Note the following key design characteristics; the gutters are 10 pixels on page margins on left and right, which alter depending on the screen size.
 
-<iframe height="700" frameborder='0' width="100%" src='http://registry.origami.ft.com/components/o-grid@3.0.3/demos/visual/demos/default.html?embed=1'></iframe>
+<iframe height="700" frameborder='0' width="100%" src='http://registry.origami.ft.com/components/o-grid@3.1.3/demos/visual/demos/default.html?embed=1'></iframe>
 
 <a href="http://build.origami.ft.com/files/o-grid/demos/default.html">Click here</a> to see a seperate page showing the this responsive grid. Designers can resize this to get column widths for any fixed screen size they need.
 
