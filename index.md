@@ -26,39 +26,41 @@ If you require an FT masthead or logo file, please contact the FT.com Design & U
 
 ##Origami Grid
 
-The Origami grid is a responsive 12-column system. Resizing and formatting can be controlled as you reduce the viewport width down through the FT’s various breakpoints. Below are the four breakpoints which are used with o-grid.
+The Origami grid is a responsive 12-column system. Resizing and formatting can be controlled as you reduce the viewport width up through the FT’s various breakpoints called "Layouts". Below are the four layouts (S, M, L, XL) which are used with o-grid.
 
 <table style="width:100%;">
-				<tbody>
-				<tr>
-				<th>Scale name</th>
-				<th>o-grid indicator</th>
-				<th>Widths</th>
-				</tr>
-
-				<tr>
-				<td>Small</td>
-				<td>S</td>
-				<td>0 - 290</td>
-				</tr>
-				<tr>
-				<td>Medium</td>
-				<td>M</td>
-				<td>490 +</td>
-				</tr>
-				
-				<tr>
-				<td>Large</td>
-				<td>L</td>
-				<td>970 +</td>
-				</tr>
-				
-				<tr>
-				<td>Extra Large</td>
-				<td>XL</td>
-				<td>1210 +</td>
-				</tr>
-</tbody>
+	<tbody>
+		<tr>
+			<th>Layout</th>
+			<th>Layout Origami name</th>
+			<th>Width (in px)</th>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>default</td>
+			<td>240+</td>
+		</tr>
+		<tr>
+			<td>Small</td>
+			<td>S</td>
+			<td>490+</td>
+		</tr>
+		<tr>
+			<td>Medium</td>
+			<td>M</td>
+			<td>730+</td>
+		</tr>
+		<tr>
+			<td>Large</td>
+			<td>L</td>
+			<td>970+</td>
+		</tr>
+		<tr>
+			<td>Extra Large</td>
+			<td>XL</td>
+			<td>1210</td>
+		</tr>
+	</tbody>
 </table>
 
 
