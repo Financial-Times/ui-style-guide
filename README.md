@@ -1,11 +1,6 @@
 ## This is a gh-pages branch
 
-Please visit http://financial-times.github.io/ui-style-guide to view the site
-
-## Prerequisites
-
-- Install node and npm from [npmjs.org](http://npmjs.org).  Check that it's installed by running `node --version`.
-- Install [origami-build-tools](https://github.com/Financial-Times/origami-build-tools).
+Please visit http://styleguide.ft.com to view the site
 
 ## Testing locally
 
@@ -48,7 +43,7 @@ Configuration file: /Users/user.name/sandboxes/local/style-guide/_config.yml
   Server running... press ctrl-c to stop.
 ```
 
-* Now you can view the site on your browser at [http://localhost:4000](http://localhost:4000).  Every time you make a change, the site will update automatically (except changes to main.js or main.scss, for which, see the Building section above)
+* Now you can view the site on your browser at [http://localhost:4000](http://localhost:4000).  Every time you make a change, the site will update automatically.
 
 
 ## Restarting Jekyll
@@ -60,7 +55,7 @@ cd /path/to/ui-style-guide/
 Then once inside this directory run a "watch", which sets Jeykll running.
 
 ```
-jekyll serve --watch --baseurl=''
+jekyll serve --watch
 ```
 To turn Jekyll off press ctrl+C in the terminal. The localhost link will stop working.
 
@@ -76,7 +71,7 @@ Here's a quick summary of the steps needed to get Jekyll running on your local m
 ```
 sudo gem install jekyll
 cd path/to/ui-style-guide
-jekyll serve --watch --baseurl=''
+jekyll serve --watch
 ```
 
 * In folder:
