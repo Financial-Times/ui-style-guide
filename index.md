@@ -115,7 +115,7 @@ View <a href="http://build.origami.ft.com/files/o-header@3.0.6/demos/header-no-s
 
 ##Colour Palette
 
-The FT's signature colour is FT Pink. It is strongly suggested that you use FT Pink when creating your design, product or app. For reference, all colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors">Origami o-color component.</a>
+The FT's signature colour is FT Pink. It is strongly suggested that you use FT Pink when creating your design, product or app. For reference, all colours can be retrieved from the <a href="http://registry.origami.ft.com/components/o-colors">Origami o-color component</a>.
 
 ###Common colours
 
@@ -448,7 +448,7 @@ __Arial__
 
 Arial is used as a fallback for Benton where custom fonts can't be used
 
-All fonts can be retrieved from the <a href="http://registry.origami.ft.com/components/o-fonts">Origami o-fonts component.</a>
+All fonts can be retrieved from the <a href="http://registry.origami.ft.com/components/o-fonts">Origami o-fonts component</a>.
 
 
 ###Implementation Names
@@ -501,7 +501,7 @@ __Legacy buttons__
 
 Please note there are a set of <a href="http://financial-times.github.io/ft-velcro">legacy</a> buttons widely in use. These are primarly for FT.com and have been deprecated in Origami.
 
-All Origami button styles can be retrieved from the <a href="http://registry.origami.ft.com/components/o-buttons">Origami o-buttons component.</a>
+All Origami button styles can be retrieved from the <a href="http://registry.origami.ft.com/components/o-buttons">Origami o-buttons component</a>.
 
 ###Origami Buttons
 
@@ -570,7 +570,7 @@ These will always appear underneath the input field. The error message should be
 
 ##Overlays
 
-FT.com currently uses a series of legacy overlay styles. Do not in any circumstances reproduce any of these legacy overlays. Code can be retrieved from <a href="http://registry.origami.ft.com/components/o-overlay">Origami o-overlay component.</a>
+FT.com currently uses a series of legacy overlay styles. Do not in any circumstances reproduce any of these legacy overlays. Code can be retrieved from <a href="http://registry.origami.ft.com/components/o-overlay">Origami o-overlay component</a>.
 
 ###Content inside overlays
 
