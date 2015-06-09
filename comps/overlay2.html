@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<!--[if IE 7]>         <html class="o-useragent-ie7 o-hoverable-on"> <![endif]-->
-<!--[if IE 8]>         <html class="o-useragent-ie8 o-hoverable-on"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="o-hoverable-on"> <!--<![endif]-->
+<html class="o-hoverable-on">
 <head>
-<meta name="description" content="Overlay" />
-    <meta charset="utf-8">
-    <title>o-overlay</title>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <style>body { margin: 0; }.demo-js .o--if-nojs { display: none; }</style>
-    <link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=o-overlay@1.0.1:/demos/src/demo.scss">
-    <link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=ft-buttons@^1.5.4,ft-typography@^1.12.3" />
+	<meta charset="utf-8" />
+	<title>o-overlay</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<style>body { margin: 0; }.demo-js .o--if-nojs { display: none; }</style>
+	<link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=o-overlay@^1.4.8:/demos/src/demo.scss" />
+	<link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=o-buttons@^2.0.3,o-typography@^1.16.4,o-fonts,o-ft-icons" />
+	<script src="//polyfill.webservices.ft.com/v1/polyfill.min.js"></script>
+	<style>
+		.o-overlay {
+			width: 80%;
+			left: 50%;
+			margin-left: -40%;
+			top: 50%;
+			min-height: 242px;
+			margin-top: -121px;
+		}
+	</style>
 </head>
-<body class="o-hoverable-on">
-  <script src="//polyfill.webservices.ft.com/v1/polyfill.min.js"></script>
-    
-  <!-- relevent code I need to create UISG composite -->
-  
-  <div class="o-overlay-shadow"></div>
-    
-  
-  
+<body class="o-hoverable-on" style="background-color: #fff1e0;">
+
+	<!-- relevent code I need to create UISG composite -->
+	<div class="o-overlay-shadow"></div>
  
-    <div class="o-overlay o-overlay--modal ft-typography-body-wrapper" style="margin-left: -250px; margin-top: -150px;width:500px;">
-        
-        <header class="o-overlay__heading o-overlay__heading--shaded">
-            <button class="o-overlay__close">
-                <div class="o-overlay__close-icon"></div>
-            </button>
-            <span role="heading" class="o-overlay__title">Subscribe to the Financial Times</span>
-        </header>
-         
-        <section class="o-overlay__content">
-		<p>Would you lilke to read this article then simple register for FREE and you can read 8 articles a month at any time and on any section of FT.com. <br><br>You can also sign up for alerts when your keyword is mentioned in an FT article.</p>
+	<div class="o-overlay o-overlay--modal o-ft-typography-body-wrapper">
 		
-        <p style="float:right;">
-          <span style="padding-right:20px;"><a href="#">Buy a subscription</a></span>
-          <button style="" class="ft-buttons ft-buttons--standout ft-buttons--big">Register</button>
-        </p>
-            
-	   </section>
-    </div>
-    
+		<header class="o-overlay__heading o-overlay__heading--shaded">
+			<a class="o-overlay__close" role="button" href="#void" aria-label="Close" title="Close"><span class="o-overlay__close-icon"></span></a>
+			<span role="heading" class="o-overlay__title">Subscribe to the Financial Times</span>
+		</header>
 
+		<section class="o-overlay__content">
+			<p>Would you lilke to read this article then simple register for FREE and you can read 8 articles a month at any time and on any section of FT.com. <br /><br />You can also sign up for alerts when your keyword is mentioned in an FT article.</p>
+			<p style="float: right;">
+				<span style="padding-right: 20px;"><a href="#">Buy a subscription</a></span>
+				<button style="" class="o-buttons o-buttons--standout o-buttons--big">Register</button>
+			</p>
+		</section>
+	</div>
 
-  
-  
-  
-    <script src="//build.origami.ft.com/bundles/js?modules=o-overlay@1.0.1:/demos/src/demo.js"></script>
-    <script src="//registry.origami.ft.com/embedapi?autoload=resize"></script>
+	<script src="//build.origami.ft.com/bundles/js?modules=o-overlay@^1.4.8:/demos/src/demo.js"></script>
+	<script src="//registry.origami.ft.com/embedapi?autoload=resize"></script>
 </body>
 </html>

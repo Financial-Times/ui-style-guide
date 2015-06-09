@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }} - {{ site.name }}</title>
-        <meta name="robots" content="noindex, nofollow">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html class="o-hoverable-on core">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>{{ page.title }} - {{ site.name }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!--
 			Perform your cuts the mustard test.
@@ -40,8 +39,26 @@
 			/* Remove space around the document */
 			margin: 0;
 		}
-		
-		/* Add any other inline styles here */
+		.no-wrap {
+			white-space: nowrap;
+		}
+		.footer-logo {
+			float: right;
+			font-size: 20px;
+			line-height: 40px;
+		}
+
+		.origami-logo {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: contain;
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2My4zIDYzLjMnPjxnPjxnPjxwb2x5Z29uIGZpbGw9JyNEN0QxQzYnIHBvaW50cz0nMzEuNyw1MS4zIDE5LjksNjMuMiAwLjEsNDMuNCAwLjEsMTkuNycvPjxwb2x5bGluZSBmaWxsPScjQjdCNUFCJyBwb2ludHM9JzQzLjYsMCAxOS45LDAgMC4xLDE5LjcgMTIsMzEuNiA0My42LDAnLz48cG9seWxpbmUgZmlsbD0nIzg3ODY4MCcgcG9pbnRzPSc2My4zLDQzLjQgNjMuMywxOS43IDQzLjYsMCAzMS43LDExLjggNjMuMyw0My40Jy8+PHBvbHlnb24gZmlsbD0nIzY0NjQ2NCcgcG9pbnRzPScxOS45LDYzLjIgNDMuNiw2My4yIDYzLjMsNDMuNCA1MS41LDMxLjYnLz48cGF0aCBmaWxsPScjRDdEMUM2JyBkPSdtMC4wOTgwNjggMTkuNycvPjwvZz48L2c+PC9zdmc+");
+			vertical-align: top;
+			margin-right: 10px;
+		}
 	</style>
 
 	<!--
@@ -50,8 +67,8 @@
 		If you have extracted the critical CSS into the inline CSS block above,
 		this could move to the end of the document.
 	-->
-	<link rel="stylesheet" href="http://build.origami.ft.com/bundles/css?modules=o-header@^3.0.3,o-fonts,o-ft-icons,o-techdocs@^4.0.0" />
-	<link href="{{ site.baseurl }}/buildcache/UISG-custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://build.origami.ft.com/bundles/css?modules=o-header@^3.0.6,o-fonts,o-ft-icons,o-techdocs@^4.0.0,o-forms@^1.0.0" />
+
 	<!--
 		Unconditionally load the polyfill service to provide the best support
 		possible for modern web standards.
@@ -87,77 +104,58 @@
 		ga('send', 'pageview');
 	</script>
 		
-<!--        <link href="{{ site.baseurl }}/buildcache/bundle.css" rel="stylesheet">-->
-        
-        
-        
-        <script src='http://registry.origami.ft.com/embedapi'></script>
-        
-		
-    </head>
-    <body class='o-techdocs o-hoverable-on'>
+	<script src="http://registry.origami.ft.com/embedapi"></script>
+</head>
+<body class="o-techdocs">
 
-		<header data-o-component="o-header" class="o-header">
-			<div class="o-header__container">
-				<div class="o-header__inner">
-					<div class="o-header__primary">
-						<a class="o-header__primary__left" href="{{ site.baseurl }}/">
-								<span class="origami-logo"></span>
-								<h1 class="o-header__title">{{site.name}}</h1>
-						</a>
+	<header data-o-component="o-header" class="o-header">
+		<div class="o-header__container">
+			<div class="o-header__inner">
+				<div class="o-header__primary">
+					<a class="o-header__primary__left" href="{{ site.baseurl }}/">
+						<span class="origami-logo"></span>
+						<h1 class="o-header__title">{{site.name}}</h1>
+					</a>
 
-						<nav class="o-header__primary__center o-hierarchical-nav o-header__nav--primary-theme" data-o-component="o-hierarchical-nav">
-
-							<ul data-o-hierarchical-nav-level="1">
-
-								<li data-priority="1"><a href="http://origami.ft.com/">Spec</a></li><!--
-
+					<nav class="o-header__primary__center o-hierarchical-nav o-header__nav--primary-theme" data-o-component="o-hierarchical-nav">
+						<ul data-o-hierarchical-nav-level="1"><!-- 
+							--><li data-priority="1"><a href="http://origami.ft.com/">Spec</a></li><!--
 							--><li data-priority="1"><a href="http://registry.origami.ft.com/components">Registry</a></li><!--
 							--><li data-priority="1" class="o-hierarchical-nav__parent"><a href="{{ site.baseurl }}/docs/legacy">Legacy</a></li><!--
+							--><li data-priority="1" class="o-hierarchical-nav__parent"><a href="http://next.ft.com/__styleguide">Next</a></li><!--
 
-							--><li data-more class="o-hierarchical-nav__parent"><a><span class="o-hierarchical-nav__more--if-some">More</span><span class="o-hierarchical-nav__more--if-all">Menu<!-- REMOVED UNTILL the ICON FONT WORKS AGAIN<i class="o-hierarchical-nav__parent__down-arrow"></i>--></span></a></li>
-							</ul>
-						</nav>
-
-			</div>
-			<div class="o-header__secondary">
-
+							--><li data-more class="o-hierarchical-nav__parent"><a><span class="o-hierarchical-nav__more--if-some">More</span><span class="o-hierarchical-nav__more--if-all">Menu<i class="o-hierarchical-nav__parent__down-arrow"></i></span></a></li><!-- 
+						--></ul>
+					</nav>
+				</div>
+				<div class="o-header__secondary"></div>
 			</div>
 		</div>
+	</header>
+	
+	<div class="o-techdocs-layout"> 
+		<div class="o-techdocs-sidebar">
+			<!-- Required to prevent the column from collapsing when it's empty -->
+			&nbsp;
+		</div>
+
+		<div class="o-techdocs-main o-techdocs-content">
+			{{ content }}
+		</div>
 	</div>
-</header>
-		
 
-      <div class="o-techdocs-layout"> 
-
-        <div class="o-techdocs-sidebar">
-          <div class="o-techdocs-nav"></div>
-        </div>
-
-        <div class="o-techdocs-main">
-          <div class="o-techdocs-content">
-            {{ content }}
-          </div>
-        </div>
-      </div>
-
-		
-		<footer class="o-techdocs-footer">
+	<footer class="o-techdocs-footer">
 		<div class="o-techdocs-footer__inner">
 			<div class="footer-logo">
 				<span class="origami-logo"></span>Origami
 			</div>
 			<p>© THE FINANCIAL TIMES LTD {{ site.time | date:'%Y' }}. FT and 'Financial Times' are trademarks of The Financial Times Ltd.</p>
-			<h2>Contact</h2>
-		  		    <div class="UISGFooter">
-							  
-				    <p>All instructions in this guide are designed to help developers, product managers and digital agencies to get a handle on what the layout rules are for presenting FT content.</p>
 
-					<p>If you would like to contact anyone to get more details on anything in the style guide please contact the FT Design and UX team on the general email design[at]ft.com.</p>
-			       </div>
-			
+			<p>All instructions in this guide are designed to help developers, product managers and digital agencies to get a handle on what the layout rules are for presenting FT content.</p>
+
+			<p>If you would like to contact anyone to get more details on anything in the styleguide please contact the FT Design and UX team at <a href="mailto:design@ft.com">design@ft.com</a>.</p>
 		</div>
 	</footer>
-		
-    </body>
+	
+</body>
 </html>
