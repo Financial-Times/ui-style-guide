@@ -18,7 +18,7 @@ section: Section 1
 </div>
 
 ##FT branding
-A guide to the Financial Times' corporate branding is contained in a separate document, the <a href="http://financial-times.github.io/ui-style-guide/download/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. Guidance is given in the use of the logotypes, including correct placement and treatment. 
+A guide to the Financial Times' corporate branding is contained in a separate document, the <a href="https://github.com/Financial-Times/ui-style-guide/raw/gh-pages/downloads/FT_BrandGuidelines2014.pdf">FT Brand Guidelines</a>. Guidance is given in the use of the logotypes, including correct placement and treatment. 
 
 If you require an FT masthead or logo file, please contact the FT.com Design & UX team at [design@ft.com](mailto:design@ft.com).
 
@@ -26,7 +26,7 @@ If you require an FT masthead or logo file, please contact the FT.com Design & U
 
 The Origami grid is a responsive 12-column system. Resizing and formatting can be controlled as you reduce the viewport width up through the FT’s various breakpoints called "Layouts". Below are the four layouts (S, M, L, XL) which are used with o-grid.
 
-<table style="width:100%;">
+<table style="width: 100%">
 	<tbody>
 		<tr>
 			<th>Layout</th>
@@ -352,7 +352,7 @@ Below is a table of the FT Greys, numbered by increasing density.
 ###FT Weekend Colours
 These colours are only to be used for sections within FT weekend to represent editorial sections.
 
-<table class="o-techdocs-table" style="width:100%;">
+<table class="o-techdocs-table" style="width: 100%">
 	<tr>
 		<th>Name</th>
 		<th>Hex</th>
