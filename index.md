@@ -4,7 +4,7 @@ title: Home
 section: Section 1
 ---
 
-![UI Style guide banner]({{site.baseurl}}/img/banner.png)
+![UI Style guide banner]({{site.baseurl}}ui-style-guide/img/banner.png)
 
 ##Overview
 
