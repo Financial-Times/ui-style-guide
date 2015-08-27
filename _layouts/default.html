@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!--
-			Perform your cuts the mustard test.
-			For information about what features come bundled with other
-			features in all browsers, see caniuse.com
+		Perform your cuts the mustard test.
+		For information about what features come bundled with other
+		features in all browsers, see caniuse.com
 	-->
 	<script>
 		var cutsTheMustard = ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window);
@@ -134,15 +134,17 @@
 			</div>
 		</div>
 	</header>
-	
+
 	<div class="o-techdocs-layout"> 
 		<div class="o-techdocs-sidebar">
 			<!-- Required to prevent the column from collapsing when it's empty -->
 			&nbsp;
 		</div>
 
-		<div class="o-techdocs-main o-techdocs-content">
-			{{ content }}
+		<div class="o-techdocs-main">
+			<div class="o-techdocs-content">
+				{{ content }}
+			</div>
 		</div>
 	</div>
 
@@ -158,6 +160,5 @@
 			<p>If you would like to contact anyone to get more details on anything in the styleguide please contact the FT Design and UX team at <a href="mailto:design@ft.com">design@ft.com</a>.</p>
 		</div>
 	</footer>
-	
 </body>
 </html>
