@@ -60,7 +60,7 @@ jekyll serve --watch
 To turn Jekyll off press ctrl+C in the terminal. The localhost link will stop working.
 
 
-##Summary
+## Summary
 Here's a quick summary of the steps needed to get Jekyll running on your local machine.
 
 * Download the style guide from git hub and put in a new folder
