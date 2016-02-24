@@ -1,5 +1,5 @@
 name: UI Style Guide
-highlighter: pygments
+highlighter: rouge
 relative_permalinks: false
 baseurl: 
 exclude: [scss, bower.json, Gruntfile.js, package.json, README.md]
