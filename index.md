@@ -68,7 +68,7 @@ Below is a demo link of the grid with columns displayed. Note the following key 
 
 <iframe height="700" frameborder="0" width="100%" src="http://registry.origami.ft.com/components/o-grid@3.1.8/demos/visual/demos/default.html?embed=1"></iframe>
 
-<a href="http://build.origami.ft.com/files/o-grid/demos/default.html" target="_blank">Open the responsive grid in a new window</a>. Designers can resize this to get column widths for any fixed screen size they need.
+<a href="https://origami-build.ft.com/files/o-grid/demos/default.html" target="_blank">Open the responsive grid in a new window</a>. Designers can resize this to get column widths for any fixed screen size they need.
 
 For designers here is <a href="https://github.com/Financial-Times/ui-style-guide/raw/gh-pages/downloads/o-grid_4.psd">PSD</a> file showing the basic grid at the main breakpoints with guides.
 
@@ -111,7 +111,7 @@ If you're creating a product or sub-brand of the FT, please follow the following
 ### Tools icons
 The header also caters for any tool icons you may want to insert, such as for Search or Account etc. These tools collapse into a Menu icon at smaller screen sizes.
 
-View <a href="http://build.origami.ft.com/files/o-header@3.0.6/demos/header-no-secondary.html">demonstration site</a> here.
+View <a href="https://origami-build.ft.com/files/o-header@3.0.6/demos/header-no-secondary.html">demonstration site</a> here.
 
 ## Colour Palette
 
