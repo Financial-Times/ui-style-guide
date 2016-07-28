@@ -1,6 +1,6 @@
-## This is a gh-pages branch
+# UI Style Guide
 
-Please visit http://styleguide.ft.com to view the site
+This style guide is now deprecated.
 
 ## Testing locally
 
@@ -84,4 +84,3 @@ Move all style guide files out of the ui-style-guide folder and into the parent 
 * In your browser:
 
 http://localhost:4000/
-
